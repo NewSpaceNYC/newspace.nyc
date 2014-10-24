@@ -1,0 +1,110 @@
+body {
+    margin: 0 auto;
+    line-height: 1.7em;
+}
+
+.l-box {
+    padding: 1em;
+}
+
+.header {
+    margin: 0 0;
+}
+
+    .header .pure-menu {
+        padding: 0.5em;
+    }
+
+        .header .pure-menu li a:hover,
+        .header .pure-menu li a:focus {
+            background: none;
+            border: none;
+            color: #aaa;
+        }
+
+.slogan{
+    margin: 57px auto 0;
+    display: block;
+    background: url(https://703b2c069452b328a61a9d57b759c4ce8e2e8891.googledrive.com/host/0B9LVk4xbDIJTMW44enlTSnVzWkE/first-nsnyc-meeting.jpg) center -165px;
+    padding: 27px 33px 434px;
+    color: rgb(244, 232, 246);
+    height: 919px;
+}
+    .slogan-words{
+        background: url(https://703b2c069452b328a61a9d57b759c4ce8e2e8891.googledrive.com/host/0B9LVk4xbDIJTMW44enlTSnVzWkE/nsnyc-slogn-bg.svg) center -10px no-repeat;
+        height: 456px;
+        padding: 78px 251px 0 164px;
+        margin: 555px auto auto -326px;
+        position: absolute;
+        text-align: center;
+        width: 243px;
+    }
+
+.center{
+    text-align: center;
+}
+
+body .primary-button {
+    background: #02a6eb;
+    color: #fff;
+}
+
+.splash {
+    margin: 0 auto;
+    padding: 3em 0 0;
+    background: #110E0C  url(https://e01664e04f761a953c177fc6c099b54b4a0ab988.googledrive.com/host/0B9LVk4xbDIJTRmwzeHdZZERtOGM/ns-website-bg.png) repeat-x center top;
+}
+    .splash .splash-head {
+        font-size: 300%;
+        margin: 0em 0;
+        line-height: 1.2em;
+    }
+    .splash .splash-subhead {
+        color: #999;
+        font-weight: 300;
+        line-height: 1.4em;
+    }
+    .splash .primary-button {
+        font-size: 150%;
+    }
+
+
+.content .content-subhead {
+    color: #999;
+    padding-bottom: 0.3em;
+    text-transform: uppercase;
+    margin: 0;
+    border-bottom: 2px solid #eee;
+    display: inline-block;
+}
+
+.content .content-ribbon {
+    margin: 3em;
+    border-bottom: 1px solid #eee;
+}
+
+.ribbon {
+    background: url(https://703b2c069452b328a61a9d57b759c4ce8e2e8891.googledrive.com/host/0B9LVk4xbDIJTMW44enlTSnVzWkE/nsnyc-footer-bg.svg) repeat-x;
+    text-align: center;
+    padding: 2em;
+    color: #6E55D1;
+    margin: -123px auto auto auto;
+}
+    .ribbon h2 {
+        padding: 23px 0 0;
+        display: block;
+        font-weight: normal;
+        margin: 211px 0 13px;
+    }
+
+.button-xlarge {
+    font-size: 125%;
+}
+
+.footer {
+    background: transparent;
+    color: #666;
+    text-align: center;
+    padding: 1em;
+    font-size: 80%;
+}
