@@ -111,3 +111,28 @@ body .primary-button {
     padding: 1em;
     font-size: 80%;
 }
+    .footer-icons{
+        height: 33px;
+        padding: 0 11px;
+    }
+    .links{
+        list-style: none;
+        display: inline;
+        margin: auto;
+        padding: 3px 33px;
+    }
+        .links li{
+            display: inline-block;
+        }
+    #googleplus-icon{
+        fill: red;
+    }
+    #facebook-icon{
+        fill: #3B5998;
+    }
+    #twitter-icon{
+        fill: #4099FF;
+    }
+    #github-icon{
+        fill: grey;
+    }

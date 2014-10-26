@@ -33,6 +33,7 @@
     "docpad-plugin-coffeescript": "2.x",
     "docpad-plugin-eco": "2.x",
     "docpad-plugin-ghpages": "~2.4.3",
+    "docpad-plugin-iconmonstr": "~2.0.15",
     "docpad-plugin-marked": "2.x",
     "docpad-plugin-partials": "2.x",
     "docpad-plugin-related": "2.x",

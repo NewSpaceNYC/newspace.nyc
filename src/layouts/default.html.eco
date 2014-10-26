@@ -60,8 +60,32 @@
 	<%- @content %>
 
 	<div class="footer pure-u-1"> 
-		&copy;<%- (new Date()).getFullYear() %> NewSpace NYC.
-		last updated <%= @site.date.toISOString() %>
+		<ul class="links">
+			<li>
+				<a href="https://plus.google.com/107499544218653464665" rel="publisher" target="_blank"> 
+					<%- @getIconmonstrBlock('googleplus4','googleplus-icon','footer-icons') %> 
+				</a>
+			</li>
+			<li>
+				<a href="https://www.facebook.com/newspacenyc" target="_blank"> 
+					<%- @getIconmonstrBlock('facebook4','facebook-icon','footer-icons') %> 
+				</a>
+			</li>
+			<li>
+				<a href="https://twitter.com/newspace_nyc" target="_blank"> 
+					<%- @getIconmonstrBlock('twitter4','twitter-icon','footer-icons') %> 
+				</a>
+			</li>
+			<li>
+				<a href="https://github.com/newspacenyc" target="_blank"> 
+					<%- @getIconmonstrBlock('github10','github-icon','footer-icons') %> 
+				</a>
+			</li>
+		</ul>
+		<div>
+			&copy;<%- (new Date()).getFullYear() %> NewSpace NYC.
+			last updated <%= @site.date.toISOString() %>
+		</div>
 	</div>
 </div>
 
