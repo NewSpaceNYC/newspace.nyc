@@ -43,7 +43,10 @@ docpadConfig = {
 			]
 
 			# Scripts
-			scripts: []
+			scripts: [
+				"//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"
+				"scripts/script.js"
+			]
 
 
 

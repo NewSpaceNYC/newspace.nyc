@@ -6,23 +6,48 @@ body {
     line-height: 1.7em;
 }
 
-.l-box {
-    padding: 1em;
+.opacity-1{
+    opacity: 1 !important;
 }
 
 .header {
-    margin: 0 0;
+    transition-duration: 0.777s;
+    opacity: 0;
+    margin: 0;
 }
 
     .header .pure-menu {
         padding: 0.5em;
+        background: #442566;
     }
-
+        .header .pure-menu li a{
+            text-transform: uppercase;
+            color: #fff !important;
+            font-size: 13px;
+        }
         .header .pure-menu li a:hover,
         .header .pure-menu li a:focus {
             background: none;
             border: none;
             color: #aaa;
+        }
+        .pure-menu.pure-menu-open.pure-menu-fixed{
+            border-bottom: 1px solid #3F003F;
+        }
+        .pure-menu-heading{
+            float: left;
+            margin: 4px auto 0 !important;
+            color: #fff !important;
+        }
+        .pure-menu-horizontal li{
+            background: purple;
+            border: 1px solid rgb(51, 37, 82);
+            border-radius: 2px;
+            margin: 2px 1px auto;
+        }
+        .pure-menu.pure-menu-horizontal>ul{
+            float: right;
+            margin: auto 44px auto auto;
         }
 
 .slogan{
