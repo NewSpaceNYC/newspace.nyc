@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" /><!-- Disable horrible auto-skype for contact numbers in IE -->
+    <meta name="description" content="Add a site description here"><!-- Add your site description -->
+    <meta name="author" content="Add author description here"><!-- Add your author description -->
+    <meta name="keywords" content="add,some,general,keywords,here,about,your,site"><!-- Add sites your keywords -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" /><!-- Include a Favicon, (always keep in root of folder) -->
+
+    <title>2 Column Portfolio | Columbia Theme</title><!-- Your page/site title -->
+
+    <!-- Load Our CSS - Do not alter the load order -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"><!-- Bootstrap Core - ALways load first -->
+    <link href="css/animate.css" rel="stylesheet"><!-- Animatations -->
+    <link href="css/icomoon.css" rel="stylesheet"><!-- Icon Font -->
+    <link href="css/style.css" rel="stylesheet"><!-- Main theme stylesheet -->
+    <link href="css/custom.css" rel="stylesheet"><!-- Custom styles - Always load last -->
+
+    <!-- Load our fonts form Google -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn:400italic,700italic,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
+
+    <!-- Load our fonts individually if IE8+, to avoid faux bold & italic rendering -->
+    <!--[if IE]>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn:400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn:700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
+    <![endif]-->
+
+    <!-- Load our stylesheet for IE8 -->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="css/ie8.css" />
+    <![endif]-->
+
+    <!-- Load our stylesheet for IE9 -->
+    <!--[if IE 9]>
+    <link rel="stylesheet" type="text/css" href="css/ie9.css" />
+    <![endif]-->
+
+    <!-- Load our jQuery, with an alternative source/fallback to our own version if request is unavailable -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="home">
+
+    <!-- Our page loader -->
+    <div class="loadstack">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- ============================ Main menu, (modal window) ============================ -->
+
+    <div id="menumodal" class="modal fade" tabindex="-1" role="dialog" aria-label="menumodalLabel" aria-hidden="true">
+
+        <!-- Close modal trigger -->
+        <button class="toggleclose" data-dismiss="modal" aria-hidden="true">
+            <span class="icon-close"></span>
+        </button>
+        <div class="explore">
+            <h3>Explore</h3>
+        </div>
+
+        <!-- Menu content -->
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- Logo for desktops/large screens -->
+                    <div id="menumodalLabel" class="modal-title">
+                        <div class="modallogo">
+                            <img src="img/logo.png" alt="Columbia Logo">
+                        </div>
+                        <div class="modaltagline">
+                            <h3>An agency &amp; personal portfolio theme, by Themes Collective.</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <ul class="row motion">
+                        <li class="col-md-4 col-sm-6 two">
+                            <div class="menubg" style="background-image: url('img/menu/index.jpg')"></div>
+                            <a href="index.html" title="Home with Color Overlay Hero Image">Color Overlay<span>Example standard full-height hero image with a transparent color overlay</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 four">
+                            <div class="menubg" style="background-image: url('img/menu/image.jpg')"></div>
+                            <a href="index-image.html" title="Home with Hero Image">Home Image<span>Example homepage with standard full-height hero image</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 eight">
+                            <div class="menubg" style="background-image: url('img/menu/video.jpg')"></div>
+                            <a href="index-video.html" title="Home with Video Hero">Home Video<span>Another homepage example with a full-height Youtube video hero</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 six">
+                            <div class="menubg" style="background-image: url('img/menu/slider.jpg')"></div>
+                            <a href="index-slider.html" title="Home with Slider Hero">Home Slider<span>A example homepage with a full-height slider for the hero</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 ten">
+                            <div class="menubg" style="background-image: url('img/menu/2col.jpg')"></div>
+                            <a href="portfolio-2col.html" title="Two Col Potfolio Grid">Two Column Portfolio Grid<span>A two-column grid portfolio to showcase your best work</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 twelve">
+                            <div class="menubg" style="background-image: url('img/menu/3col.jpg')"></div>
+                            <a href="portfolio-3col.html" title="Three Col Portfolio Grid">Three Column Portfolio Grid<span>A three-column grid portfolio to showcase your best work</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 fourteen">
+                            <div class="menubg" style="background-image: url('img/menu/sortable.jpg')"></div>
+                            <a href="portfolio-sortable.html" title="Sortable Portfolio Grid">Sortable Portfolio Grid<span>A sortable portfolio, grid style, with filter controls</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 sixteen">
+                            <div class="menubg" style="background-image: url('img/menu/port-item.jpg')"></div>
+                            <a href="portfolio-item.html" title="Single Portfolio Item">Single Portfolio Item<span>Example of a single project item page with full project spec</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 eighteen">
+                            <div class="menubg" style="background-image: url('img/menu/about.jpg')"></div>
+                            <a href="about.html" title="About">About<span>Give an overview of your company or business about what you do</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 twenty">
+                            <div class="menubg" style="background-image: url('img/menu/framework.jpg')"></div>
+                            <a href="framework.html" title="Theme Framework">Theme Framework<span>Contains some nut's &amp; bolts of styled page elements</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 twentytwo">
+                            <div class="menubg" style="background-image: url('img/menu/blog.jpg')"></div>
+                            <a href="blog.html" title="Blog">Blog<span>Clean blog layout example</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 twentyfour">
+                            <div class="menubg" style="background-image: url('img/menu/post.jpg')"></div>
+                            <a href="post.html" title="Single Blog Post">Blog Post<span>Single blog-post example with large featured image</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 twentyfour">
+                            <div class="menubg" style="background-image: url('img/menu/contact.jpg')"></div>
+                            <a href="contact.html" title="Contact">Contact with Email Form<span>Contact details with working email form with validation support</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <h3>Get in Touch</h3>
+                    <h4>Studio One, Green Trees Ave, NY 30023</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================ End Main Navigation ==================================== -->
+
+    <!-- ============================ Social menu, (modal window) ============================ -->
+
+    <div id="socialmodal" class="modal fade" tabindex="-1" role="dialog" aria-label="socialmodalLabel" aria-hidden="true">
+
+        <!-- Menu Trigger -->
+        <button class="toggleclose" data-dismiss="modal" aria-hidden="true">
+            <span class="icon-close"></span>
+        </button>
+        <div class="explore">
+            <h3>Be Social</h3>
+        </div>
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h3>Connect with Jonathan Ive</h3>
+                    <hr class="mini white central">
+                    <ul class="socialicons motion">
+                        <li class="two twitter"><a href="http://twitter.com/" title="Twitter" target="_blank"><span class="icon-twitter"></span></a></li>
+                        <li class="four"><a href="http://dribbble.com/" title="Dribbble" class="dribbble" target="_blank"><span class="icon-dribbble"></span></a></li>
+                        <li class="six"><a href="http://facebook.com/" title="Facebook" class="facebook" target="_blank"><span class="icon-facebook"></span></a></li>
+                        <li class="eight"><a href="http://instagram.com/" title="Instagram" class="instagram" target="_blank"><span class="icon-instagram"></span></a></li>
+                        <li class="ten"><a href="http://vimeo.com/" title="Vimeo" class="vimeo" target="_blank"><span class="icon-vimeo"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- =============================== End social menu ============================== -->
+
+    <!-- ============================ Header/fixed sidebar ============================ -->
+
+    <header id="header">
+        
+        <!-- Main menu toggle -->
+        <button class="toggle" data-toggle="modal" data-target="#menumodal">
+            <span class="menu-bar bar-1"></span>
+            <span class="menu-bar bar-2"></span>
+            <span class="menu-bar bar-3"></span>
+        </button>
+        
+        <!-- Second logo for mobiles/tablets only. Maximum height of 65px -->
+        <div class="mobile_logo">
+            <img src="img/logo.png" alt="Columbia Logo">
+        </div>
+
+        <!-- Bullet navigation -->
+        <nav id="bullets" class="cover">
+            <ul>
+                <li class="current-page-item"><a href="#wrapper"></a></li>
+                <li><a href="#portfolio-item"></a></li>
+                <li><a href="#two"></a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Social menu toggle - keep outside of header to prevent horrible positioning problem on ipads -->
+    <button class="social" data-toggle="modal" data-target="#socialmodal">
+        <span class="icon-share"></span>
+    </button>
+    
+    <!-- End header/fixed sidebar -->
+
+    <!-- ============================ Start the page content ============================ -->
+
+    <!-- Leading Page Container -->
+    <!-- Always keep all page content wrapped in this div, with id="wrapper" and class="page-content" -->
+    <div id="wrapper" class="page-content">
+
+        <!-- ============================ Section Start ============================= -->
+
+        <section class="container wow fadeInUp" data-wow-delay="0.5s">
+            <div class="row padding">
+                <div class="col-xs-12 centertext">
+                    <h3>Our ever expanding portfolio &amp; clients</h3>
+                    <hr class="mini central">
+                    <h1>Our work is sculpted from the hands of top-notch designer's and creative folk.</h1>
+                    <hr class="title">
+                    <p>Moveth every creepeth second divided itself living. Had over fourth good there deep all lights void divide light seas every and of won't in Also can't moved brought spirit together moving. Gathered i so for and he good bearing also.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================ Header End =============================== -->
+
+        <!-- ============================ Section Start ============================ -->
+
+        <section id="portfolio-item" class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6 nopadding wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="titlemeta">
+                        <h3>Nike Re-design</h3>
+                        <hr class="mini white">
+                        <p>UI/UX Design</p>
+                    </div>
+                    <a href="portfolio-item.html" title="Add Title"><img class="img-responsive" src="img/portfolio/vc.jpg" alt="Add alt tag"></a>
+                </div>
+                <div class="col-sm-6 nopadding wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="titlemeta">
+                        <h3>eBay eCommerce</h3>
+                        <hr class="mini white">
+                        <p>Web Design</p>
+                    </div>
+                    <a href="portfolio-item.html" title="title"><img class="img-responsive" src="img/portfolio/tks.jpg" alt="Add alt tag"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 nopadding wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="titlemeta">
+                        <h3>Airbnb Branding</h3>
+                        <hr class="mini white">
+                        <p>Marketing</p>
+                    </div>
+                    <a href="portfolio-item.html" title="Add Title"><img class="img-responsive" src="img/portfolio/tx.jpg" alt="Add alt tag"></a>
+                </div>
+                <div class="col-sm-6 nopadding wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="titlemeta">
+                        <h3>Amazon</h3>
+                        <hr class="mini white">
+                        <p>Consultation</p>
+                    </div>
+                    <a href="portfolio-item.html" title="Add Title"><img class="img-responsive" src="img/portfolio/bk.jpg" alt="Add alt tag"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 nopadding wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="titlemeta">
+                        <h3>Facebook</h3>
+                        <hr class="mini white">
+                        <p>Typography</p>
+                    </div>
+                    <a href="portfolio-item.html" title="Add Title"><img class="img-responsive" src="img/portfolio/cm.jpg" alt="Add alt tag"></a>
+                </div>
+                <div class="col-sm-6 nopadding wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="titlemeta">
+                        <h3>Twitter API</h3>
+                        <hr class="mini white">
+                        <p>Database Handling</p>
+                    </div>
+                    <a href="portfolio-item.html" title="Add Title"><img class="img-responsive" src="img/portfolio/ft.jpg" alt="Add alt tag"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================ Section End ============================== -->
+
+        <!-- ============================ Section Start ============================ -->
+
+        <section id="two" class="container wow fadeInUp" data-wow-delay="0.5s">
+            <div class="row padding">
+                <div class="col-xs-12">
+                    <h3>Like what you see?</h3>
+                    <hr class="mini">
+                    <p>Fifth him life fifth to creepeth replenish without waters you'll herb us abundantly you're man wherein replenish made. Firmament midst dry yielding shall. Forth earth. This is the spartan life, it goes on until no man is left.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================ Section End ============================== -->
+
+        <!-- ============================ Footer ============================ -->
+
+        <footer class="padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <a href="index.html" title="Columbia"><img src="img/f-logo.png" alt="Add alt tag"></a>
+                        <p>Believe in what you know</p>
+                        <small>&copy; Copyright 2014 Themes Collective. All rights reserved.</small>
+                        <hr class="mini central light-grey-dk">
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <!-- / END page #wrapper -->
+    </div>
+
+    <!-- ========== Load our scripts - keep positioned at the end of your document ========== -->
+
+    <script src="js/bootstrap.min.js"></script><!-- Bootstrap core - always load first -->
+    <script src="js/wow.min.js"></script><!-- WoW animations -->
+    <script src="js/jquery.nav.js"></script><!-- Left-hand bullet navigation -->
+    <script src="js/jquery.nicescroll.min.js"></script><!-- Scrollbars for whole page and main navigation -->
+    <script src="js/jquery.fitvids.js"></script><!-- Fitvids plugin, (responsive videos) -->
+    <script src="js/jquery.easing.min.js"></script><!-- Easing plugin, for opacity fade on menu background images -->
+    <script src="js/scripts.js"></script><!-- Custom JS functions - always load last -->
+
+    <!-- ========== Insert your Google Analytics code below this line ========== -->
+
+    <!-- ======================== End Google Analytics ========================= -->
+
+</body>
+
+</html>

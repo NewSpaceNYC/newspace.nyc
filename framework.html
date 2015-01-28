@@ -1,0 +1,2162 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" /><!-- Disable horrible auto-skype for contact numbers in IE -->
+    <meta name="description" content="Add a site description here"><!-- Add your site description -->
+    <meta name="author" content="Add author description here"><!-- Add your author description -->
+    <meta name="keywords" content="add,some,general,keywords,here,about,your,site"><!-- Add sites your keywords -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" /><!-- Include a Favicon, (always keep in root of folder) -->
+
+    <title>Theme Framework | Columbia Theme</title><!-- Your page/site title -->
+
+    <!-- Load Our CSS - Do not alter the load order -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"><!-- Bootstrap Core - ALways load first -->
+    <link href="css/animate.css" rel="stylesheet"><!-- Animatations -->
+    <link href="css/icomoon.css" rel="stylesheet"><!-- Icon Font -->
+    <link href="css/style.css" rel="stylesheet"><!-- Main theme stylesheet -->
+    <link href="css/custom.css" rel="stylesheet"><!-- Custom styles - Always load last -->
+
+    <!-- Load our fonts form Google -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn:400italic,700italic,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
+
+    <!-- Load our fonts individually if IE8+, to avoid faux bold & italic rendering -->
+    <!--[if IE]>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn:400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn:700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
+    <![endif]-->
+
+    <!-- Load our stylesheet for IE8 -->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="css/ie8.css" />
+    <![endif]-->
+
+    <!-- Load our stylesheet for IE9 -->
+    <!--[if IE 9]>
+    <link rel="stylesheet" type="text/css" href="css/ie9.css" />
+    <![endif]-->
+
+    <!-- Load our jQuery, with an alternative source/fallback to our own version if request is unavailable -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+      /* Color-swatches */
+      #swatches .col-md-3.col-sm-6.col-xs-12 {
+        padding: 10px
+      }
+      .color-swatches .swatches {
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+        background-color: #FFF;
+        width: 100%;
+      }
+      .color-swatches .left-col,
+      .color-swatches .right-col {
+        width: 50%;
+        height: 70px;
+      }
+      .color-swatches .left-col {
+        -webkit-border-radius: 6px 0 0 0;
+        -moz-border-radius: 6px 0 0 0;
+        border-radius: 6px 0 0 0;
+      }
+      .color-swatches .right-col {
+        -webkit-border-radius: 0 6px 0 0;
+        -moz-border-radius: 0 6px 0 0;
+        border-radius: 0 6px 0 0;
+      }
+      .color-swatches .hex {
+        padding: 16px;
+        height: 70px
+      }
+      .color-swatches .hex h4,
+      .color-swatches .hex p {
+        margin: 0;
+        color: #aaa;
+        font-size: 14px;
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        line-height: 19px;
+        text-transform: uppercase
+      }
+      .bs-glyphicons {
+        margin: 0;
+        overflow: hidden;
+      }
+      @media (min-width: 768px) {
+        .bs-glyphicons {
+          margin-right: 0;
+          margin-left: 0;
+        }
+      }
+      .bs-glyphicons-list {
+        padding-left: 0;
+        list-style: none;
+      }
+      .bs-glyphicons li {
+        float: left;
+        width: 25%;
+        padding: 20px;
+        margin-bottom: 20px;
+        line-height: 1.4;
+        text-align: center;
+      }
+      @media (min-width: 768px) {
+        .bs-glyphicons li {
+          width: 12.5%;
+          font-size: 12px;
+        }
+      }
+      .bs-glyphicons .glyphicon {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-size: 24px;
+      }
+      .bs-glyphicons .glyphicon-class {
+        display: block;
+        text-align: center;
+        word-wrap: break-word;
+      }
+      /* Icomoon Grid */
+      .glyph {
+        font-size: 16px;
+        width: 15em;
+        padding-bottom: 1em;
+        margin-bottom: 1em;
+        float: left;
+        overflow: hidden;
+      }
+      .pbs {
+        padding-bottom: .25em;
+      }
+      .fs1 {
+        font-size: 32px;
+        text-align: center;
+        width: 12.5%
+      }
+      /* Just a button spacing fix */
+       #buttons .col-md-3.col-sm-6.col-xs-12,
+       #pops .col-md-3.col-sm-6.col-xs-12 {
+        margin-bottom: 20px
+       }
+      #pagemeta.white hr.title:after {
+        border-top-color: #fff;
+        }
+      }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Our page loader -->
+    <div class="loadstack">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- ============================ Main menu, (modal window) ============================ -->
+
+    <div id="menumodal" class="modal fade" tabindex="-1" role="dialog" aria-label="menumodalLabel" aria-hidden="true">
+
+        <!-- Close modal trigger -->
+        <button class="toggleclose" data-dismiss="modal" aria-hidden="true">
+            <span class="icon-close"></span>
+        </button>
+        <div class="explore">
+            <h3>Explore</h3>
+        </div>
+
+        <!-- Menu content -->
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- Logo for desktops/large screens -->
+                    <div id="menumodalLabel" class="modal-title">
+                        <div class="modallogo">
+                            <img src="img/logo.png" alt="Columbia Logo">
+                        </div>
+                        <div class="modaltagline">
+                            <h3>An agency &amp; personal portfolio theme, by Themes Collective.</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <ul class="row motion">
+                        <li class="col-md-4 col-sm-6 two">
+                            <div class="menubg" style="background-image: url('img/menu/index.jpg')"></div>
+                            <a href="index.html" title="Home with Color Overlay Hero Image">Color Overlay<span>Example standard full-height hero image with a transparent color overlay</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 four">
+                            <div class="menubg" style="background-image: url('img/menu/image.jpg')"></div>
+                            <a href="index-image.html" title="Home with Hero Image">Home Image<span>Example homepage with standard full-height hero image</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 eight">
+                            <div class="menubg" style="background-image: url('img/menu/video.jpg')"></div>
+                            <a href="index-video.html" title="Home with Video Hero">Home Video<span>Another homepage example with a full-height Youtube video hero</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 six">
+                            <div class="menubg" style="background-image: url('img/menu/slider.jpg')"></div>
+                            <a href="index-slider.html" title="Home with Slider Hero">Home Slider<span>A example homepage with a full-height slider for the hero</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 ten">
+                            <div class="menubg" style="background-image: url('img/menu/2col.jpg')"></div>
+                            <a href="portfolio-2col.html" title="Two Col Potfolio Grid">Two Column Portfolio Grid<span>A two-column grid portfolio to showcase your best work</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 twelve">
+                            <div class="menubg" style="background-image: url('img/menu/3col.jpg')"></div>
+                            <a href="portfolio-3col.html" title="Three Col Portfolio Grid">Three Column Portfolio Grid<span>A three-column grid portfolio to showcase your best work</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 fourteen">
+                            <div class="menubg" style="background-image: url('img/menu/sortable.jpg')"></div>
+                            <a href="portfolio-sortable.html" title="Sortable Portfolio Grid">Sortable Portfolio Grid<span>A sortable portfolio, grid style, with filter controls</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 sixteen">
+                            <div class="menubg" style="background-image: url('img/menu/port-item.jpg')"></div>
+                            <a href="portfolio-item.html" title="Single Portfolio Item">Single Portfolio Item<span>Example of a single project item page with full project spec</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 eighteen">
+                            <div class="menubg" style="background-image: url('img/menu/about.jpg')"></div>
+                            <a href="about.html" title="About">About<span>Give an overview of your company or business about what you do</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 twenty">
+                            <div class="menubg" style="background-image: url('img/menu/framework.jpg')"></div>
+                            <a href="framework.html" title="Theme Framework">Theme Framework<span>Contains some nut's &amp; bolts of styled page elements</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 twentytwo">
+                            <div class="menubg" style="background-image: url('img/menu/blog.jpg')"></div>
+                            <a href="blog.html" title="Blog">Blog<span>Clean blog layout example</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 twentyfour">
+                            <div class="menubg" style="background-image: url('img/menu/post.jpg')"></div>
+                            <a href="post.html" title="Single Blog Post">Blog Post<span>Single blog-post example with large featured image</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 twentyfour">
+                            <div class="menubg" style="background-image: url('img/menu/contact.jpg')"></div>
+                            <a href="contact.html" title="Contact">Contact with Email Form<span>Contact details with working email form with validation support</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <h3>Get in Touch</h3>
+                    <h4>Studio One, Green Trees Ave, NY 30023</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================ End Main Navigation ==================================== -->
+
+    <!-- ============================ Social menu, (modal window) ============================ -->
+
+    <div id="socialmodal" class="modal fade" tabindex="-1" role="dialog" aria-label="socialmodalLabel" aria-hidden="true">
+
+        <!-- Menu Trigger -->
+        <button class="toggleclose" data-dismiss="modal" aria-hidden="true">
+            <span class="icon-close"></span>
+        </button>
+        <div class="explore">
+            <h3>Be Social</h3>
+        </div>
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h3>Connect with Jonathan Ive</h3>
+                    <hr class="mini white central">
+                    <ul class="socialicons motion">
+                        <li class="two twitter"><a href="http://twitter.com/" title="Twitter" target="_blank"><span class="icon-twitter"></span></a></li>
+                        <li class="four"><a href="http://dribbble.com/" title="Dribbble" class="dribbble" target="_blank"><span class="icon-dribbble"></span></a></li>
+                        <li class="six"><a href="http://facebook.com/" title="Facebook" class="facebook" target="_blank"><span class="icon-facebook"></span></a></li>
+                        <li class="eight"><a href="http://instagram.com/" title="Instagram" class="instagram" target="_blank"><span class="icon-instagram"></span></a></li>
+                        <li class="ten"><a href="http://vimeo.com/" title="Vimeo" class="vimeo" target="_blank"><span class="icon-vimeo"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- =============================== End social menu ============================== -->
+
+    <!-- ============================ Header/fixed sidebar ============================ -->
+
+    <header id="header">
+        
+        <!-- Main menu toggle -->
+        <button class="toggle" data-toggle="modal" data-target="#menumodal">
+            <span class="menu-bar bar-1"></span>
+            <span class="menu-bar bar-2"></span>
+            <span class="menu-bar bar-3"></span>
+        </button>
+        
+        <!-- Second logo for mobiles/tablets only. Maximum height of 65px -->
+        <div class="mobile_logo">
+            <img src="img/logo.png" alt="Columbia Logo">
+        </div>
+
+        <!-- Bullet navigation -->
+        <nav id="bullets" class="cover">
+            <ul>
+                <li class="current-page-item"><a href="#wrapper"></a></li>
+                <li><a href="#swatches"></a></li>
+                <li><a href="#two"></a></li>
+                <li><a href="#three"></a></li>
+                <li><a href="#pops"></a></li>
+                <li><a href="#four"></a></li>
+                <li><a href="#five"></a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Social menu toggle - keep outside of header to prevent horrible positioning problem on ipads -->
+    <button class="social" data-toggle="modal" data-target="#socialmodal">
+        <span class="icon-share"></span>
+    </button>
+    
+    <!-- End header/fixed sidebar -->
+
+    <!-- ============================ Start the page content ============================ -->
+
+    <!-- Leading Page Container -->
+    <!-- Always keep all page content wrapped in this div, with id="wrapper" and class="page-content" -->
+    <div id="wrapper" class="page-content">
+
+      <!-- ============================ Section one: slider hero ============================ -->
+
+      <section id="pagemeta" class="white">
+        <div class="container">
+            <div class="row padding">
+                <div class="col-xs-12 centertext">
+                    <h3>A fully styled Bootstrap framework</h3>
+                    <hr class="mini central">
+                    <h1>The elements: Modular copy &amp; paste blocks from Columbia's framework.</h1>
+                    <hr class="title">
+                    <p>Sometime into the expedition, we stumbled across a narrow, dark tunnel. We crawled in and started to make our way further down, and to our surprise, it opened out into the largest, most lucious rainforest we had ever seen.</p>
+                </div>
+            </div>
+          </div>
+      </section>
+
+      <!-- =============================== Header ================================ -->
+
+      <!-- ============================ Section Start ============================ -->
+
+      <section id="swatches" class="beige-lt padding">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="color-swatches">
+                <div class="swatches">
+                  <div class="clearfix">
+                    <div class="pull-left left-col blue-lt"></div>
+                    <div class="pull-right right-col blue-dk"></div>
+                  </div>
+                  <div class="hex">
+                    <h4>BLUE</h4>
+                    <p>#5D9CEC, #4A89DC</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="color-swatches">
+                <div class="swatches">
+                  <div class="clearfix">
+                    <div class="pull-left left-col aqua-lt"></div>
+                    <div class="pull-right right-col aqua-dk"></div>
+                  </div>
+                  <div class="hex">
+                    <h4>AQUA</h4>
+                    <p>#4FC1E9, #3BAFDA</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="color-swatches">
+                <div class="swatches">
+                  <div class="clearfix">
+                    <div class="pull-left left-col mint-lt"></div>
+                    <div class="pull-right right-col mint-dk"></div>
+                  </div>
+                  <div class="hex">
+                    <h4>MINT</h4>
+                    <p>#48CFAD, #37BC9B</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="color-swatches">
+                <div class="swatches">
+                  <div class="clearfix">
+                    <div class="pull-left left-col green-lt"></div>
+                    <div class="pull-right right-col green-dk"></div>
+                  </div>
+                  <div class="hex">
+                    <h4>Green</h4>
+                    <p>#A0D468, #8CC152</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="color-swatches">
+                <div class="swatches">
+                  <div class="clearfix">
+                    <div class="pull-left left-col sunflower-lt"></div>
+                    <div class="pull-right right-col sunflower-dk"></div>
+                  </div>
+                  <div class="hex">
+                    <h4>SUNFLOWER</h4>
+                    <p>#FFCE54, #F6BB42</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="color-swatches">
+                <div class="swatches">
+                  <div class="clearfix">
+                    <div class="pull-left left-col red-lt"></div>
+                    <div class="pull-right right-col red-dk"></div>
+                  </div>
+                  <div class="hex">
+                    <h4>Red</h4>
+                    <p>#FC6E51, #E9573F</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="color-swatches">
+                <div class="swatches">
+                  <div class="clearfix">
+                    <div class="pull-left left-col grapefruit-lt"></div>
+                    <div class="pull-right right-col grapefruit-dk"></div>
+                  </div>
+                  <div class="hex">
+                    <h4>GRAPEFRUIT</h4>
+                    <p>#ED5565, #DA4453</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="color-swatches">
+                <div class="swatches">
+                  <div class="clearfix">
+                    <div class="pull-left left-col lavender-lt"></div>
+                    <div class="pull-right right-col lavender-dk"></div>
+                  </div>
+                  <div class="hex">
+                    <h4>LAVENDER</h4>
+                    <p>#AC92EC, #967ADC</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- New color palette row -->
+
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="color-swatches">
+                <div class="swatches">
+                  <div class="clearfix">
+                    <div class="pull-left left-col rose-lt"></div>
+                    <div class="pull-right right-col rose-dk"></div>
+                  </div>
+                  <div class="hex">
+                    <h4>ROSE</h4>
+                    <p>#EC87C0, #D770AD</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="color-swatches">
+                <div class="swatches">
+                  <div class="clearfix">
+                    <div class="pull-left left-col light-grey-lt"></div>
+                    <div class="pull-right right-col light-grey-dk"></div>
+                  </div>
+                  <div class="hex">
+                    <h4>Light-grey</h4>
+                    <p>#F3F3F3, #E6E9ED</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="color-swatches">
+                <div class="swatches">
+                  <div class="clearfix">
+                    <div class="pull-left left-col dark-grey-lt"></div>
+                    <div class="pull-right right-col dark-grey-dk"></div>
+                  </div>
+                  <div class="hex">
+                    <h4>Dark Gray</h4>
+                    <p>#555555, #333333</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="color-swatches">
+                <div class="swatches">
+                  <div class="clearfix">
+                    <div class="pull-left left-col navy-lt"></div>
+                    <div class="pull-right right-col navy-dk"></div>
+                  </div>
+                  <div class="hex">
+                    <h4>Navy</h4>
+                    <p>#4B4667, #3F3B55</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- New color palette row -->
+
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="color-swatches">
+                <div class="swatches">
+                  <div class="clearfix">
+                    <div class="pull-left left-col electric-lt"></div>
+                    <div class="pull-right right-col electric-dk"></div>
+                  </div>
+                  <div class="hex">
+                    <h4>Electric</h4>
+                    <p>#3FD8DF, #37c3c9</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="color-swatches">
+                <div class="swatches">
+                  <div class="clearfix">
+                    <div class="pull-left left-col turquoise-lt"></div>
+                    <div class="pull-right right-col turquoise-dk"></div>
+                  </div>
+                  <div class="hex">
+                    <h4>Turquoise</h4>
+                    <p>#E2F9FF, #D0EDF5</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="color-swatches">
+                <div class="swatches">
+                  <div class="clearfix">
+                    <div class="pull-left left-col orange-lt"></div>
+                    <div class="pull-right right-col orange-dk"></div>
+                  </div>
+                  <div class="hex">
+                    <h4>Orange</h4>
+                    <p>#F8991C, #e19229</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="color-swatches">
+                <div class="swatches">
+                  <div class="clearfix">
+                    <div class="pull-left left-col pink-lt"></div>
+                    <div class="pull-right right-col pink-dk"></div>
+                  </div>
+                  <div class="hex">
+                    <h4>Pink</h4>
+                    <p>#E52D7B, #CD246C</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- New color palette row -->
+
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="color-swatches">
+                <div class="swatches">
+                  <div class="clearfix">
+                    <div class="pull-left left-col beige-lt"></div>
+                    <div class="pull-right right-col beige-dk"></div>
+                  </div>
+                  <div class="hex">
+                    <h4>Beige</h4>
+                    <p>#FFFED8, #f3f2ca</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="color-swatches">
+                <div class="swatches">
+                  <div class="clearfix">
+                    <div class="pull-left left-col tan-lt"></div>
+                    <div class="pull-right right-col tan-dk"></div>
+                  </div>
+                  <div class="hex">
+                    <h4>Tan</h4>
+                    <p>#E2F9FF, #D0EDF5</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="color-swatches">
+                <div class="swatches">
+                  <div class="clearfix">
+                    <div class="pull-left left-col gold-lt"></div>
+                    <div class="pull-right right-col gold-dk"></div>
+                  </div>
+                  <div class="hex">
+                    <h4>Gold</h4>
+                    <p>#F8991C, #e19229</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="color-swatches">
+                <div class="swatches">
+                  <div class="clearfix">
+                    <div class="pull-left left-col white"></div>
+                    <div class="pull-right right-col black"></div>
+                  </div>
+                  <div class="hex">
+                    <h4>White/Black</h4>
+                    <p>#FFFFFF, #000000</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ============================ Section End ============================== -->
+
+      <!-- ============================ Section Start ============================ -->
+
+        <section id="two" class="white padding">
+            <div class="container">
+                <div class="row">                   
+                  <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                          <span class="sr-only">60% Complete</span>
+                      </div>
+                      <span class="progress-type">HTML / HTML5</span>
+                      <span class="progress-completed">60%</span>
+                  </div>
+                  <div class="progress">
+                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                          <span class="sr-only">40% Complete (success)</span>
+                      </div>
+                      <span class="progress-type">ASP.Net</span>
+                      <span class="progress-completed">40%</span>
+                  </div>
+                  <div class="progress">
+                      <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                          <span class="sr-only">20% Complete (info)</span>
+                      </div>
+                      <span class="progress-type">Java</span>
+                      <span class="progress-completed">20%</span>
+                  </div>
+                  <div class="progress">
+                      <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                          <span class="sr-only">60% Complete (warning)</span>
+                      </div>
+                      <span class="progress-type">JavaScript / jQuery</span>
+                      <span class="progress-completed">60%</span>
+                  </div>
+                  <div class="progress">
+                      <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                          <span class="sr-only">80% Complete (danger)</span>
+                      </div>
+                      <span class="progress-type">CSS / CSS3</span>
+                      <span class="progress-completed">80%</span>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <!-- ============================ Section End ============================== -->
+
+        <!-- ============================ Section Start ============================ -->
+
+        <section class="container padding">
+            <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                  Collapsible Group Item #1
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                  Collapsible Group Item #2
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                  Collapsible Group Item #3
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+
+        <!-- ============================ Section End ============================== -->
+
+        <!-- ============================ Section Start ============================ -->
+
+        <section id="three" class="white padding">
+          <div class="container">
+
+            <div class="col-md-12">
+              <div class="panel">
+                <ul id="myTab1" class="nav nav-tabs nav-justified">
+                  <li class="active"><a href="#home1" data-toggle="tab">Home</a></li>
+                  <li><a href="#profile1" data-toggle="tab">Profile</a></li>
+                  <li><a href="#reveal1" data-toggle="tab">Profile</a></li>
+                </ul>
+                <div id="myTabContent" class="tab-content">
+                  <div class="tab-pane fade active in" id="home1">
+                    <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.</p>
+                  </div>
+                  <div class="tab-pane fade" id="profile1">
+                    <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee.  </p>
+                  </div>
+                  <div class="tab-pane fade" id="reveal1">
+                    <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ============================ Section End ============================== -->
+
+        <!-- ============================ Section Start ============================ -->
+
+        <section class="beige-lt padding">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Panel Default</h3>
+                  </div>
+                  <div class="panel-body">
+                    Panel content
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Panel Primary</h3>
+                  </div>
+                  <div class="panel-body">
+                    Panel content
+                  </div>
+                </div>
+              </div><!-- /.col-md-6 -->
+              <div class="col-md-6">
+                <div class="panel panel-success">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Panel Success</h3>
+                  </div>
+                  <div class="panel-body">
+                    Panel content
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Panel Info</h3>
+                  </div>
+                  <div class="panel-body">
+                    Panel content
+                  </div>
+                </div>
+              </div><!-- /.col-md-6 -->
+              <div class="col-md-6">
+                <div class="panel panel-warning">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Panel Warning</h3>
+                  </div>
+                  <div class="panel-body">
+                    Panel content
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="panel panel-danger">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Panel Danger</h3>
+                  </div>
+                  <div class="panel-body">
+                    Panel content
+                  </div>
+                </div>
+              </div><!-- /.col-md-6 -->
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================ Section End ============================== -->
+
+        <!-- ============================ Section Start ============================ -->
+
+        <section class="beige-lt padding">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="list-group">
+                  <a href="#" class="list-group-item active">Cras justo odio</a>
+                  <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+                  <a href="#" class="list-group-item">Morbi leo risus</a>
+                  <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+                  <a href="#" class="list-group-item">Vestibulum at eros</a>
+                  <a href="#" class="list-group-item">Porta ac consectetur</a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="list-group">
+                  <a href="#" class="list-group-item active">Cras justo odio</a>
+                  <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+                  <a href="#" class="list-group-item">Morbi leo risus</a>
+                  <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+                  <a href="#" class="list-group-item">Vestibulum at eros</a>
+                  <a href="#" class="list-group-item">Porta ac consectetur</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================ Section End ============================== -->
+
+        <!-- ============================ Section Start ============================ -->
+
+        <section id="buttons" class="white padding">
+          <div class="container">
+
+            <div class="row">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <button type="button" class="btn btn-block">Normal</button>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <button type="button" class="btn btn-default btn-block">Default</button>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <button type="button" class="btn btn-primary btn-block">Primary</button>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <button type="button" class="btn btn-success btn-block">Success</button>
+              </div>
+            </div>
+
+            <br>
+            <div class="row">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <button type="button" class="btn btn-info btn-block">Info</button>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <button type="button" class="btn btn-warning btn-block">Warning</button>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <button type="button" class="btn btn-danger btn-block">Danger</button>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <button type="button" class="btn btn-link btn-block">Link</button>
+              </div>
+            </div>
+
+            <br>
+            <div class="row">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="btn-group">
+                  <button type="button" class="btn">Normal</button>
+                  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-default">Default</button>
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                      <span class="caret"></span>
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                      <span class="caret"></span>
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-success">Success</button>
+                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                      <span class="caret"></span>
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-info">Info</button>
+                    <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+                      <span class="caret"></span>
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-warning">Warning</button>
+                    <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+                      <span class="caret"></span>
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-danger">Danger</button>
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                      <span class="caret"></span>
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+                </div>
+             </div>
+          </div>
+        </section>
+          
+        <!-- ============================ Section End ============================== -->
+
+        <!-- ============================ Section Start ============================ -->
+          
+        <section id="pops" class="container padding">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <button type="button" class="btn btn-warning" title="Popover title" data-container="body" data-toggle="popover" data-placement="right" data-content="Some content in Popover on right">Click Me
+              </button>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <button type="button" class="btn btn-primary" title="Popover title" data-container="body" data-toggle="popover" data-placement="top" data-content="Some content in Popover on top">Click Me
+              </button>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <button type="button" class="btn btn-success" title="Popover title" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Some content in Popover on bottom">Click Me
+              </button>
+            </div>              
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <button type="button" class="btn btn-default" title="Popover title" data-container="body" data-toggle="popover" data-placement="left" data-content="Some content in Popover on left">Click Me
+              </button>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip right">
+                Hover Me
+              </button>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip top">
+                Hover Me
+              </button>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip bottom">
+                Hover Me
+              </button>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip left">
+                Hover Me
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================ Section End ============================== -->
+
+        <!-- ============================ Section Start ============================ -->
+
+        <section class="padding beige">
+          <div class="container">
+
+            <!-- Button trigger modal -->
+            <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+              Launch demo modal
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">My Awesome Modal Title</h4>
+                  </div>
+                  <div class="modal-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. 
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================ Section End ============================== -->
+
+        <!-- ============================ Section Start ============================ -->
+
+        <section class="container padding">
+          <div class="row">
+            <div class="col-md-12">
+              <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Library</a></li>
+                <li class="active">Data</li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================ Section End ============================== -->
+
+        <!-- ============================ Section Start ============================ -->
+
+        <section class="beige-lt padding">
+          <div class="container">
+
+            <div class="row">
+              <div class="col-md-12">
+
+                <div class="alert alert-warning alert-dismissable">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                  <strong>Warning!</strong> Best check yo self, you're not looking too good.
+                </div>
+                <div class="alert alert-info alert-dismissable">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                  <strong>Well done!</strong> You successfully read this important alert message.
+                </div>
+                <div class="alert alert-success alert-dismissable">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                  <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+                </div>
+                <div class="alert alert-danger alert-dismissable">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                  <strong>Oh snap!</strong> Change a few things up and try submitting again.
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ============================ Section End ============================== -->
+
+        <!-- ============================ Section Start ============================ -->
+
+        <section class="white padding">
+          <div class="container">
+
+            <div class="row">
+              <h1>Header 1 - Awesome looking header </h1>
+              <br>
+              <h2>Header 2 - Awesome looking header</h2>
+              <br>
+              <h3>Header 3 - Awesome looking header</h3>
+              <br>
+              <h4>Header 4 - Awesome looking header</h4>
+              <br>
+              <h5>Header 5 - Awesome looking header</h5>
+              <br>
+              <h6>Header 6 - Awesome looking header</h6>
+              <br>
+              <p>Paragraph text - Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
+              <br>
+              <span>Quote</span>
+              <blockquote>
+               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
+               <small>Steve Jobs, CEO Apple</small>
+              </blockquote>
+            </div>
+            <br>
+            <br>
+            <div class="well">
+              <p>This is an example of a 'Well'. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ============================ Section End ============================== -->
+
+        <!-- ============================ Section Start ============================ -->
+
+        <section class="container padding">
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="img/slide.jpg" alt="First slide">
+              </div>
+              <div class="item">
+                <img src="img/slide.jpg" alt="Second slide">
+              </div>
+              <div class="item">
+                <img src="img/slide.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+          </div>
+        </section>
+
+        <!-- ============================ Section End ============================== -->
+
+        <!-- ============================ Section Start ============================ -->
+
+        <section class="beige-lt padding">
+          <div class="container">
+            <div class="pricing-table pricing-three-column row">
+              <div class="plan col-sm-6">
+                <div class="plan-name">
+                  <h3>$29</h3>
+                  <span>Basic</span>
+                  <hr class="mini central">
+                </div>
+                <ul>
+                  <li class="plan-feature">10 Users</li>
+                  <li class="plan-feature">5TB Disk Space</li>
+                  <li class="plan-feature">500,000 Hits</li>
+                  <li class="plan-feature">No Support</li>
+                  <li class="plan-feature"><a href="#" class="btn btn-primary btn-lg btn-block">Buy</a></li>
+                </ul>
+              </div>
+              <div class="plan col-sm-6">
+                <div class="plan-name">
+                  <h3>$99</h3>
+                  <span>Premium</span>
+                  <hr class="mini central">
+                  <span class="badge badge-warning">Popular</span>
+                </div>
+                <ul>
+                  <li class="plan-feature">100 Users</li>
+                  <li class="plan-feature">25TB Disk Space</li>
+                  <li class="plan-feature">1,000,000 Hits</li>
+                  <li class="plan-feature">Super Support</li>
+                  <li class="plan-feature"><a href="#" class="btn btn-primary btn-lg btn-block">Buy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================ Section End ============================== -->
+
+        <!-- ============================ Section Start ============================ -->
+
+        <section class="container padding">
+          <div class="row">
+            <div class="col-md-6">
+              <ul class="pagination">
+                <li class="active"><a href="#">PREV</a></li>
+                <li><a href="#">1</a></li>
+                <li class="active"><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li class="disabled"><a href="#">5</a></li>
+                <li class="active"><a href="#">NEXT</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="pager">
+                <li class="previous"><a href="#">Previous</a></li>
+                <li class="next"><a href="#">Next</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================ Section End ============================== -->
+
+        <!-- ============================ Section Start ============================ -->
+
+        <section id="four" class="white padding">
+          <div class="container">
+            <h3 class="text-center">Just some of the 200 Bootstrap Icons<br>(Full pack included)</h3>
+            <br>
+            <br>
+            <div class="bs-glyphicons">
+              <ul class="bs-glyphicons-list">
+                <li>
+                  <span class="glyphicon glyphicon-asterisk"></span>
+                </li>
+                <li>
+                  <span class="glyphicon glyphicon-plus"></span>
+                </li>
+                <li>
+                  <span class="glyphicon glyphicon-euro"></span>
+                </li>
+                <li>
+                  <span class="glyphicon glyphicon-minus"></span>
+                </li>
+                <li>
+                  <span class="glyphicon glyphicon-cloud"></span>
+                </li>
+                <li>
+                  <span class="glyphicon glyphicon-envelope"></span>
+                </li>
+                <li>
+                  <span class="glyphicon glyphicon-pencil"></span>
+                </li>
+                <li>
+                  <span class="glyphicon glyphicon-glass"></span>
+                </li>
+                <li>
+                  <span class="glyphicon glyphicon-music"></span>
+                </li>
+                <li>
+                  <span class="glyphicon glyphicon-search"></span>
+                </li>
+                <li>
+                  <span class="glyphicon glyphicon-heart"></span>
+                </li>
+                <li>
+                  <span class="glyphicon glyphicon-star"></span>
+                </li>
+                <li>
+                  <span class="glyphicon glyphicon-star-empty"></span>
+                </li>
+                <li>
+                  <span class="glyphicon glyphicon-user"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-film"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-th-large"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-th"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-th-list"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-ok"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-remove"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-zoom-in"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-zoom-out"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-off"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-signal"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-cog"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-trash"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-home"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-file"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-time"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-road"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-download-alt"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-download"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-upload"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-inbox"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-play-circle"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-repeat"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-refresh"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-list-alt"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-lock"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-flag"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-headphones"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-volume-off"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-volume-down"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-volume-up"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-qrcode"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-barcode"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-tag"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-tags"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-book"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-bookmark"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-print"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-camera"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-font"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-bold"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-italic"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-text-height"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-text-width"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-align-left"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-align-center"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-align-right"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-align-justify"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-list"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-indent-left"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-indent-right"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-facetime-video"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-picture"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-map-marker"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-adjust"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-tint"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-edit"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-share"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-check"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-move"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-step-backward"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-fast-backward"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-backward"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-play"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-pause"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-stop"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-forward"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-fast-forward"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-step-forward"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-eject"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-plus-sign"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-minus-sign"></span>
+                </li>
+              
+                <li>
+                  <span class="glyphicon glyphicon-remove-sign"></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================ Section End ============================== -->
+
+        <!-- ============================ Section Start: icomoon ============================ -->
+
+        <section id="five" class="beige-lt padding">
+          <div class="container">
+            <h3 class="text-center">Just some of the 450 Icomoon Icons<br>(Full pack included)</h3>
+            <br>
+            <br>
+          <div class="clearfix">
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-home"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-home2"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-home3"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-office"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-newspaper"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-pencil"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-pencil2"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-quill"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-pen"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-blog"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-droplet"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-paint-format"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-image"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-image2"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-images"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-camera"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-music"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-headphones"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-play"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-film"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-camera2"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-dice"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-pacman"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-spades"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-clubs"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-diamonds"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-pawn"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-bullhorn"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-connection"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-podcast"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-feed"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-book"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-books"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-library"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-file"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-profile"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-file2"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-file3"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-file4"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-copy"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-copy2"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-copy3"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-paste"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-paste2"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-paste3"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-stack"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-folder"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-folder-open"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-tag"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-tags"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-barcode"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-qrcode"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-ticket"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-cart"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-cart2"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-cart3"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-coin"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-credit"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-calculate"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-support"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-phone"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-phone-hang-up"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-address-book"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-notebook"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-envelope"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-pushpin"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-location"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-location2"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-compass"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-map"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-map2"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-history"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-clock"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-clock2"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-alarm"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-alarm2"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-bell"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-stopwatch"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-calendar"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-calendar2"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-print"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-keyboard"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-screen"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-laptop"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-mobile"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-mobile2"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-tablet"></span>
+              </div>
+            </div>
+            <div class="glyph fs1">
+              <div class="clearfix pbs">
+                <span class="icon-tv"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================ Section End ============================== -->
+
+      <!-- ============================ Footer======= ============================ -->
+
+      <footer class="padding">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xs-12">
+                      <a href="index.html" title="Columbia"><img src="img/f-logo.png" alt="Add alt tag"></a>
+                      <p>Believe in what you know</p>
+                      <small>&copy; Copyright 2014 Themes Collective. All rights reserved.</small>
+                      <hr class="mini central light-grey-dk">
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+    <!-- / END #wrapper -->
+    </div>
+
+    <!-- ========== Load our scripts - keep positioned at the end of your document ========== -->
+
+    <script src="js/bootstrap.min.js"></script><!-- Bootstrap core - always load first -->
+    <script src="js/wow.min.js"></script><!-- WoW animations -->
+    <script src="js/jquery.nav.js"></script><!-- Left-hand bullet navigation -->
+    <script src="js/jquery.nicescroll.min.js"></script><!-- Scrollbars for whole page and main navigation -->
+    <script src="js/jquery.easing.min.js"></script><!-- Easing plugin, for opacity fade on menu background images -->
+    <script src="js/scripts.js"></script><!-- Custom JS functions - always load last -->
+
+</body>
+
+</html>

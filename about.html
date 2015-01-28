@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" /><!-- Disable horrible auto-skype for contact numbers in IE -->
+    <meta name="description" content="Add a site description here"><!-- Add your site description -->
+    <meta name="author" content="Add author description here"><!-- Add your author description -->
+    <meta name="keywords" content="add,some,general,keywords,here,about,your,site"><!-- Add sites your keywords -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" /><!-- Include a Favicon, (always keep in root of folder) -->
+
+    <title>About | Columbia Theme</title><!-- Your page/site title -->
+
+    <!-- Load Our CSS - Do not alter the load order -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"><!-- Bootstrap Core - ALways load first -->
+    <link href="css/animate.css" rel="stylesheet"><!-- Animatations -->
+    <link href="css/icomoon.css" rel="stylesheet"><!-- Icon Font -->
+    <link href="css/jquery.fs.wallpaper.css" rel="stylesheet"/><!-- Video css file -->
+    <link href="css/style.css" rel="stylesheet"><!-- Main theme stylesheet -->
+    <link href="css/custom.css" rel="stylesheet"><!-- Custom styles - Always load last -->
+
+    <!-- Load our fonts form Google -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn:400italic,700italic,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
+
+    <!-- Load our fonts individually if IE8+, to avoid faux bold & italic rendering -->
+    <!--[if IE]>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn:400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn:700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
+    <![endif]-->
+
+    <!-- Load our stylesheet for IE8 -->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="css/ie8.css" />
+    <![endif]-->
+
+    <!-- Load our stylesheet for IE9 -->
+    <!--[if IE 9]>
+    <link rel="stylesheet" type="text/css" href="css/ie9.css" />
+    <![endif]-->
+
+    <!-- Load our jQuery, with an alternative source/fallback to our own version if request is unavailable -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Our page loader -->
+    <div class="loadstack">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- ============================ Main menu, (modal window) ============================ -->
+
+    <div id="menumodal" class="modal fade" tabindex="-1" role="dialog" aria-label="menumodalLabel" aria-hidden="true">
+
+        <!-- Close modal trigger -->
+        <button class="toggleclose" data-dismiss="modal" aria-hidden="true">
+            <span class="icon-close"></span>
+        </button>
+        <div class="explore">
+            <h3>Explore</h3>
+        </div>
+
+        <!-- Menu content -->
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- Logo for desktops/large screens -->
+                    <div id="menumodalLabel" class="modal-title">
+                        <div class="modallogo">
+                            <img src="img/logo.png" alt="Columbia Logo">
+                        </div>
+                        <div class="modaltagline">
+                            <h3>An agency &amp; personal portfolio theme, by Themes Collective.</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <ul class="row motion">
+                        <li class="col-md-4 col-sm-6 two">
+                            <div class="menubg" style="background-image: url('img/menu/index.jpg')"></div>
+                            <a href="index.html" title="Home with Color Overlay Hero Image">Color Overlay<span>Example standard full-height hero image with a transparent color overlay</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 four">
+                            <div class="menubg" style="background-image: url('img/menu/image.jpg')"></div>
+                            <a href="index-image.html" title="Home with Hero Image">Home Image<span>Example homepage with standard full-height hero image</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 eight">
+                            <div class="menubg" style="background-image: url('img/menu/video.jpg')"></div>
+                            <a href="index-video.html" title="Home with Video Hero">Home Video<span>Another homepage example with a full-height Youtube video hero</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 six">
+                            <div class="menubg" style="background-image: url('img/menu/slider.jpg')"></div>
+                            <a href="index-slider.html" title="Home with Slider Hero">Home Slider<span>A example homepage with a full-height slider for the hero</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 ten">
+                            <div class="menubg" style="background-image: url('img/menu/2col.jpg')"></div>
+                            <a href="portfolio-2col.html" title="Two Col Potfolio Grid">Two Column Portfolio Grid<span>A two-column grid portfolio to showcase your best work</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 twelve">
+                            <div class="menubg" style="background-image: url('img/menu/3col.jpg')"></div>
+                            <a href="portfolio-3col.html" title="Three Col Portfolio Grid">Three Column Portfolio Grid<span>A three-column grid portfolio to showcase your best work</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 fourteen">
+                            <div class="menubg" style="background-image: url('img/menu/sortable.jpg')"></div>
+                            <a href="portfolio-sortable.html" title="Sortable Portfolio Grid">Sortable Portfolio Grid<span>A sortable portfolio, grid style, with filter controls</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 sixteen">
+                            <div class="menubg" style="background-image: url('img/menu/port-item.jpg')"></div>
+                            <a href="portfolio-item.html" title="Single Portfolio Item">Single Portfolio Item<span>Example of a single project item page with full project spec</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 eighteen">
+                            <div class="menubg" style="background-image: url('img/menu/about.jpg')"></div>
+                            <a href="about.html" title="About">About<span>Give an overview of your company or business about what you do</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 twenty">
+                            <div class="menubg" style="background-image: url('img/menu/framework.jpg')"></div>
+                            <a href="framework.html" title="Theme Framework">Theme Framework<span>Contains some nut's &amp; bolts of styled page elements</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 twentytwo">
+                            <div class="menubg" style="background-image: url('img/menu/blog.jpg')"></div>
+                            <a href="blog.html" title="Blog">Blog<span>Clean blog layout example</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 twentyfour">
+                            <div class="menubg" style="background-image: url('img/menu/post.jpg')"></div>
+                            <a href="post.html" title="Single Blog Post">Blog Post<span>Single blog-post example with large featured image</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 twentyfour">
+                            <div class="menubg" style="background-image: url('img/menu/contact.jpg')"></div>
+                            <a href="contact.html" title="Contact">Contact with Email Form<span>Contact details with working email form with validation support</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <h3>Get in Touch</h3>
+                    <h4>Studio One, Green Trees Ave, NY 30023</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================ End Main Navigation ==================================== -->
+
+    <!-- ============================ Social menu, (modal window) ============================ -->
+
+    <div id="socialmodal" class="modal fade" tabindex="-1" role="dialog" aria-label="socialmodalLabel" aria-hidden="true">
+
+        <!-- Menu Trigger -->
+        <button class="toggleclose" data-dismiss="modal" aria-hidden="true">
+            <span class="icon-close"></span>
+        </button>
+        <div class="explore">
+            <h3>Be Social</h3>
+        </div>
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h3>Connect with Jonathan Ive</h3>
+                    <hr class="mini white central">
+                    <ul class="socialicons motion">
+                        <li class="two twitter"><a href="http://twitter.com/" title="Twitter" target="_blank"><span class="icon-twitter"></span></a></li>
+                        <li class="four"><a href="http://dribbble.com/" title="Dribbble" class="dribbble" target="_blank"><span class="icon-dribbble"></span></a></li>
+                        <li class="six"><a href="http://facebook.com/" title="Facebook" class="facebook" target="_blank"><span class="icon-facebook"></span></a></li>
+                        <li class="eight"><a href="http://instagram.com/" title="Instagram" class="instagram" target="_blank"><span class="icon-instagram"></span></a></li>
+                        <li class="ten"><a href="http://vimeo.com/" title="Vimeo" class="vimeo" target="_blank"><span class="icon-vimeo"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- =============================== End social menu ============================== -->
+
+    <!-- ============================ Header/fixed sidebar ============================ -->
+
+    <header id="header">
+        
+        <!-- Main menu toggle -->
+        <button class="toggle" data-toggle="modal" data-target="#menumodal">
+            <span class="menu-bar bar-1"></span>
+            <span class="menu-bar bar-2"></span>
+            <span class="menu-bar bar-3"></span>
+        </button>
+        
+        <!-- Second logo for mobiles/tablets only. Maximum height of 65px -->
+        <div class="mobile_logo">
+            <img src="img/logo.png" alt="Columbia Logo">
+        </div>
+
+        <!-- Bullet navigation -->
+        <nav id="bullets" class="cover">
+            <ul>
+                <li class="current-page-item"><a href="#one"></a></li>
+                <li><a href="#wrapper"></a></li>
+                <li><a href="#team"></a></li>
+                <li><a href="#three"></a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Social menu toggle - keep outside of header to prevent horrible positioning problem on ipads -->
+    <button class="social" data-toggle="modal" data-target="#socialmodal">
+        <span class="icon-share"></span>
+    </button>
+    
+    <!-- End header/fixed sidebar -->
+
+    <!-- ============================ Start the page content ============================ -->
+
+    <!-- Leading Page Container -->
+    <!-- Always keep all page content wrapped in this div, with id="wrapper" and class="page-content" -->
+    <div id="wrapper" class="page-content">
+
+        <!-- ============================ Section Start ============================ -->
+
+        <section id="two" class="container wow fadeInUp" data-wow-delay="0.5s">
+            <div class="row padding">
+                <div class="col-xs-12 centertext">
+                    <h3>Where did we come from?</h3>
+                    <hr class="mini central">
+                    <h1>Our company has been shaping things up now for over a decade.</h1>
+                    <hr class="title">
+                    <p>Sometime into the expedition, we stumbled across a narrow, dark tunnel. We crawled in and started to make our way further down, and to our surprise, it opened out into the largest, most lucious rainforest we had ever seen.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================ Section End ============================== -->
+
+        <!-- ============================ Section Start ============================ -->
+
+        <section id="team" class="container-fluid dark-grey-dk">
+            <div class="row clearfix">
+                <ul class="col-md-6 team-avatars">
+                    <li class="wow fadeInUp animated" data-wow-delay="0.2s">
+                      <a href="#tm1" class="active"><img src="img/avatars/ava-1.jpg" alt="John Smith"></a>
+                    </li>
+                    <li class="wow fadeInUp animated" data-wow-delay="0.4s">
+                      <a href="#tm2"><img src="img/avatars/ava-2.jpg" alt="John Smith"></a>
+                    </li>
+                    <li class="wow fadeInUp animated" data-wow-delay="0.6s">
+                      <a href="#tm3"><img src="img/avatars/ava-3.jpg" alt="John Smith"></a>
+                    </li>
+                    <li class="wow fadeInUp animated" data-wow-delay="0.8s">
+                      <a href="#tm4"><img src="img/avatars/ava-4.jpg" alt="John Smith"></a>
+                    </li>
+                    <li class="wow fadeInUp animated" data-wow-delay="1.0s">
+                      <a href="#tm5"><img src="img/avatars/ava-5.jpg" alt="John Smith"></a>
+                    </li>
+                    <li class="wow fadeInUp animated" data-wow-delay="1.2s">
+                      <a href="#tm6"><img src="img/avatars/ava-6.jpg" alt="John Smith"></a>
+                    </li>
+                    <li class="wow fadeInUp animated" data-wow-delay="1.4s">
+                      <a href="#tm7"><img src="img/avatars/ava-7.jpg" alt="John Smith"></a>
+                    </li>
+                    <li class="wow fadeInUp animated" data-wow-delay="1.6s">
+                      <a href="#tm8"><img src="img/avatars/ava-8.jpg" alt="John Smith"></a>
+                    </li>
+                    <li class="wow fadeInUp animated" data-wow-delay="1.8s">
+                      <a href="#tm9"><img src="img/avatars/ava-9.jpg" alt="John Smith"></a>
+                    </li>
+                    <li class="wow fadeInUp animated" data-wow-delay="2.0s">
+                      <a href="#tm10"><img src="img/avatars/ava-10.jpg" alt="John Smith"></a>
+                    </li>
+                    <li class="wow fadeInUp animated" data-wow-delay="2.2s">
+                      <a href="#tm11"><img src="img/avatars/ava-11.jpg" alt="John Smith"></a>
+                    </li>
+                    <li class="wow fadeInUp animated" data-wow-delay="2.4s">
+                      <a href="#tm12"><img src="img/avatars/ava-12.jpg" alt="John Smith"></a>
+                    </li>
+                    <li class="wow fadeInUp animated" data-wow-delay="2.6s">
+                      <a href="#tm13"><img src="img/avatars/ava-13.jpg" alt="John Smith"></a>
+                    </li>
+                    <li class="wow fadeInUp animated" data-wow-delay="2.8s">
+                      <a href="#tm14"><img src="img/avatars/ava-14.jpg" alt="John Smith"></a>
+                    </li>
+                    <li class="wow fadeInUp animated" data-wow-delay="3.0s">
+                      <a href="#tm15"><img src="img/avatars/ava-15.jpg" alt="John Smith"></a>
+                    </li>
+                </ul>
+                <div class="col-md-6 team-content">
+                    <div id="tm1" class="team-meta active">
+                        <h3>Director</h3>
+                        <hr class="mini central">
+                        <p>John Smith</p>
+                        <cite><a href="#"><span class="icon-twitter"></span> @johnsmith</a></cite>
+                    </div>
+                    <div id="tm2" class="team-meta">
+                        <h3>Senior Director</h3>
+                        <hr class="mini central">
+                        <p>Patsy Klein</p>
+                        <cite><a href="#"><span class="icon-twitter"></span> @patsyklein</a></cite>
+                    </div>
+                    <div id="tm3" class="team-meta">
+                        <h3>General Manager</h3>
+                        <hr class="mini central">
+                        <p>John Mayer</p>
+                        <cite><a href="#"><span class="icon-twitter"></span> @johnmayer</a></cite>
+                    </div>
+                    <div id="tm4" class="team-meta">
+                        <h3>Executive</h3>
+                        <hr class="mini central">
+                        <p>Stevie Wonder</p>
+                        <cite><a href="#"><span class="icon-twitter"></span> @steviewonder</a></cite>
+                    </div>
+                    <div id="tm5" class="team-meta">
+                        <h3>Intern</h3>
+                        <hr class="mini central">
+                        <p>Bob Segar</p>
+                        <cite><a href="#"><span class="icon-twitter"></span> @bobsegar</a></cite>
+                    </div>
+                    <div id="tm6" class="team-meta">
+                        <h3>Director</h3>
+                        <hr class="mini central">
+                        <p>John Malkovic</p>
+                        <cite><a href="#"><span class="icon-twitter"></span> @johnmalkovic</a></cite>
+                    </div>
+                    <div id="tm7" class="team-meta">
+                        <h3>Senior Director</h3>
+                        <hr class="mini central">
+                        <p>Halle Berry</p>
+                        <cite><a href="#"><span class="icon-twitter"></span> @halleberry</a></cite>
+                    </div>
+                    <div id="tm8" class="team-meta">
+                        <h3>General Manager</h3>
+                        <hr class="mini central">
+                        <p>Beyonce</p>
+                        <cite><a href="#"><span class="icon-twitter"></span> @beyonece</a></cite>
+                    </div>
+                    <div id="tm9" class="team-meta">
+                        <h3>Jony Ives</h3>
+                        <hr class="mini central">
+                        <p>Stevie Wonder</p>
+                        <cite><a href="#"><span class="icon-twitter"></span> @jonyives</a></cite>
+                    </div>
+                    <div id="tm10" class="team-meta">
+                        <h3>Intern</h3>
+                        <hr class="mini central">
+                        <p>JC Van Damme</p>
+                        <cite><a href="#"><span class="icon-twitter"></span> @vandamme</a></cite>
+                    </div>
+                    <div id="tm11" class="team-meta">
+                        <h3>Director</h3>
+                        <hr class="mini central">
+                        <p>Steven Segal</p>
+                        <cite><a href="#"><span class="icon-twitter"></span> @stevensegal</a></cite>
+                    </div>
+                    <div id="tm12" class="team-meta">
+                        <h3>Senior Director</h3>
+                        <hr class="mini central">
+                        <p>Katy Perry</p>
+                        <cite><a href="#"><span class="icon-twitter"></span> katyperry</a></cite>
+                    </div>
+                    <div id="tm13" class="team-meta">
+                        <h3>General Manager</h3>
+                        <hr class="mini central">
+                        <p>Russell Brand</p>
+                        <cite><a href="#"><span class="icon-twitter"></span> @russellbrand</a></cite>
+                    </div>
+                    <div id="tm14" class="team-meta">
+                        <h3>Executive</h3>
+                        <hr class="mini central">
+                        <p>Jay Leno</p>
+                        <cite><a href="#"><span class="icon-twitter"></span> @jayleno</a></cite>
+                    </div>
+                    <div id="tm15" class="team-meta">
+                        <h3>Intern</h3>
+                        <hr class="mini central">
+                        <p>Will Smith</p>
+                        <cite><a href="#"><span class="icon-twitter"></span> @willsmith</a></cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================ Section End ============================== -->
+
+        <!-- ============================ Section Start ============================ -->
+
+        <section id="three" class="white">
+            <div class="container padding">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h3>Our Company Timeline</h3>
+                        <hr class="mini">
+                        <p>Sometime into the expedition, we stumbled across a narrow, dark tunnel. We crawled in and started to make our way further down, and to our surprise, it opened out into the largest, most lucious rainforest we had ever seen.</p>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <div class="row">
+                    <div class="timeline-centered">
+                        <div class="line"></div>
+                        <div class="present">Now</div>
+                        <div class="dot_tp"></div>
+                        <div class="born">Born</div>
+                        <div class="dot_bt"></div>
+                        <article class="timeline-entry">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon bg-secondary"></div>
+                                <div class="timeline-label">
+                                    <h3>July 2014</h3>
+                                    <p>We deliver the UX conference of the century <strong>from space.</strong></p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="timeline-entry">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon bg-success"></div>
+                                <div class="timeline-label">
+                                    <h3>June 2014</h3>
+                                    <p>We grew our team and added <strong>5 new staff.</strong></p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="timeline-entry">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon bg-warning"></div>
+                                <div class="timeline-label">
+                                    <h3>May 2014</h3>
+                                    <p>Company onboards Apple as <strong>first major client.</strong></p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="timeline-entry">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon bg-secondary"></div>
+                                <div class="timeline-label">
+                                    <h3>April 2014</h3>
+                                    <p>We win award for <strong>Best Startup.</strong></p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="timeline-entry">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon bg-success"></div>
+                                <div class="timeline-label">
+                                    <h3>April 2014</h3>
+                                    <p>Our company is <strong>born,</strong> yes!</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="elementvid" class="container-fluid"></section>
+
+        <section class="white">
+            <div class="container padding">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h3>Our Company Timeline</h3>
+                        <hr class="mini">
+                        <p>Sometime into the expedition, we stumbled across a narrow, dark tunnel. We crawled in and started to make our way further down, and to our surprise, it opened out into the largest, most lucious rainforest we had ever seen.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================ Section End ============================== -->
+
+        <!-- =============================== Footer ================================ -->
+
+        <footer class="padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <a href="index.html" title="Columbia"><img src="img/f-logo.png" alt="Add alt tag"></a>
+                        <p>Believe in what you know</p>
+                        <small>&copy; Copyright 2014 Themes Collective. All rights reserved.</small>
+                        <hr class="mini central light-grey-dk">
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <!-- / END page #wrapper -->
+    </div>
+
+    <!-- ========== Load our scripts - keep positioned at the end of your document ========== -->
+
+    <script src="js/bootstrap.min.js"></script><!-- Bootstrap core - always load first -->
+    <script src="js/wow.min.js"></script><!-- WoW animations -->
+    <script src="js/jquery.nav.js"></script><!-- Left-hand bullet navigation -->
+    <script src="js/jquery.nicescroll.min.js"></script><!-- Scrollbars for whole page and main navigation -->
+    <script src="js/jquery.easing.min.js"></script><!-- Easing plugin, for opacity fade on menu background images -->
+    <script src="js/jquery.fs.wallpaper.js"></script><!-- Video plugin -->
+    <script src="js/scripts.js"></script><!-- Custom JS functions - always load last -->
+
+    <!-- Page-specific JS functions - these are functions that only occur on this specific page, so we DON'T want these placed in our scripts.js file as this file is loaded on every page for global site functions.  -->
+
+    <!-- Initialize background video in hero section, (above the fold) -->
+    <script>
+        $(document).ready(function() {
+            $("#elementvid").wallpaper({
+                source: {
+                    poster: "video/about-fallback.jpg",
+                    mp4:    "video/about.mp4",
+                    ogg:    "video/about.ogv",
+                    webm:   "video/about.webm"
+                }
+            });
+        });
+    </script>
+
+    <!-- ========== Insert your Google Analytics code below this line ========== -->
+
+    <!-- ======================== End Google Analytics ========================= -->
+
+</body>
+
+</html>

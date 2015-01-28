@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" /><!-- Disable horrible auto-skype for contact numbers in IE -->
+    <meta name="description" content="Add a site description here"><!-- Add your site description -->
+    <meta name="author" content="Add author description here"><!-- Add your author description -->
+    <meta name="keywords" content="add,some,general,keywords,here,about,your,site"><!-- Add sites your keywords -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" /><!-- Include a Favicon, (always keep in root of folder) -->
+
+    <title>Columbia | An Agency Theme</title><!-- Your page/site title -->
+
+    <!-- Load Our CSS - Do not alter the load order -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"><!-- Bootstrap Core - ALways load first -->
+    <link href="css/animate.css" rel="stylesheet"><!-- Animatations -->
+    <link href="css/icomoon.css" rel="stylesheet"><!-- Icon Font -->
+    <link href="css/flexslider.css" rel="stylesheet"><!-- Flexslider styles for #blogfeed -->
+    <link href="css/style.css" rel="stylesheet"><!-- Main theme stylesheet -->
+    <link href="css/custom.css" rel="stylesheet"><!-- Custom styles - Always load last -->
+
+    <!-- Load our fonts from Google -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
+
+    <!-- Load our fonts individually if IE8+, to avoid faux bold & italic rendering -->
+    <!--[if IE]>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn:400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn:700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
+    <![endif]-->
+
+    <!-- Load our stylesheet for IE8 -->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="css/ie8.css" />
+    <![endif]-->
+
+    <!-- Load our stylesheet for IE9 -->
+    <!--[if IE 9]>
+    <link rel="stylesheet" type="text/css" href="css/ie9.css" />
+    <![endif]-->
+
+    <!-- Load our jQuery, with an alternative source/fallback to our own version if request is unavailable -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="home">
+
+    <!-- Our page loader -->
+    <div class="loadstack">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- ============================ Main menu, (modal window) ============================ -->
+
+    <div id="menumodal" class="modal fade" tabindex="-1" role="dialog" aria-label="menumodalLabel" aria-hidden="true">
+
+        <!-- Close modal trigger -->
+        <button class="toggleclose" data-dismiss="modal" aria-hidden="true">
+            <span class="icon-close"></span>
+        </button>
+        <div class="explore">
+            <h3>Explore</h3>
+        </div>
+
+        <!-- Menu content -->
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- Logo for desktops/large screens -->
+                    <div id="menumodalLabel" class="modal-title">
+                        <div class="modallogo">
+                            <img src="img/logo.png" alt="Columbia Logo">
+                        </div>
+                        <div class="modaltagline">
+                            <h3>An agency &amp; personal portfolio theme, by Themes Collective.</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <ul class="row motion">
+                        <li class="col-md-4 col-sm-6 two">
+                            <div class="menubg" style="background-image: url('img/menu/index.jpg')"></div>
+                            <a href="index.html" title="Home with Color Overlay Hero Image">Color Overlay<span>Example standard full-height hero image with a transparent color overlay</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 four">
+                            <div class="menubg" style="background-image: url('img/menu/image.jpg')"></div>
+                            <a href="index-image.html" title="Home with Hero Image">Home Image<span>Example homepage with standard full-height hero image</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 eight">
+                            <div class="menubg" style="background-image: url('img/menu/video.jpg')"></div>
+                            <a href="index-video.html" title="Home with Video Hero">Home Video<span>Another homepage example with a full-height Youtube video hero</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 six">
+                            <div class="menubg" style="background-image: url('img/menu/slider.jpg')"></div>
+                            <a href="index-slider.html" title="Home with Slider Hero">Home Slider<span>A example homepage with a full-height slider for the hero</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 ten">
+                            <div class="menubg" style="background-image: url('img/menu/2col.jpg')"></div>
+                            <a href="portfolio-2col.html" title="Two Col Potfolio Grid">Two Column Portfolio Grid<span>A two-column grid portfolio to showcase your best work</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 twelve">
+                            <div class="menubg" style="background-image: url('img/menu/3col.jpg')"></div>
+                            <a href="portfolio-3col.html" title="Three Col Portfolio Grid">Three Column Portfolio Grid<span>A three-column grid portfolio to showcase your best work</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 fourteen">
+                            <div class="menubg" style="background-image: url('img/menu/sortable.jpg')"></div>
+                            <a href="portfolio-sortable.html" title="Sortable Portfolio Grid">Sortable Portfolio Grid<span>A sortable portfolio, grid style, with filter controls</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 sixteen">
+                            <div class="menubg" style="background-image: url('img/menu/port-item.jpg')"></div>
+                            <a href="portfolio-item.html" title="Single Portfolio Item">Single Portfolio Item<span>Example of a single project item page with full project spec</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 eighteen">
+                            <div class="menubg" style="background-image: url('img/menu/about.jpg')"></div>
+                            <a href="about.html" title="About">About<span>Give an overview of your company or business about what you do</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 twenty">
+                            <div class="menubg" style="background-image: url('img/menu/framework.jpg')"></div>
+                            <a href="framework.html" title="Theme Framework">Theme Framework<span>Contains some nut's &amp; bolts of styled page elements</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 twentytwo">
+                            <div class="menubg" style="background-image: url('img/menu/blog.jpg')"></div>
+                            <a href="blog.html" title="Blog">Blog<span>Clean blog layout example</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 twentyfour">
+                            <div class="menubg" style="background-image: url('img/menu/post.jpg')"></div>
+                            <a href="post.html" title="Single Blog Post">Blog Post<span>Single blog-post example with large featured image</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 twentyfour">
+                            <div class="menubg" style="background-image: url('img/menu/contact.jpg')"></div>
+                            <a href="contact.html" title="Contact">Contact with Email Form<span>Contact details with working email form with validation support</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <h3>Get in Touch</h3>
+                    <h4>Studio One, Green Trees Ave, NY 30023</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================ End Main Navigation ==================================== -->
+
+    <!-- ============================ Social menu, (modal window) ============================ -->
+
+    <div id="socialmodal" class="modal fade" tabindex="-1" role="dialog" aria-label="socialmodalLabel" aria-hidden="true">
+
+        <!-- Menu Trigger -->
+        <button class="toggleclose" data-dismiss="modal" aria-hidden="true">
+            <span class="icon-close"></span>
+        </button>
+        <div class="explore">
+            <h3>Be Social</h3>
+        </div>
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h3>Connect with Jonathan Ive</h3>
+                    <hr class="mini white central">
+                    <ul class="socialicons motion">
+                        <li class="two twitter"><a href="http://twitter.com/" title="Twitter" target="_blank"><span class="icon-twitter"></span></a></li>
+                        <li class="four"><a href="http://dribbble.com/" title="Dribbble" class="dribbble" target="_blank"><span class="icon-dribbble"></span></a></li>
+                        <li class="six"><a href="http://facebook.com/" title="Facebook" class="facebook" target="_blank"><span class="icon-facebook"></span></a></li>
+                        <li class="eight"><a href="http://instagram.com/" title="Instagram" class="instagram" target="_blank"><span class="icon-instagram"></span></a></li>
+                        <li class="ten"><a href="http://vimeo.com/" title="Vimeo" class="vimeo" target="_blank"><span class="icon-vimeo"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- =============================== End social menu ============================== -->
+
+    <!-- ============================ Header/fixed sidebar ============================ -->
+
+    <header id="header">
+        
+        <!-- Main menu toggle -->
+        <button class="toggle this" data-toggle="modal" data-target="#menumodal">
+            <span class="menu-bar bar-1"></span>
+            <span class="menu-bar bar-2"></span>
+            <span class="menu-bar bar-3"></span>
+        </button>
+        
+        <!-- Second logo for mobiles/tablets only. Maximum height of 65px -->
+        <div class="mobile_logo">
+            <img src="img/logo.png" alt="Columbia Logo">
+        </div>
+
+        <!-- Bullet navigation -->
+        <nav id="bullets" class="cover">
+            <ul>
+                <li class="current-page-item"><a href="#start"></a></li>
+                <li><a href="#icons"></a></li>
+                <li><a href="#three"></a></li>
+                <li><a href="#stats"></a></li>
+                <li><a href="#blogfeed"></a></li>
+                <li><a href="#testimonials"></a></li>
+            </ul>
+        </nav>      
+
+    </header>
+
+    <!-- Social menu toggle - keep outside of header to prevent horrible positioning problem on ipads -->
+    <button class="social" data-toggle="modal" data-target="#socialmodal">
+        <span class="icon-share"></span>
+    </button>
+
+    <!-- End header/fixed sidebar -->
+
+    <!-- ============================ Start the page content ============================ -->
+
+    <!-- Leading Page Container -->
+    <!-- Always keep all page content wrapped in this div, with id="wrapper" and class="page-content" -->
+    <div id="wrapper" class="page-content">
+
+        <!-- ============================ Section one: hero ============================ -->
+
+        <section id="start" class="herofade hero cover element-img" style="background-image: url('img/hero-image.jpg')">
+            <div class="tagline">
+                <img src="img/logo.png" class="wow fadeInUp" alt="Columbia Logo" data-wow-delay="0.3s">
+                <hr class="mini white central">
+                <h1 class="wow fadeInUp" data-wow-delay="0.5s">We are a digital design firm with clout.</h1>
+                <p class="wow fadeInUp" data-wow-delay="0.7s">A subtle, yet powerful template that focuses on the content and the user, delivered flawlessly across mobiles &amp; tablets.</p>
+                <a class="scrollto" href="#two" title="Get Reading"><span class="icon-arrow-down2"></span></a>
+            </div>
+        </section>
+
+        <!-- ============================ Section two: textblock ============================ -->
+
+        <section id="two" class="container wow fadeInUp scrollreceive" data-wow-delay="0.5s">
+            <div class="row padding">
+                <div class="col-xs-12">
+                    <h3>We are a collaborate company</h3>
+                    <hr class="mini">
+                    <p>Sometime into the expedition, <a href="#" class="textlink" title="link">we stumbled across</a> a narrow, dark tunnel. We crawled in and started to make our way further down, and to our surprise, it opened out into the largest, most lucious rainforest we had ever seen.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================ Section three: image and text ============================ -->
+
+        <section class="container-fluid white">
+            <div class="row">
+                <div class="col-md-6 textpadding wow fadeInLeft" data-wow-delay="0.5s">
+                    <h3>We are a collaborate company</h3>
+                    <hr class="mini">
+                    <p>Sometime into the expedition, we stumbled across a narrow, dark tunnel. We crawled in and started to make our way further down, and to our surprise, it opened out into the largest, most lucious rainforest we had ever seen.</p>
+                </div>
+                <div class="col-md-6 element-img" style="background-image: url('img/collaborate.jpg'); height: 540px"></div>
+            </div>
+        </section>
+
+        <!-- ============================ Section four: services icons ============================ -->
+
+        <section id="icons" class="red-lt">
+            <div class="container padding">
+                <div class="row">
+                    <div class="col-md-3 col-xs-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <span class="icon-pie"></span>
+                        <h3>We Push Analytics</h3>
+                    </div>
+                    <div class="col-md-3 col-xs-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <span class="icon-bars"></span>
+                        <h3>We Drive Results</h3>
+                    </div>
+                    <div class="col-md-3 col-xs-6 wow fadeInUp" data-wow-delay="0.9s">
+                        <span class="icon-stats"></span>
+                        <h3>We Pursue Perfection</h3>
+                    </div>
+                    <div class="col-md-3 col-xs-6 wow fadeInUp" data-wow-delay="1.2s">
+                        <span class="icon-stack"></span>
+                        <h3>We Re-invent the Norm</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================ Section five: list-items ============================ -->
+
+        <section id="five" class="container-fluid white">
+            <div class="row">
+                <div class="col-md-6 element-img" style="background-image: url('img/beauty.jpg'); height: 530px"></div>
+                <div class="col-md-6 textpadding wow fadeInLeft" data-wow-delay="0.5s">
+                    <h3>We build things with beauty.</h3>
+                    <hr class="mini">
+                    <ul class="list">
+                        <li><span class="icon-radio-checked"></span> We make things for the web that work, for the client and most importantly for the end user.</li>
+                        <li><span class="icon-radio-checked"></span> We make things for the web that work, for the client and most importantly for the end user.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================ Section six: ordered list-items ============================ -->
+
+        <section id="three" class="red-lt">
+            <div class="container">
+                <div class="row padding">
+                    <div class="col-sm-6 wow fadeInLeft" data-wow-delay="0.3s">
+                        <h3><span class="number">01.</span> Systems Config</h3>
+                        <br>
+                        <p>We design and build complex security systems for global corporations.</p>
+                        
+                        <br>
+                    
+                        <h3><span class="number">02.</span> Account Management</h3>
+                        <br>
+                        <p>We design and build complex security systems for global corporations.</p>
+                    </div>
+                    <div class="col-sm-6 wow fadeInRight" data-wow-delay="0.3s">
+                        <h3><span class="number">03.</span> Data Analysis</h3>
+                        <br>
+                        <p>We design and build complex security systems for global corporations.</p>
+                        
+                        <br>
+                    
+                        <h3><span class="number">04.</span> Startup Consultation</h3>
+                        <br>
+                        <p>We design and build complex security systems for global corporations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================ Section seven: textblock ============================ -->
+
+        <section>
+
+            <div class="container wow fadeInUp" data-wow-delay="0.5s">
+                <div class="row padding">
+                    <div class="col-xs-12">
+                        <p>Sometime into the expedition, <a href="#" class="textlink" title="link">we stumbled across</a> a narrow, dark tunnel. We crawled in and started to make our way further down, and to our surprise, it opened out into the largest, most lucious rainforest we had ever seen.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ====== Full-width blockquote ======= -->
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <hr class="bq-top">
+                        <blockquote class="bigtext">Sometime into the expedition, we stumbled across a narrow, dark tunnel so we crawled in.</blockquote>
+                        <hr class="bq-bottom">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======= Image and text ============= -->
+
+            <div class="container">
+                <div class="row padding">
+                    <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.3s">
+                        <p>Sometime into the expedition, we stumbled across a narrow, dark tunnel. We crawled in and started to make our way further down, and to our surprise, it opened out into the largest, most lucious rainforest we had ever seen.</p>
+                    </div>
+                    <div class="col-md-6 wow fadeInRight" data-wow-delay="0.3s">
+                        <p>Sometime into the expedition, we stumbled across a narrow, dark tunnel. We crawled in and started to make our way further down, and to our surprise, it opened out into the largest, most lucious rainforest we had ever seen.</p>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+
+        <!-- ============================ Section eight: stats ============================ -->
+
+        <section id="stats" class="element-img" style="background-image: url('img/bookshelf.jpg')">
+            <div class="container padding">
+                <div class="row">
+                    <div class="col-md-3 col-xs-6">
+                        <h3>Clients</h3>
+                        <span class="counter">152</span>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <h3>Staff</h3>
+                        <span class="counter">80</span>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <h3>Offices</h3>
+                        <span class="counter">15</span>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <h3>Awards</h3>
+                        <span class="counter">20</span>
+                    </div>
+                    <div class="overlay white"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================ Section nine: list-items & showreel ============================ -->
+
+        <section class="container padding">
+            <div class="row">
+                <div class="col-xs-12 wow fadeInUp" data-wow-delay="0.5s">
+                    <h3>Ace Customer Support</h3>
+                    <p>Sometime into the expedition, we stumbled across a narrow, dark tunnel - so we crawled in.</p>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.5s">
+                    <ul class="list">
+                        <li><span class="icon-radio-checked"></span> We make things for the web that work, for the client and most importantly for the end user.</li>
+                        <li><span class="icon-radio-checked"></span> We make things for the web that work, for the client and most importantly for the end user.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 wow fadeInRight" data-wow-delay="0.5s">
+                    <ol>
+                        <li>We make things for the web that work, for the client and most importantly for the end user.</li>
+                        <li>We make things for the web that work, for the client and most importantly for the end user.</li>
+                    </ol>
+                </div>
+            </div>
+            <br>
+            <div class="row fitvids">
+                <div class="col-md-12 wow fadeInUp" data-wow-delay="0.5s">
+                    <iframe width="560" height="315" src="//www.youtube.com/embed/PzjwAAskt4o" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================ Section ten: full-width image ============================ -->
+
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 element-img parallax" style="background-image: url('img/sketch.jpg'); height: 500px">
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================ Section eleven: blockquote ============================ -->
+
+        <section class="container-fluid white padding">
+            <div class="row">
+                <div class="col-xs-12 wow fadeInUp" data-wow-delay="0.3s">
+                    <blockquote class="bigtext">We were startled by her beauty, and stood in ore at her glowing radiance.</blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================ Section twelve: blog roll ============================ -->
+
+        <section id="blogfeed" class="container-fluid light-grey-lt">
+            <div class="modtitle">
+                <h3>Recent Articles</h3>
+            </div>
+            <div class="direction controls">
+                <a href="prev" class="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                <a href="next" class="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="blogslider">
+                        <ul class="slides">
+                            <li>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="flat-box">
+                                        <div class="slideimg">
+                                            <a href="post.html" title="Add Title"><img src="img/blogfeed/post-01.jpg" alt="Add alt tag"></a>
+                                        </div>
+                                        <h3 class="slidetitle"><a href="post.html" title="Post Title">Another post, how about a a high-five</a></h3>
+                                        <p class="blogroll-meta">Posted: June 2014, in Design News</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="flat-box">
+                                        <div class="slideimg">
+                                            <a href="post.html" title="Add Title"><img src="img/blogfeed/post-02.jpg" alt="Add alt tag"></a>
+                                        </div>
+                                        <h3 class="slidetitle"><a href="post.html" title="Post Title">Another post, how about a a high-five</a></h3>
+                                        <p class="blogroll-meta">Posted: June 2014, in Design News</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="flat-box">
+                                        <div class="slideimg">
+                                            <a href="post.html" title="Add Title"><img src="img/blogfeed/post-03.jpg" alt="Add alt tag"></a>
+                                        </div>
+                                        <h3 class="slidetitle"><a href="post.html" title="Post Title">An awesome blog post title</a></h3>
+                                        <p class="blogroll-meta">Posted: June 2014, in Design News</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="flat-box">
+                                        <div class="slideimg">
+                                            <a href="post.html" title="Add Title"><img src="img/blogfeed/post-04.jpg" alt="Add alt tag"></a>
+                                        </div>
+                                        <h3 class="slidetitle"><a href="post.html" title="Post Title">How about another post title then</a></h3>
+                                        <p class="blogroll-meta">Posted: June 2014, in Design News</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="flat-box">
+                                        <div class="slideimg">
+                                            <a href="post.html" title="Add Title"><img src="img/blogfeed/post-05.jpg" alt="Add alt tag"></a>
+                                        </div>
+                                        <h3 class="slidetitle"><a href="post.html" title="Post Title">And lastly a fourth post title</a></h3>
+                                        <p class="blogroll-meta">Posted: June 2014, in Design News</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="flat-box">
+                                        <div class="slideimg">
+                                            <a href="post.html" title="Add Title"><img src="img/blogfeed/post-06.jpg" alt="Add alt tag"></a>
+                                        </div>
+                                        <h3 class="slidetitle"><a href="post.html" title="Post Title">And lastly a fourth post title</a></h3>
+                                        <p class="blogroll-meta">Posted: June 2014, in Design News</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================ Section thirteen: icongrid ============================ -->
+
+        <section id="icongrid" class="services white padding">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 servcontent wow fadeInLeft" data-wow-delay="0.3s">
+                        <div class="ico">
+                            <img src="img/icons/Responsive@2x.png" alt="Add Alt Tag">
+                        </div>
+                        <div class="servdetail">
+                        <h3>Responsive</h3>
+                        <hr class="mini">
+                        <p>Fifth him life fifth to creepeth replenish without waters you'll herb us abundantly you're man wherein replenish made. Firmament midst dry yielding shall.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 servcontent wow fadeInRight" data-wow-delay="0.3s">
+                        <div class="ico">
+                            <img src="img/icons/Spaceship@2x.png" alt="Add Alt Tag">
+                        </div>
+                        <div class="servdetail">
+                        <h3>Quick Launch</h3>
+                        <hr class="mini">
+                        <p>Fifth him life fifth to creepeth replenish without waters you'll herb us abundantly you're man wherein replenish made. Firmament midst dry yielding shall.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 servcontent wow fadeInLeft" data-wow-delay="0.3s">
+                        <div class="ico">
+                            <img src="img/icons/Graph@2x.png" alt="Add Alt Tag">
+                        </div>
+                        <div class="servdetail">
+                        <h3>Awesome features</h3>
+                        <hr class="mini">
+                        <p>Fifth him life fifth to creepeth replenish without waters you'll herb us abundantly you're man wherein replenish made. Firmament midst dry yielding shall.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 servcontent wow fadeInRight" data-wow-delay="0.3s">
+                        <div class="ico">
+                            <img src="img/icons/Gift-Box@2x.png" alt="Add Alt Tag">
+                        </div>
+                        <div class="servdetail">
+                        <h3>Font icons</h3>
+                        <hr class="mini">
+                        <p>Fifth him life fifth to creepeth replenish without waters you'll herb us abundantly you're man wherein replenish made. Firmament midst dry yielding shall.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 servcontent wow fadeInLeft" data-wow-delay="0.3s">
+                        <div class="ico">
+                            <img src="img/icons/File@2x.png" alt="Add Alt Tag">
+                        </div>
+                        <div class="servdetail">
+                        <h3>Documentation</h3>
+                        <hr class="mini">
+                        <p>Fifth him life fifth to creepeth replenish without waters you'll herb us abundantly you're man wherein replenish made. Firmament midst dry yielding shall.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 servcontent wow fadeInRight" data-wow-delay="0.3s">
+                        <div class="ico">
+                            <img src="img/icons/Magic@2x.png" alt="Add Alt Tag">
+                        </div>
+                        <div class="servdetail">
+                        <h3>Fully Tested</h3>
+                        <hr class="mini">
+                        <p>Fifth him life fifth to creepeth replenish without waters you'll herb us abundantly you're man wherein replenish made. Firmament midst dry yielding shall.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ============================ Section fourteen: testimonials ============================ -->
+
+        <section id="testimonials" class="container padding wow fadeInUp" data-wow-delay="0.3s">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <h3>What does the world say about us?</h3>
+                    <hr class="mini red-lt central">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div id="testo-slide" class="carousel slide" data-ride="carousel">
+                        <!-- Bottom Carousel Indicators -->
+                        <ol class="carousel-indicators">
+                          <li data-target="#testo-slide" data-slide-to="0" class="active"></li>
+                          <li data-target="#testo-slide" data-slide-to="1"></li>
+                          <li data-target="#testo-slide" data-slide-to="2"></li>
+                        </ol>
+                    
+                        <!-- Carousel Slides / Quotes -->
+                        <div class="carousel-inner">
+
+                            <!-- Quote 1 -->
+                            <div class="item active">
+                                <blockquote>
+                                    <div class="row">
+                                        <div class="col-sm-3 text-center">
+                                            <img class="img-circle" src="img/testo-1.jpg" alt="Person One">
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <p>Fifth him life fifth to creepeth replenish without waters you'll herb us abundantly you're man wherein.</p>
+                                            <small>Someone famous</small>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                            <!-- Quote 2 -->
+                            <div class="item">
+                                <blockquote>
+                                    <div class="row">
+                                        <div class="col-sm-3 text-center">
+                                            <img class="img-circle" src="img/testo-2.jpg" alt="Person Two">
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <p>Fifth him life fifth to creepeth replenish without waters you'll herb us abundantly you're man wherein replenish made.</p>
+                                            <small>Someone famous</small>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                            <!-- Quote 3 -->
+                            <div class="item">
+                                <blockquote>
+                                    <div class="row">
+                                        <div class="col-sm-3 text-center">
+                                            <img class="img-circle" src="img/testo-3.jpg" alt="Person Three">
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <p>Appear created face saying winged third itself. Grass for without above image fruit kind the so give replenish saying saying place cattle.</p>
+                                            <small>Someone famous</small>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div><!-- End #testo-slide -->               
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================ Section fifteen: clients ============================ -->
+
+        <section id="clients" class="white padding">
+             <div class="container">
+                <div class="row centertext">
+                    <div class="col-xs-12">
+                        <h3>OUR CLIENTS</h3>
+                        <hr class="mini central">
+                        <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-6 wow fadeInUp" data-wow-delay="0.3s">
+                                        <img src="img/clients/hipster.png" class="img-responsive" alt="Hipster">
+                                    </div>
+                                    <div class="col-md-6 col-xs-6 wow fadeInUp" data-wow-delay="0.6s">
+                                        <img src="img/clients/henderson.png" class="img-responsive" alt="Henderson">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-6 wow fadeInUp" data-wow-delay="0.9s">
+                                        <img src="img/clients/walkers.png" class="img-responsive" alt="Walkers">
+                                    </div>
+                                    <div class="col-md-6 col-xs-6 wow fadeInUp" data-wow-delay="1.2s">
+                                        <img src="img/clients/sams.png" class="img-responsive" alt="Sams">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================ Footer ============================ -->
+
+        <footer class="padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <a href="index.html" title="Columbia"><img src="img/f-logo.png" alt="Add alt tag"></a>
+                        <p>Believe in what you know</p>
+                        <small>&copy; Copyright 2014 Themes Collective. All rights reserved.</small>
+                        <hr class="mini central light-grey-dk">
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <!-- / END page #wrapper -->
+    </div>
+
+    <!-- ========== Load our scripts - keep positioned at the end of your document ========== -->
+
+    <script src="js/bootstrap.min.js"></script><!-- Bootstrap core - always load first -->
+    <script src="js/wow.min.js"></script><!-- WoW animations -->
+    <script src="js/jquery.nav.js"></script><!-- Left-hand bullet navigation -->
+    <script src="js/jquery.nicescroll.min.js"></script><!-- Scrollbars for whole page and main navigation -->
+    <script src="js/jquery.counterup.min.js"></script><!-- counterup plugin for increasing page stats -->
+    <script src="js/waypoints.min.js"></script><!-- Waypoints, needed for 'counterup' plugin -->
+    <script src="js/jquery.fitvids.js"></script><!-- Fitvids plugin, (responsive videos) -->
+    <script src="js/jquery.flexslider-min.js"></script><!-- Flexslider -->
+    <script src="js/jquery.easing.min.js"></script><!-- Easing plugin, for opacity fade on menu background images -->
+    <script src="js/scripts.js"></script><!-- Custom JS functions - always load last -->
+
+    <!-- Page-specific JS functions - these are functions that only occur on this specific page, so we DON'T want these placed in our scripts.js file as this file is loaded on every page for global site functions.  -->
+
+    <!-- Initialize CounterUp plugin for rounding up/animated statistics -->
+    <script>
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
+
+    <!-- Initialize fitvids.js plugin for responsive videos -->
+    <script>
+        $(document).ready(function(){
+            $(".fitvids").fitVids();
+        });
+    </script>
+
+    <!-- Teamimonials Carousel -->
+    <script>
+        $(document).ready(function(){
+            $('#testo-carousel').carousel({
+                pauseOnHover: true,
+                interval: 4000,
+            });
+        });
+    </script>
+
+    <!-- Initialize flexslider for blogfeed slider -->
+    <script>
+        // second-flexslider
+        $(window).load(function() {
+          $('#blogslider').flexslider({
+            animation: "slide",
+            directionNav: false,
+            controlNav: false,
+            touch: false,
+            slideshow: false
+          });
+        });
+        $('.prev, .next').on('click', function() {
+          var href = $(this).attr('href');
+          $('#blogslider').flexslider(href)
+          return false;
+        })
+    </script>
+
+    <!-- ========== Insert your Google Analytics code below this line ========== -->
+
+    <!-- ======================== End Google Analytics ========================= -->
+
+</body>
+
+</html>
