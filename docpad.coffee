@@ -38,14 +38,14 @@ docpadConfig = {
 
 			# Styles
 			styles: [
-				"http://yui.yahooapis.com/pure/0.4.2/pure-min.css"
-				"styles/style.css"
+				"https://yui.yahooapis.com/pure/0.4.2/pure-min.css"
+				"/styles/style.css"
 			]
 
 			# Scripts
 			scripts: [
-				"//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"
-				"scripts/script.js"
+				"https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"
+				"/scripts/script.js"
 			]
 
 
