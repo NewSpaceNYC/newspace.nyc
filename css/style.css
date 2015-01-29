@@ -130,6 +130,7 @@ body {
 .absolute-anchor{
   position: absolute;
   margin: -33px 0 0 0;
+  opacity: 0;
 }
 
 @-webkit-keyframes scaleout {
