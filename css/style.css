@@ -190,7 +190,7 @@ h2 {
 
 h3,
 h4 {
-  margin-top: 0;;
+  margin-top: 0;
 }
 
 h3 {
@@ -302,17 +302,17 @@ hr.title:before {
 hr.bq-top {
   width: 20%;
   margin-bottom: 70px;
-  margin-top: 0
+  margin-top: 0;
 }
 
 hr.bq-bottom {
   width: 20%;
   margin-top: 80px;
-  margin-bottom: 0
+  margin-bottom: 0;
 }
 
 ul.list {
-  padding-left: 26px
+  padding-left: 26px;
 }
 
 ul.list li,
@@ -1109,7 +1109,7 @@ header#pagemeta p {
 }
 
 header#pagemeta hr.mini {
-  margin-top: 30px
+  margin-top: 30px;
 }
 
 @media (max-width:768px) {
@@ -1353,7 +1353,7 @@ blockquote.bigtext {
   width:55px;
   text-align:center;
   float:left;
-  margin-top:5px
+  margin-top:5px;
 }
 
 .servcontent:hover{
@@ -1670,7 +1670,7 @@ blockquote.bigtext {
 #hero-slider .carousel-control .icon-next,
 #hero-slider .carousel-control .icon-prev {
   top: 0;
-  margin-top: 0
+  margin-top: 0;
 }
 
 #hero-slider a.right.carousel-control {
@@ -1836,7 +1836,7 @@ blockquote.bigtext {
 }
 
 #portfolio-item .titlemeta hr.mini {
-  margin-top: 0
+  margin-top: 0;
 }
 
 #portfolio-item .titlemeta {
@@ -1881,7 +1881,7 @@ blockquote.bigtext {
 
 @media (max-width:768px) {
   .titlebar {
-    margin-top: 65px
+    margin-top: 65px;
   }
 }
 
@@ -2457,7 +2457,7 @@ ul.filters li p:hover {
 /********************************************************/
 
 #testimonials hr.mini {
-  margin-top: 25px
+  margin-top: 25px;
 }
 
 #testo-slide {
@@ -2767,7 +2767,7 @@ ul.filters li p:hover {
   left: 0;
   top: 50%;
   margin-left: -9px;
-  margin-top: -10px
+  margin-top: -10px;
 }
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label p {
@@ -2816,7 +2816,7 @@ ul.filters li p:hover {
   border-color: rgba(136, 183, 213, 0);
   border-left-color: #F5F5F6;
   border-width: 10px;
-  margin-top: -10px
+  margin-top: -10px;
 }
 
 .present {
