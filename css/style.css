@@ -488,6 +488,14 @@ a.scrollto {
   height: 500px
 }
 
+a[title="SumoMe"]{
+  background-color: transparent;
+}
+
+.splash-slogan{
+  word-spacing: 2px;
+}
+
 /***********************************************************/
 /* Main navigation modal window                            */
 /***********************************************************/
@@ -2384,7 +2392,7 @@ ul.filters li p:hover {
 
 #team .team-avatars a:before {
   content: "";
-  background-color: #ED6D58;
+  background-color: rgba(237, 88, 225, 0.33);
   position: absolute;
   width: 100%;
   height: 100%;
