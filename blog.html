@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
 
-<head>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
@@ -11,18 +11,19 @@
     <meta name="keywords" content="add,some,general,keywords,here,about,your,site"><!-- Add sites your keywords -->
     <link rel="icon" href="favicon.ico" type="image/x-icon" /><!-- Include a Favicon, (always keep in root of folder) -->
 
-    <title>Blog | Columbia Theme</title><!-- Your page/site title -->
+    <title>NewSpace NYC, a community & incubator for commcerial outer-space startups. </title><!-- Your page/site title -->
 
     <!-- Load Our CSS - Do not alter the load order -->
     <link href="css/bootstrap.min.css" rel="stylesheet"><!-- Bootstrap Core - ALways load first -->
     <link href="css/animate.css" rel="stylesheet"><!-- Animatations -->
     <link href="css/icomoon.css" rel="stylesheet"><!-- Icon Font -->
+    <link href="css/flexslider.css" rel="stylesheet"><!-- Flexslider styles for #blogfeed -->
     <link href="css/style.css" rel="stylesheet"><!-- Main theme stylesheet -->
     <link href="css/custom.css" rel="stylesheet"><!-- Custom styles - Always load last -->
 
-    <!-- Load our fonts form Google -->
+    <!-- Load our fonts from Google -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Vollkorn:400italic,700italic,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=PT+Serif:700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
 
@@ -47,7 +48,7 @@
     <![endif]-->
 
     <!-- Load our jQuery, with an alternative source/fallback to our own version if request is unavailable -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
     
     <!-- Load these in the <head> for quicker IE8+ load times -->
@@ -57,9 +58,12 @@
     <script src="js/respond.min.js"></script>
     <![endif]-->
 
+    <!-- Sumo Me script -->
+    <script src="https://load.sumome.com/" data-sumo-site-id="5bdebe83a452625095e39e93833b0c9031f11fd3f338e550cfa0592b458a48e2" async></script>
+
 </head>
 
-<body id="blog">
+<body id="home">
 
     <!-- Our page loader -->
     <div class="loadstack">
@@ -85,76 +89,55 @@
                     <!-- Logo for desktops/large screens -->
                     <div id="menumodalLabel" class="modal-title">
                         <div class="modallogo">
-                            <img src="img/logo.png" alt="Columbia Logo">
+                            NEWSPACE NYC
                         </div>
                         <div class="modaltagline">
-                            <h3>An agency &amp; personal portfolio theme, by Themes Collective.</h3>
+                            <h3>An open community for the development of private companies commercializing space.</h3>
                         </div>
                     </div>
                 </div>
-                <div class="modal-body">
+                 <div class="modal-body">
                     <ul class="row motion">
                         <li class="col-md-4 col-sm-6 two">
-                            <div class="menubg" style="background-image: url('img/menu/index.jpg')"></div>
-                            <a href="index.html" title="Home with Color Overlay Hero Image">Color Overlay<span>Example standard full-height hero image with a transparent color overlay</span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 four">
-                            <div class="menubg" style="background-image: url('img/menu/image.jpg')"></div>
-                            <a href="index-image.html" title="Home with Hero Image">Home Image<span>Example homepage with standard full-height hero image</span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 eight">
-                            <div class="menubg" style="background-image: url('img/menu/video.jpg')"></div>
-                            <a href="index-video.html" title="Home with Video Hero">Home Video<span>Another homepage example with a full-height Youtube video hero</span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 six">
-                            <div class="menubg" style="background-image: url('img/menu/slider.jpg')"></div>
-                            <a href="index-slider.html" title="Home with Slider Hero">Home Slider<span>A example homepage with a full-height slider for the hero</span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 ten">
-                            <div class="menubg" style="background-image: url('img/menu/2col.jpg')"></div>
-                            <a href="portfolio-2col.html" title="Two Col Potfolio Grid">Two Column Portfolio Grid<span>A two-column grid portfolio to showcase your best work</span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 twelve">
-                            <div class="menubg" style="background-image: url('img/menu/3col.jpg')"></div>
-                            <a href="portfolio-3col.html" title="Three Col Portfolio Grid">Three Column Portfolio Grid<span>A three-column grid portfolio to showcase your best work</span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 fourteen">
-                            <div class="menubg" style="background-image: url('img/menu/sortable.jpg')"></div>
-                            <a href="portfolio-sortable.html" title="Sortable Portfolio Grid">Sortable Portfolio Grid<span>A sortable portfolio, grid style, with filter controls</span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 sixteen">
-                            <div class="menubg" style="background-image: url('img/menu/port-item.jpg')"></div>
-                            <a href="portfolio-item.html" title="Single Portfolio Item">Single Portfolio Item<span>Example of a single project item page with full project spec</span></a>
+                            <div class="menubg" style="background-image: url(https://e01664e04f761a953c177fc6c099b54b4a0ab988.googledrive.com/host/0B9LVk4xbDIJTRmwzeHdZZERtOGM/ns-website-bg.png)"></div>
+                            <a href="index.html" title="homepage">Homepage<span>Beam me up Scotty!</span></a>
                         </li>
                         <li class="col-md-4 col-sm-6 eighteen">
                             <div class="menubg" style="background-image: url('img/menu/about.jpg')"></div>
                             <a href="about.html" title="About">About<span>Give an overview of your company or business about what you do</span></a>
                         </li>
-                        <li class="col-md-4 col-sm-6 twenty">
-                            <div class="menubg" style="background-image: url('img/menu/framework.jpg')"></div>
-                            <a href="framework.html" title="Theme Framework">Theme Framework<span>Contains some nut's &amp; bolts of styled page elements</span></a>
+                        <li class="col-md-4 col-sm-6 four">
+                            <div class="menubg" style="background-image: url('https://7b6a49c2130b2adf7da2766cbc05ca7c3fa698b5.googledrive.com/host/0B9LVk4xbDIJTSUJ6dnZfaF9fUDg/IMG_2638.JPG')"></div>
+                            <a href="#majortom" title="MajorTom, our pilot project.">
+                                MajorTom
+                                <span> Our Pilot Project </span>
+                            </a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 six">
+                            <div class="menubg" ></div>
+                            <a href="http://discuss.newspace.nyc/" title="NewSpace Discourse Forum">Forum<span>Our open community Discourse forum for all things outer-space.</span></a>
                         </li>
                         <li class="col-md-4 col-sm-6 twentytwo">
                             <div class="menubg" style="background-image: url('img/menu/blog.jpg')"></div>
                             <a href="blog.html" title="Blog">Blog<span>Clean blog layout example</span></a>
                         </li>
                         <li class="col-md-4 col-sm-6 twentyfour">
-                            <div class="menubg" style="background-image: url('img/menu/post.jpg')"></div>
-                            <a href="post.html" title="Single Blog Post">Blog Post<span>Single blog-post example with large featured image</span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 twentyfour">
                             <div class="menubg" style="background-image: url('img/menu/contact.jpg')"></div>
-                            <a href="contact.html" title="Contact">Contact with Email Form<span>Contact details with working email form with validation support</span></a>
+                            <a href="contact.html" title="Contact">Contact<span>Contact details with working email form with validation support</span></a>
                         </li>
                     </ul>
                 </div>
                 <div class="modal-footer">
                     <h3>Get in Touch</h3>
-                    <h4>Studio One, Green Trees Ave, NY 30023</h4>
+                    all@newspace.nyc
+                    <h4>
+                       WeWorkLabs, 175 Varick Street New York, NY 10014
+                    </h4>
                 </div>
             </div>
         </div>
     </div>
+
 
     <!-- ============================ End Main Navigation ==================================== -->
 
