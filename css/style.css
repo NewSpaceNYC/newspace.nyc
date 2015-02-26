@@ -444,6 +444,11 @@ iframe {
   margin-top: -19px; /* Minus half the HEIGHT of your logo */
   margin-left: -79px; /* Minus half the WIDTH of your logo */
 }
+  .mobile_logo h1{
+    font-size: 25px;
+    margin: 6px auto auto;
+    color: #A96EFF;
+  }
 
 @media (min-width: 769px) {
   .mobile_logo {
@@ -1252,7 +1257,7 @@ h3 span.number {
 }
 blockquote.bigtext {
   text-align: center;
-  font-size: 50px;
+  font-size: 45px;
   line-height: 68px;
   font-family: 'PT Serif', 'Vollkorn', Georgia, serif;
   letter-spacing: -3px;
@@ -1281,21 +1286,23 @@ blockquote.bigtext {
 #stats {
   text-align: center;
 }
-#stats h3{
-  color: #fff;
-}
+  #stats h3{
+    color: #fff;
+  }
 
-#stats span.counter {
-  font-size: 80px;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  line-height: 80px;
-  color: #ccc;
-}
+  #stats span.counter {
+    font-size: 80px;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    line-height: 80px;
+    color: #fff;
+  }
 
-#stats .col-xs-6 {
-  margin: 30px 0
-}
+  #stats .col-xs-6 {
+    margin: 30px 0;
+    background: none repeat scroll 0% 0%;
+    color: #fff;
+  }
 
 /********************************************************/
 /* Icon Block                                           */
@@ -2376,6 +2383,7 @@ ul.filters li p:hover {
   padding: 0;
   font-size: 0;
   margin: 0;
+  height: 270px;
 }
 
 #team .team-avatars li {
