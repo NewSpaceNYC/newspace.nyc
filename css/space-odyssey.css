@@ -1,0 +1,209 @@
+body {
+    background-color: #00000E;
+    margin: 0 auto;
+    line-height: 1.7em;
+    color: #999; /*#518749 */
+}
+
+
+.dark-card{
+    transition-duration: 0.777s;
+    display: block;
+    color: #F1F1FF;
+    padding: 33px;
+    background: none repeat scroll 0% 0% rgba(4, 4, 11, 0.86);
+    box-shadow: 7px 7px 13px rgba(1, 0, 30, 0.78);
+}
+.opacity-1{
+    opacity: 1 !important;
+}
+.show-it{
+    display: block !important;
+    opacity: 1 !important;
+}
+.hide-it{
+    display: none !important;
+}
+.majortom-youtube{
+    width: 560px; 
+    height: 315px;
+    transition-duration: 0.777s;
+    display: none;
+    margin: auto auto 31px;
+}
+
+.header {
+    transition-duration: 0.777s;
+    opacity: 0;
+    margin: 0;
+}
+
+    .header .pure-menu {
+        padding: 0.5em;
+    }
+
+        .header .pure-menu li a:hover,
+        .header .pure-menu li a:focus {
+            background: none;
+            border: none;
+            color: #aaa;
+        }
+
+body .primary-button {
+    background: #02a6eb;
+    color: #fff;
+}
+
+.center{
+    text-align: center;
+}
+
+.splash {
+    margin: 0 auto;
+    padding: 3em 0.5em;
+    background: rgba(238, 238, 238, 0.05) url("https://703b2c069452b328a61a9d57b759c4ce8e2e8891.googledrive.com/host/0B9LVk4xbDIJTMW44enlTSnVzWkE/unsplash-blue-tall-galaxy.jpeg") 0 -2885px;
+}
+    .splash .splash-head {
+        font-size: 300%;
+        margin: 0em 0;
+        line-height: 1.2em;
+    }
+    .splash .splash-subhead {
+        color: #999;
+        font-weight: 300;
+        line-height: 1.4em;
+    }
+    .splash .primary-button {
+        font-size: 150%;
+    }
+    .slogan-words{
+        margin: 77px auto auto 111px;
+        width: 44%;
+        padding: 33px 33px 44px;
+        height: 349px;
+    }
+        .slogan-words h1{
+            color: #fff;
+        }
+    .get-updates{
+        transition-duration: 0.777s;
+        margin: 69px auto 333px;
+        width: 21%;
+        display: block;
+        text-align: center;
+        padding: 33px 33px 47px;
+    }
+    .speakers{
+        margin: 111px 77px;
+    }
+    .speaker{
+        float: left;
+        margin: 33px 111px auto 33px;
+        padding: 71px 71px 44px;
+        text-align: center;
+    }
+        .speaker img{
+            margin: auto;
+            display: block;
+            width: 222px;
+        }
+        .speaker h3{
+            margin: 53px auto 0px;
+        }
+    .float-left{
+        float: left;
+    }
+    .newspace-slogan{
+        color: #281DE6;
+        float: left;
+        padding: 0px 0px 33px;
+        margin: 41px 20px -4px 13px;
+    }
+    .newspace-slogan a{
+        text-decoration: none;
+    }
+    #mce-EMAIL{
+        background: #000;
+        border: 1px solid rgba(116, 116, 192, 0.04);
+        color: #7474C0;
+        padding: 9px 3px;
+        margin: auto auto 3px;
+    }
+    #mc-embedded-subscribe{
+        background: none repeat scroll 0% 0% rgb(0, 0, 0);
+        border: 1px none blue;
+        color: #5252B4;
+        width: 232px;
+    }
+
+.pure-menu .pure-menu-heading{
+    text-transform: none;
+}
+.content{
+    background-color: #09041A;
+}
+.content .content-subhead {
+    color: #999;
+    padding-bottom: 0.3em;
+    margin: 0;
+    border-bottom: 2px solid #eee;
+    display: inline-block;
+}
+
+.content .content-ribbon {
+    margin: 3em;
+    border-bottom: 1px solid #eee;
+}
+
+.yt-section{
+    margin: 259px auto 0;
+}
+.play-icon{
+    transition-duration: 0.777s;
+    fill: rgba(29, 14, 102, 0.46);
+    width: 333px;
+    cursor: pointer;
+}
+    .play-icon:hover{
+        fill: rgba(29, 14, 102, 0.77);
+    }
+.footer {
+    color: #666;
+    text-align: center;
+    padding: 1em;
+    font-size: 80%;
+}
+
+ @media (max-width: 768px) {
+    .get-updates{
+        margin: 177px auto 0px;
+        width: 43%;
+    }
+    .slogan-words{
+        margin: auto auto 111px;
+        padding: 33px 33px 0px;
+        height: 402px;
+        width: 51%;
+    }
+        .slogan-words ul, .slogan-words li{
+            display: none;
+        }
+        .newspace-slogan{
+            margin: 0px 20px -4px 13px;
+        }
+    .speakers{
+        margin: 0 77px 59px;
+        width: 259px;
+    }
+    .speaker{
+        margin: 33px auto;
+        padding: 33px 18px 18px;
+        width: 222px;
+    }
+    .speaker img{
+        width: 191px;
+    }
+    .majortom-youtube{
+        width: 96% !important;
+    }
+}
