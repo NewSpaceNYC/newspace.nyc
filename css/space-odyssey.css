@@ -5,7 +5,29 @@ body {
     color: #999; /*#518749 */
 }
 
-
+.venue{
+    float: right;
+    border: 1px solid rgba(215, 227, 255, 0.04);
+    padding: 7px;
+    border-radius: 4px;
+    background: rgba(53, 66, 162, 0.07) none repeat scroll 0% 0%;
+}
+.speakers-bg{
+    border: 1px solid rgba(215, 227, 255, 0.04);
+    border-radius: 4px;
+    background: rgba(53, 66, 162, 0.07) none repeat scroll 0% 0%;
+    width: 254px;
+    margin: 15px 0px;
+    padding: 1px 0px 20px 13px;
+}
+    .speakers-bg:first-child{
+        margin: 7px 0;
+    }
+    .speakers-bg sub{
+        color: #7F7FEA;
+        float: left;
+        padding: 1px 1px 0px;
+    }
 .dark-card{
     transition-duration: 0.777s;
     display: block;
@@ -96,6 +118,13 @@ body .primary-button {
     .speakers{
         margin: 111px 77px;
     }
+    .speakers-ul{
+        padding: 0 0 0 13px;
+        margin: 3px 0 0;
+    }
+    .speakers-include{
+        width: 305px;
+    }
     .speaker{
         float: left;
         margin: 33px 111px auto 33px;
@@ -175,18 +204,22 @@ body .primary-button {
 }
 
  @media (max-width: 768px) {
+
+    .splash {
+        background: rgba(238, 238, 238, 0.05) url("https://703b2c069452b328a61a9d57b759c4ce8e2e8891.googledrive.com/host/0B9LVk4xbDIJTMW44enlTSnVzWkE/unsplash-blue-tall-galaxy.jpeg") 0 -2377px;
+    }
     .get-updates{
-        margin: 177px auto 0px;
+        margin: 29px auto 226px;;
         width: 43%;
     }
     .slogan-words{
         margin: auto auto 111px;
         padding: 33px 33px 0px;
-        height: 402px;
+        height: 685px;
         width: 51%;
     }
-        .slogan-words ul, .slogan-words li{
-            display: none;
+        .speakers-include{
+           display: none;
         }
         .newspace-slogan{
             margin: 0px 20px -4px 13px;
