@@ -263,13 +263,33 @@ a{
     }
     .actions-card{
         width: 40%;
+        margin: 131px auto auto;
     }
+    .slogan-words{
+        float: none;
+    }
+    .actions-card{
+        float: none;
+    }
+    .speakers{
+        margin: 111px auto;
+        width: inherit;
+    }
+    .speaker{
+        margin: 33px auto;
+    }
+    .splash {
+        background: rgba(238, 238, 238, 0.05) url("https://703b2c069452b328a61a9d57b759c4ce8e2e8891.googledrive.com/host/0B9LVk4xbDIJTMW44enlTSnVzWkE/unsplash-blue-tall-galaxy.jpeg") 0 -2390px;
+    }   
 }
 
  @media (max-width: 768px) {
 
     .splash {
-        background: rgba(238, 238, 238, 0.05) url("https://703b2c069452b328a61a9d57b759c4ce8e2e8891.googledrive.com/host/0B9LVk4xbDIJTMW44enlTSnVzWkE/unsplash-blue-tall-galaxy.jpeg") 0 -2377px;
+        background: rgba(238, 238, 238, 0.05) url("https://703b2c069452b328a61a9d57b759c4ce8e2e8891.googledrive.com/host/0B9LVk4xbDIJTMW44enlTSnVzWkE/unsplash-blue-tall-galaxy.jpeg") 0 -2515px;
+    }
+    .slogan{
+        text-align: center;
     }
     .actions-card{
         width: 222px;
@@ -279,6 +299,8 @@ a{
         .actions-card sup{
             float: left;
             padding: 21px 0;
+            margin: auto;
+            width: 100%;
         }
         .actions-card ul{
             padding: 0;
@@ -286,12 +308,19 @@ a{
     .get-updates{
         margin: 29px auto 226px;;
         width: 43%;
+        clear: both;
+    }
+    .venue{
+        float: left;
+    }
+    .event-date{
+        margin-top: 22px;
     }
     .slogan-words{
         margin: auto auto 111px;
         padding: 33px;
-        width: 51%;
-        float: inherit;
+        width: inherit;
+        text-align: left;
     }
         .speakers-include{
            display: none;
@@ -300,13 +329,17 @@ a{
             margin: 0px 20px -4px 13px;
         }
     .speakers{
-        margin: 0 auto;
+        margin: 0px auto 77px;
         width: 259px;
+        display: block;
     }
     .speaker, .speaker:first-child{
-        margin: 33px auto 77px 70px;
+        margin: 33px auto;
         padding: 33px 18px 18px;
         width: 222px;
+    }
+    .speaker:last-child{
+        margin: 33px auto 111px;
     }
     .speaker img{
         width: 191px;
