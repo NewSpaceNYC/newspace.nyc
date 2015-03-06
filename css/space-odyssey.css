@@ -12,7 +12,7 @@ body {
     padding: 7px;
     border-radius: 4px;
     background: rgba(53, 66, 162, 0.07) none repeat scroll 0% 0%;
-    margin: 3px 24px 0 0;
+    margin: 3px 4px 0 0;
 }
 .speakers-bg{
     border: 1px solid rgba(215, 227, 255, 0.04);
@@ -106,9 +106,10 @@ a{
     }
     .slogan-words{
         margin: 77px auto auto 111px;
-        width: 44%;
+        width: 555px;
+        display: inline-block;
         padding: 33px 21px 44px 39px;
-        height: 349px;
+        float: left;
     }
         .slogan-words ul{
             padding: 0px 0px 0px 16px;
@@ -130,10 +131,10 @@ a{
     }
     .speakers-ul{
         padding: 0 0 0 13px;
-        margin: 3px 0 0;
+        margin: 3px 0px 0px -16px;
     }
     .speakers-include{
-        width: 305px;
+        width: 290px;
     }
     .speaker{
         float: left;
@@ -158,12 +159,15 @@ a{
     .float-right{
         float: right;
     }
+    .actions-holder{
+
+    }
     .actions-card{
         border: 1px solid rgba(215, 227, 255, 0.04);
         padding: 7px;
         margin: 134px 111px auto 0;
         padding: 33px 4px 44px 39px;
-
+        float: right;
     }
         .actions-card ul{
             list-style: none;
@@ -251,20 +255,43 @@ a{
     font-size: 80%;
 }
 
+@media (max-width: 1180px){
+    .actions-holder{
+        margin: auto;
+        display: block;
+        text-align: center;
+    }
+    .actions-card{
+        width: 40%;
+    }
+}
+
  @media (max-width: 768px) {
 
     .splash {
         background: rgba(238, 238, 238, 0.05) url("https://703b2c069452b328a61a9d57b759c4ce8e2e8891.googledrive.com/host/0B9LVk4xbDIJTMW44enlTSnVzWkE/unsplash-blue-tall-galaxy.jpeg") 0 -2377px;
     }
+    .actions-card{
+        width: 222px;
+        float: inherit;
+        margin: auto auto 96px;
+    }
+        .actions-card sup{
+            float: left;
+            padding: 21px 0;
+        }
+        .actions-card ul{
+            padding: 0;
+        }
     .get-updates{
         margin: 29px auto 226px;;
         width: 43%;
     }
     .slogan-words{
         margin: auto auto 111px;
-        padding: 33px 33px 0px;
-        height: 685px;
+        padding: 33px;
         width: 51%;
+        float: inherit;
     }
         .speakers-include{
            display: none;
@@ -273,11 +300,11 @@ a{
             margin: 0px 20px -4px 13px;
         }
     .speakers{
-        margin: 0 77px 59px;
+        margin: 0 auto;
         width: 259px;
     }
-    .speaker{
-        margin: 33px auto;
+    .speaker, .speaker:first-child{
+        margin: 33px auto 77px 70px;
         padding: 33px 18px 18px;
         width: 222px;
     }
