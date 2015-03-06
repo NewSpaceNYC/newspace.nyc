@@ -12,7 +12,7 @@ body {
     padding: 7px;
     border-radius: 4px;
     background: rgba(53, 66, 162, 0.07) none repeat scroll 0% 0%;
-    margin: 3px 45px 0 0;
+    margin: 3px 24px 0 0;
 }
 .speakers-bg{
     border: 1px solid rgba(215, 227, 255, 0.04);
@@ -107,7 +107,7 @@ a{
     .slogan-words{
         margin: 77px auto auto 111px;
         width: 44%;
-        padding: 33px 4px 44px 39px;
+        padding: 33px 21px 44px 39px;
         height: 349px;
     }
         .slogan-words ul{
@@ -141,6 +141,9 @@ a{
         padding: 71px 71px 44px;
         text-align: center;
     }
+        .speaker:first-child{
+            margin: 33px 111px auto 41px;
+        }
         .speaker img{
             margin: auto;
             display: block;
