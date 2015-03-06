@@ -78,6 +78,10 @@ body .primary-button {
     color: #fff;
 }
 
+a{
+    text-decoration: none;
+}
+
 .center{
     text-align: center;
 }
