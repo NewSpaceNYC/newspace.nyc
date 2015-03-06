@@ -3,6 +3,7 @@ body {
     margin: 0 auto;
     line-height: 1.7em;
     color: #999; /*#518749 */
+    overflow-x: hidden;
 }
 
 .venue{
@@ -11,6 +12,7 @@ body {
     padding: 7px;
     border-radius: 4px;
     background: rgba(53, 66, 162, 0.07) none repeat scroll 0% 0%;
+    margin: 3px 45px 0 0;
 }
 .speakers-bg{
     border: 1px solid rgba(215, 227, 255, 0.04);
@@ -101,9 +103,12 @@ body .primary-button {
     .slogan-words{
         margin: 77px auto auto 111px;
         width: 44%;
-        padding: 33px 33px 44px;
+        padding: 33px 4px 44px 39px;
         height: 349px;
     }
+        .slogan-words ul{
+            padding: 0px 0px 0px 17px;
+        }
         .slogan-words h1{
             color: #fff;
         }
@@ -116,7 +121,8 @@ body .primary-button {
         padding: 33px 33px 47px;
     }
     .speakers{
-        margin: 111px 77px;
+        margin: 111px 0 111px 77px;
+        width: 94%;
     }
     .speakers-ul{
         padding: 0 0 0 13px;
@@ -141,6 +147,41 @@ body .primary-button {
         }
     .float-left{
         float: left;
+    }
+    .float-right{
+        float: right;
+    }
+    .actions-card{
+        border: 1px solid rgba(215, 227, 255, 0.04);
+        padding: 7px;
+        margin: 134px 111px auto 0;
+        padding: 33px 4px 44px 39px;
+
+    }
+        .actions-card ul{
+            list-style: none;
+        }
+        .actions-card li{
+            margin: 13px auto;
+        }
+        .actions-card .pure-button{
+            margin: 3px 13px auto auto;
+            width: 101px;
+            background: rgba(31, 66, 137, 0.37) none repeat scroll 0% 0%;
+            border: 1px solid #143477;
+            color: #AEC8FF;
+        }
+        .actions-card .pure-button:hover{
+            border: 1px solid #264E9F;
+            color:#fff;
+            background: rgba(31, 66, 137, 0.77) none repeat scroll 0% 0%;
+        }
+    .pure-button{
+        transition-duration: 0.777s;
+        box-shadow: 7px 7px 13px rgba(1, 0, 30, 0.78);
+    }
+    .pure-button:hover{
+        box-shadow: 2px 2px 3px rgba(1, 0, 30, 0.99);
     }
     .newspace-slogan{
         color: #281DE6;
@@ -199,7 +240,7 @@ body .primary-button {
 .footer {
     color: #666;
     text-align: center;
-    padding: 1em;
+    padding: 1em 0;
     font-size: 80%;
 }
 
