@@ -7,3 +7,15 @@
  */
 
 /* Begin custom styles */
+
+#clients .pure-u-1-6{
+	margin: auto 11px;
+} 
+
+#clients{
+	padding: 0px 0px 110px;
+}
+
+pre{
+	font-size: 13px;
+}
