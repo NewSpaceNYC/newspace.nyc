@@ -89,7 +89,7 @@ a{
 .splash {
     margin: 0 auto;
     padding: 3em 0.5em;
-    background: rgba(238, 238, 238, 0.05) url("https://703b2c069452b328a61a9d57b759c4ce8e2e8891.googledrive.com/host/0B9LVk4xbDIJTMW44enlTSnVzWkE/unsplash-blue-tall-galaxy.jpeg") 0 715px;
+    background: rgba(238, 238, 238, 0.05) url("https://703b2c069452b328a61a9d57b759c4ce8e2e8891.googledrive.com/host/0B9LVk4xbDIJTMW44enlTSnVzWkE/unsplash-blue-tall-galaxy.jpeg") 0 697px;
 }
     .splash .splash-head {
         font-size: 300%;
@@ -130,8 +130,10 @@ a{
         width: 94%;
     }
     .speakers.row2{
+        margin: 0px 0px 23px 77px;
+    }
+    .speakers.row3{
         margin: 0px 0px 111px 77px;
-        width: 94%;
     }
     .speakers-ul{
         padding: 0 0 0 13px;
