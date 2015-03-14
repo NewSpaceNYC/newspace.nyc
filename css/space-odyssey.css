@@ -147,7 +147,11 @@ a{
         margin: 33px 111px auto 33px;
         padding: 71px 71px 44px;
         text-align: center;
+        height: 404px;
     }
+        .speaker.honeybee{
+            height: inherit;
+        }
         .speaker:first-child{
             margin: 33px 111px auto 41px;
         }
