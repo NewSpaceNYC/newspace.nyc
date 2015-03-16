@@ -49,7 +49,7 @@ body {
     display: none !important;
 }
 .majortom-youtube{
-    width: 560px; 
+    width: 560px;
     height: 315px;
     transition-duration: 0.777s;
     display: none;
@@ -149,6 +149,31 @@ a{
         text-align: center;
         height: 404px;
     }
+        .csl img{
+          margin: 22px 0px 0px !important;
+          width: 222px !important;
+        }
+        .speaker.sponsors h4{
+          margin: 21px auto 0;
+          width: 121%;
+          float: left;
+          clear: both !important;
+          color: #4C7CB1 !important;
+        }
+        .speaker.sponsors{
+          padding: 71px 110px 44px 33px;
+          height: inherit;
+          background: #fff;
+        }
+          .speaker .pure-u-1-3:first-child{
+            margin-left: 18px;
+          }
+          .speaker .pure-u-1-3{
+            margin: 0 0 6px 46px;
+          }
+          .speaker.sponsors img{
+            width: 133px;
+          }
         .speaker.honeybee{
             height: inherit;
         }
@@ -282,12 +307,27 @@ a{
         float: none;
     }
     .speakers{
-        margin: 111px auto;
+        margin: 111px auto 0;
         width: inherit;
     }
-    .speaker{
-        margin: 33px auto;
-    }  
+    .speakers.row2, .speakers.row3{
+      margin: 0px 0px 23px 0px;
+    }
+    .row2 .speaker:first-child, .row3 .speaker:first-child{
+      margin: 33px 99px auto 41px;
+    }
+      .speaker{
+          margin: 33px auto;
+      }
+      .speaker p{
+        font-size: 13px;
+      }
+      .speaker.sponsors{
+        padding: 71px 125px 44px 33px;
+      }
+      .speaker .pure-u-1-3:first-child{
+        margin-left: 0;
+      }
 }
 
  @media (max-width: 768px) {
@@ -332,11 +372,33 @@ a{
         .newspace-slogan{
             margin: 0px 20px -4px 13px;
         }
-    .speakers{
+    .speakers, .speakers.row2, .speakers.row3{
         margin: 0px auto 77px;
         width: 259px;
         display: block;
     }
+      .speakers.row2 .speaker:first-child{
+        margin-top: -44px;
+      }
+      .honeybee{
+        margin: 32px 0 !important;
+      }
+      .csl{
+        margin: 0 !important;
+        clear: both;
+      }
+      .speaker.sponsors{
+        padding: 54px 19px 44px;
+      }
+      .speaker.sponsors .pure-u-1-3{
+        float: inherit;
+      }
+      .speaker.sponsors h4{
+        width:100%;
+      }
+      .speakers.row2 .speaker{
+        margin: 32px 0;
+      }
     .speaker, .speaker:first-child{
         margin: 33px auto;
         padding: 33px 18px 18px;
@@ -347,8 +409,5 @@ a{
     }
     .speaker img{
         width: 191px;
-    }
-    .majortom-youtube{
-        width: 96% !important;
     }
 }
