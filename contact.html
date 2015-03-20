@@ -49,7 +49,7 @@
     <!-- Load our jQuery, with an alternative source/fallback to our own version if request is unavailable -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
-    
+
     <!-- Load these in the <head> for quicker IE8+ load times -->
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -96,31 +96,45 @@
                     <ul class="row motion">
                         <li class="col-md-4 col-sm-6 two">
                             <div class="menubg" style="background-image: url(https://e01664e04f761a953c177fc6c099b54b4a0ab988.googledrive.com/host/0B9LVk4xbDIJTRmwzeHdZZERtOGM/ns-website-bg.png)"></div>
-                            <a href="index.html" title="homepage">Homepage<span>Beam me up Scotty!</span></a>
+                            <a href="index.html" title="homepage">Home<span>Beam me up Scotty!</span></a>
                         </li>
-                        <li class="col-md-4 col-sm-6 eighteen">
-                            <div class="menubg" style="background-image: url('img/menu/about.jpg')"></div>
-                            <a href="about.html" title="About">About<span>Give an overview of your company or business about what you do</span></a>
+                        <li class="col-md-4 col-sm-6 eight">
+                            <div class="menubg"></div>
+                            <a href="space-odyssey.html" title="Space Odyssey event">
+                              Space Odyssey (event)
+                              <span>
+                                Learn how our NY entrepreneurs, investors, academics &amp; enthusiasts
+                                are commercialize the space industry.
+                              </span>
+                            </a>
                         </li>
                         <li class="col-md-4 col-sm-6 four">
                             <div class="menubg" style="background-image: url('https://7b6a49c2130b2adf7da2766cbc05ca7c3fa698b5.googledrive.com/host/0B9LVk4xbDIJTSUJ6dnZfaF9fUDg/IMG_2638.JPG')"></div>
                             <a href="http://majortom.nyc/" title="MajorTom, our pilot project.">
                                 MajorTom
-                                <span> Our Pilot Project </span>
+                                <span> Our Pilot Project <br/>
+                                  A reciever for sat-signals.
+                                </span>
                             </a>
                         </li>
                         <li class="col-md-4 col-sm-6 six">
                             <div class="menubg" ></div>
                             <a href="http://discuss.newspace.nyc/" title="NewSpace Discourse Forum">Forum<span>Our open community Discourse forum for all things outer-space.</span></a>
                         </li>
+                        <li class="col-md-4 col-sm-6 eighteen"> <!-- about -->
+                            <div class="menubg" style="background-image: url('img/menu/about.jpg')"></div>
+                            <a href="about.html" title="About">About<span>A community for space startups in NYC. </span></a>
+                        </li> <!-- end about -->
+                        <!--
                         <li class="col-md-4 col-sm-6 twentytwo">
                             <div class="menubg" style="background-image: url('img/menu/blog.jpg')"></div>
                             <a href="blog.html" title="Blog">Blog<span>Clean blog layout example</span></a>
                         </li>
-                        <li class="col-md-4 col-sm-6 twentyfour">
+                        -->
+                        <li class="col-md-4 col-sm-6 ten"> <!--  contact -->
                             <div class="menubg" style="background-image: url('img/menu/contact.jpg')"></div>
                             <a href="contact.html" title="Contact">Contact<span>Contact details with working email form with validation support</span></a>
-                        </li>
+                        </li> <!-- end contact -->
                     </ul>
                 </div>
                 <div class="modal-footer">
@@ -133,6 +147,7 @@
             </div>
         </div>
     </div>
+
 
     <!-- ============================ End Main Navigation ==================================== -->
 
@@ -173,14 +188,14 @@
     <!-- ============================ Header/fixed sidebar ============================ -->
 
     <header id="header">
-        
+
         <!-- Main menu toggle -->
         <button class="toggle" data-toggle="modal" data-target="#menumodal">
             <span class="menu-bar bar-1"></span>
             <span class="menu-bar bar-2"></span>
             <span class="menu-bar bar-3"></span>
         </button>
-        
+
         <!-- Second logo for mobiles/tablets only. Maximum height of 65px -->
         <div class="mobile_logo">
             <h1>NewSpace NYC</h1>
@@ -201,7 +216,7 @@
     <button class="social" data-toggle="modal" data-target="#socialmodal">
         <span class="icon-share"></span>
     </button>
-    
+
     <!-- End header/fixed sidebar -->
 
     <!-- ============================ Start the page content ============================ -->
@@ -226,13 +241,22 @@
                     <h3><span class="icon-location"></span> WeWorkLabs <br/> 175 Varick Street New York, NY 10014</h3>
                     <!-- <h3><span class="icon-phone"></span> 555-343-443</h3> -->
                     <h3><span class="icon-bubble2"></span> all@newspace.nyc</h3>
-                    <br>
-                    <br>
-                    <p>Moveth every creepeth second divided itself living. Had over fourth good there deep all lights.</p><p>In Also can't moved brought spirit together moving. Gathered i so for and he good bearing also.</p>
                 </div>
-                <!-- PHP doesn't work on GitHub Pages
-                <div class="col-lg-7 textpadding white">
-                    
+
+                <div class="col-lg-5 textpadding">
+
+                  <h3>Connect with NewSpace NYC</h3>
+                  <ul class="socialicons">
+                      <li class="twitter"><a href="http://twitter.com/newspacenyc" title="Twitter" target="_blank"><span class="icon-twitter"></span></a></li>
+                      <li ><a href="" title="NewSpace NYC Google Plus" class="googleplus" target="_blank"><span class="icon-googleplus"></span></a></li>
+                      <li ><a href="https://www.facebook.com/newspacenyc" title="Facebook" class="facebook" target="_blank"><span class="icon-facebook"></span></a></li>
+                      <!--
+                      <li class="eight"><a href="http://instagram.com/" title="Instagram" class="instagram" target="_blank"><span class="icon-instagram"></span></a></li>
+                      -->
+                      <li><a href="" title="NewSpace NYC YouTube" class="youtube" target="_blank"><span class="icon-youtube"></span></a></li>
+                  </ul>
+
+                  <!-- PHP doesn't work on GitHub Pages
                     <form name="sentMessage" class="well" id="contactForm"  novalidate>
 
                         <div class="control-group  wow fadeInUp" data-wow-delay="0.3s">
@@ -245,7 +269,7 @@
                             <div class="controls">
                                 <input type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Enter Email" />
                             </div>
-                        </div>  
+                        </div>
 
                         <div class="control-group  wow fadeInUp" data-wow-delay="0.9s">
                             <div class="controls">
@@ -257,8 +281,8 @@
                         <!--
                         <button type="submit" class="btn btn-primary pull-right">Send</button>
                     </form>
-                    
-                </div> -->
+                      PHP forms don't work on GitHub Pages ;) -->
+                </div>
             </div>
         </section>
 
@@ -266,6 +290,7 @@
 
         <!-- ============================ Section Start ============================ -->
 
+        <!--
         <section id="three" class="container padding wow fadeInUp" data-wow-delay="0.6s">
             <div class="row">
                 <div class="col-xs-12">
@@ -275,6 +300,7 @@
                 </div>
             </div>
         </section>
+        -->
 
         <!-- ============================ Section End ============================== -->
 
