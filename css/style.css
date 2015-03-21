@@ -1318,21 +1318,22 @@ blockquote.bigtext {
   text-align: center;
 }
   #stats h3{
-    color: #fff;
-  }
 
+  }
   #stats span.counter {
     font-size: 80px;
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     font-weight: 700;
+    color: #120007;
     line-height: 80px;
-    color: #fff;
+    color: #120007;
   }
 
   #stats .col-xs-6 {
     margin: 30px 0;
-    background: none repeat scroll 0% 0%;
-    color: #fff;
+    background: rgba(255, 255, 255, 0.91) none repeat scroll 0% 0%;
+    color: #FFF;
+    padding: 23px 0;
   }
 
 /********************************************************/
