@@ -15,7 +15,7 @@
 		padding: 0px 0px 110px;
 	}
 	.spaceangels-div{
-		width: 333px;
+		width: 31%;
 		float: left;
 		margin: auto 11px auto 47px !important;
 	}
@@ -30,7 +30,7 @@
 	}
 	.csl-div{
 		float: right;
-		margin: 19px 62px auto auto;
+		margin: -141px 62px auto auto;
 	}
 	.a1l-div{
 		width: 188px;
@@ -38,8 +38,8 @@
 		display: block;
 	}
 	.a1l-div img{
-		margin: 10px auto auto -33px !important;
-		width: 147px;
+		margin: 10px auto auto 0px !important;
+		width: 77%;
 	}
 
 pre{
@@ -54,7 +54,7 @@ pre{
 	.solx-logo {
 		margin: 18px auto auto !important;
 	}
-	#clients .pure-u-1-6 {
+	#clients .pure-u-1-6, #clients .pure-u-1-5, #clients .pure-u-1-3, #clients .pure-u-1-4, {
     width: 40%;
 	}
 	.outernet-logo-div{
