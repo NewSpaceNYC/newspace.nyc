@@ -1357,12 +1357,6 @@ blockquote.bigtext {
 /* Clients, (homepage)                                   */
 /********************************************************/
 
-.outernet-logo{
-  border-radius: 90px;
-}
-.solx-logo{
-  margin: 44px auto auto !important;
-}
 #clients img {
   -webkit-transition: all 0.25s;
   -moz-transition: all 0.25s;

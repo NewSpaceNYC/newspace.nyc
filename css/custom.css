@@ -10,12 +10,54 @@
 
 #clients .pure-u-1-6{
 	margin: auto 11px;
-} 
-
-#clients{
-	padding: 0px 0px 110px;
 }
+	#clients{
+		padding: 0px 0px 110px;
+	}
+	.spaceangels-div{
+		width: 333px;
+		float: left;
+		margin: auto 11px auto 47px !important;
+	}
+	.outernet-logo-div{
+	  margin: auto 0px 0px 36px !important;
+	}
+	.outernet-logo{
+	  border-radius: 90px;
+	}
+	.solx-logo{
+	  margin: 44px auto auto !important;
+	}
+	.csl-div{
+		float: right;
+		margin: 19px 62px auto auto;
+	}
+	.a1l-div{
+		width: 188px;
+		margin: auto !important;
+		display: block;
+	}
+	.a1l-div img{
+		margin: 10px auto auto -33px !important;
+		width: 147px;
+	}
 
 pre{
 	font-size: 13px;
+}
+
+#clients .container{
+	width: 86%;
+}
+
+@media (max-width:768px) {
+	.solx-logo {
+		margin: 18px auto auto !important;
+	}
+	#clients .pure-u-1-6 {
+    width: 40%;
+	}
+	.outernet-logo-div{
+	  margin: auto auto auto 11px  !important;
+	}
 }
