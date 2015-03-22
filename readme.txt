@@ -1,4 +1,4 @@
 NewSpace.nyc Website
 
-Empty ReadMe :(
+Empty ReadMe :)
 
