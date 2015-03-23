@@ -129,10 +129,10 @@ a{
         margin: 111px 0 23px 77px;
         width: 94%;
     }
-    .speakers.row2{
+    .speakers.row3{
         margin: 0px 0px 23px 77px;
     }
-    .speakers.row3{
+    .speakers.row4{
         margin: 0px 0px 111px 77px;
     }
     .speakers-ul{
@@ -154,7 +154,7 @@ a{
           width: 292px !important;
         }
         .spaceangels-img{
-          width: 292px !important;
+          width: 323px !important;
           margin: 37px auto auto auto !important;
         }
         .speaker.sponsors h4{
@@ -331,10 +331,13 @@ a{
         margin: 111px auto 0;
         width: inherit;
     }
-    .speakers.row2, .speakers.row3{
+    .dyson h3{
+      margin: 37px auto 0px;
+    }
+    .speakers.row3, .speakers.row4{
       margin: 0px 0px 23px 0px;
     }
-    .row2 .speaker:first-child, .row3 .speaker:first-child{
+    .row3 .speaker:first-child, .row4 .speaker:first-child{
       margin: 33px 99px auto 41px;
     }
       .speaker{
@@ -393,12 +396,12 @@ a{
         .newspace-slogan{
             margin: 0px 20px -4px 13px;
         }
-    .speakers, .speakers.row2, .speakers.row3{
+    .speakers, .speakers.row3, .speakers.row4{
         margin: 0px auto 77px;
         width: 259px;
         display: block;
     }
-      .speakers.row2 .speaker:first-child{
+      .speakers.row3 .speaker:first-child{
         margin-top: -44px;
       }
       .honeybee{
@@ -436,7 +439,7 @@ a{
       .speaker.sponsors h4{
         width:100%;
       }
-      .speakers.row2 .speaker{
+      .speakers.row3 .speaker{
         margin: 32px 0;
       } /*  ----------------------------------- _________________________ mobile view _________________________ ----------------------------------- */
     .speaker, .speaker:first-child{
