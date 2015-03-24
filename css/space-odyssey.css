@@ -6,6 +6,10 @@ body {
     overflow-x: hidden;
 }
 
+.more{
+  color: #55539B;
+  float: left;
+}
 .venue{
     float: right;
     border: 1px solid rgba(215, 227, 255, 0.04);
@@ -85,11 +89,14 @@ a{
 .center{
     text-align: center;
 }
+.hash-tag{
+  color: rgba(183, 191, 251, 0.29);
+}
 
 .splash {
     margin: 0 auto;
     padding: 3em 0.5em;
-    background: rgba(238, 238, 238, 0.05) url("https://703b2c069452b328a61a9d57b759c4ce8e2e8891.googledrive.com/host/0B9LVk4xbDIJTMW44enlTSnVzWkE/unsplash-blue-tall-galaxy.jpeg") 0 1142px;
+    background: rgba(238, 238, 238, 0.05) url("https://703b2c069452b328a61a9d57b759c4ce8e2e8891.googledrive.com/host/0B9LVk4xbDIJTMW44enlTSnVzWkE/unsplash-blue-tall-galaxy.jpeg") 0 1195px;
 }
     .splash .splash-head {
         font-size: 300%;
@@ -169,11 +176,12 @@ a{
           padding: 71px 110px 44px 33px;
           height: inherit;
           background: #fff;
+          margin: 84px 111px auto 41px !important;
         }
           .speaker .pure-u-1-3:first-child{
             margin-left: 18px;
           }
-          .csl-div{
+          .csl-div, .indus-h3{
             margin: auto !important;
           }
           .speaker .pure-u-1-3{
@@ -182,8 +190,11 @@ a{
           .speaker.sponsors img{
             width: 133px;
           }
-        .speaker.honeybee{
-            height: inherit;
+        .honeybee-h3{
+          margin: 30px auto auto !important;
+        }
+        .speaker.honeybee h3:last-child{
+          margin: auto;
         }
         .speaker:first-child{
             margin: 33px 111px auto 41px;
@@ -312,6 +323,9 @@ a{
 
 /* Style for partialy opened windows... */
 @media (max-width: 1180px){
+    .splash{
+      background: rgba(238, 238, 238, 0.05) url("https://703b2c069452b328a61a9d57b759c4ce8e2e8891.googledrive.com/host/0B9LVk4xbDIJTMW44enlTSnVzWkE/unsplash-blue-tall-galaxy.jpeg") repeat scroll 0px 1637px;
+    }
     .actions-holder{
         margin: auto;
         display: block;
@@ -356,6 +370,10 @@ a{
 
 /*  ----------------------------------- _________________________ mobile view _________________________ ----------------------------------- */
  @media (max-width: 768px) {
+
+   .splash{
+     background: rgba(238, 238, 238, 0.05) url("https://703b2c069452b328a61a9d57b759c4ce8e2e8891.googledrive.com/host/0B9LVk4xbDIJTMW44enlTSnVzWkE/unsplash-blue-tall-galaxy.jpeg") repeat scroll 0px 892px;
+   }
    .slogan-words{
      width: 70% !important;
    }
@@ -420,6 +438,7 @@ a{
       .cvc-div{
         clear: both;
         float: left;
+        width: 100%;
         margin: 33px auto auto;
       }
       .csl-div{
@@ -446,6 +465,9 @@ a{
         margin: 33px auto;
         padding: 33px 18px 18px;
         width: 222px;
+    }
+    .ian{
+      margin: 33px auto !important;
     }
     .speaker:last-child{
         margin: 33px auto 111px;
