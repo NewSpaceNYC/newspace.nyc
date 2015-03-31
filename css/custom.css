@@ -8,6 +8,10 @@
 
 /* Begin custom styles */
 
+.splash-event-h1{
+	font-size: 33px;
+}
+
 #clients .pure-u-1-6{
 	margin: auto 11px;
 }
