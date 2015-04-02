@@ -12,6 +12,15 @@
 	font-size: 33px;
 }
 
+.splash-event a[type="button"]{
+	margin: 13px 0px 0px 23px;
+}
+.splash-event a[type="button"].past{
+	border: 2px solid #CBCBCB;
+	color: #909090;
+}
+
+
 #clients .pure-u-1-6{
 	margin: auto 11px;
 }

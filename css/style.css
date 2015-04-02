@@ -1601,7 +1601,8 @@ blockquote.bigtext {
 .hero img {
   margin: auto auto 10px;
   position: relative;
-  height: 333px;
+  height: 272px;
+  width: 666px;
   z-index: 3
 }
 
@@ -3198,7 +3199,7 @@ footer img {
   -o-transform: scale(1.0);
   -ms-transform: scale(1.0);
   transform: scale(1.0);
-  height: 99px;
+  height: 69px;
 }
 
 footer img:hover {
