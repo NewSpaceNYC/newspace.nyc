@@ -15,6 +15,7 @@
 
     <!-- Load Our CSS - Do not alter the load order -->
     <link href="css/bootstrap.min.css" rel="stylesheet"><!-- Bootstrap Core - ALways load first -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
     <link href="css/animate.css" rel="stylesheet"><!-- Animatations -->
     <link href="css/icomoon.css" rel="stylesheet"><!-- Icon Font -->
     <link href="css/flexslider.css" rel="stylesheet"><!-- Flexslider styles for #blogfeed -->
@@ -22,11 +23,44 @@
     <link href="css/custom.css" rel="stylesheet"><!-- Custom styles - Always load last -->
 
     <!-- Load our fonts from Google -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=PT+Serif:700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=PT+Serif:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
 
+    <!-- end GSS init -->
+    <!--
+    <style type="text/gss">
+      "container" {
+        width: == ::window[width];
+        height: == 666;
+        center: == ::window[center];
+      }
+      .a1l-div{
+        width: == 147;
+        height: == 147;
+        center: == "container"[center];
+        cy: == "container"[cy];
+      }
+      .csl-div{
+        size: == 333;
+        right: == "container"[right];
+        cy: == "container"[cy];
+      }
+      .spaceangels-div{
+        size: == 333;
+        left: == "container"[x];
+        cy: == "container"[cy];
+      }
+    .a1l-div[center] == ::window[center];
+    /* @h (.spaceangels-div)-30-(.a1l-div)-20-(.csl-div); */
+
+    /* Horizontally align the h1 and p with the image */
+    /* h1[center-x] == p[center-x] == #cassowaryImg[center-x]; */
+
+    </style>
+    <script src="https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/gss/v2.0.0/v2.0.0/gss.min.js"></script>
+    -->
     <!-- Load our fonts individually if IE8+, to avoid faux bold & italic rendering -->
     <!--[if IE]>
     <link href='http://fonts.googleapis.com/css?family=PT+Serif:700' rel='stylesheet' type='text/css'>
@@ -103,22 +137,19 @@
                             <a href="index.html" title="homepage">Home<span>Beam me up Scotty!</span></a>
                         </li>
                         <li class="col-md-4 col-sm-6 eight">
-                            <div class="menubg"></div>
-                            <a href="space-odyssey.html" title="Space Odyssey event">
-                              Space Odyssey (event)
+                            <div class="menubg incubator-menu-bg"></div>
+                            <a href="space-startup-form.html" title="NewSpace NYC Space Startup Incubator Application">
+                              Incubator 
                               <span>
-                                Learn how our NY entrepreneurs, investors, academics &amp; enthusiasts
-                                are commercialize the space industry.
+                                Apply to fly on the wings of NewSpace NYC.
                               </span>
                             </a>
                         </li>
                         <li class="col-md-4 col-sm-6 four">
-                            <div class="menubg" style="background-image: url('https://7b6a49c2130b2adf7da2766cbc05ca7c3fa698b5.googledrive.com/host/0B9LVk4xbDIJTSUJ6dnZfaF9fUDg/IMG_2638.JPG')"></div>
-                            <a href="http://majortom.nyc/" title="MajorTom, our pilot project.">
-                                MajorTom
-                                <span> Our Pilot Project <br/>
-                                  A reciever for sat-signals.
-                                </span>
+                            <div class="menubg meetup-menu-bg"></div>
+                            <a href="http://www.meetup.com/NYC-Space-Ventures/" title="NewSpace NYC meetup events">
+                                Events
+                                <span> On Meetup.com </span>
                             </a>
                         </li>
                         <li class="col-md-4 col-sm-6 six">
@@ -126,7 +157,7 @@
                             <a href="http://discuss.newspace.nyc/" title="NewSpace Discourse Forum">Forum<span>Our open community Discourse forum for all things outer-space.</span></a>
                         </li>
                         <li class="col-md-4 col-sm-6 eighteen"> <!-- about -->
-                            <div class="menubg" style="background-image: url('img/menu/about.jpg')"></div>
+                            <div class="menubg about-menu-bg"></div>
                             <a href="about.html" title="About">About<span>A community for space startups in NYC. </span></a>
                         </li> <!-- end about -->
                         <!--
@@ -137,7 +168,7 @@
                         -->
                         <li class="col-md-4 col-sm-6 ten"> <!--  contact -->
                             <div class="menubg" style="background-image: url('img/menu/contact.jpg')"></div>
-                            <a href="contact.html" title="Contact">Contact<span>Contact details with working email form with validation support</span></a>
+                            <a href="contact.html" title="Contact">Contact<span>Get in touch.</span></a>
                         </li> <!-- end contact -->
                     </ul>
                 </div>
@@ -151,7 +182,6 @@
             </div>
         </div>
     </div>
-
 
     <!-- ============================ End Main Navigation ==================================== -->
 
@@ -217,9 +247,9 @@
                             </li>
                             <li class="twelve telegram">
                               <a href="mailto:mike@newspace.nyc" title="NewSpace NYC Telegram" class="telegram" target="_blank">
-                                <span class="glyphicon glyphicon-send"></span>
+                                <img src="https://bb422bb78ee5f8bcbb55e34d2e0c79a18dce774e.googledrive.com/host/0B9LVk4xbDIJTXzV5Y2d5VnBCc3M/slack-icon-128.png" alt="slack chat app icon"/>
                               </a>
-                              <sub> Email Mike to join our Telegram chat group. </sub>
+                              <sub> Email Mike to join our Slack chat group. </sub>
                             </li>
                         </ul>
                     </div>
@@ -228,6 +258,7 @@
         </div>
 
         <!-- =============================== End social menu ============================== -->
+
     <!-- ============================ Header/fixed sidebar ============================ -->
 
     <header id="header">
@@ -293,16 +324,16 @@
             <div class="row clearfix">
                 <ul class="col-md-6 team-avatars">
                     <li class="wow fadeInUp animated" data-wow-delay="0.2s">
-                      <a href="#tm1" class="active"><img src="https://17da7a5ec5c2968a5bce514c4507507c616d5c76.googledrive.com/host/0B9LVk4xbDIJTNnJXR3haakRNOUU/sidney-facebook.jpg" alt="Sidney Nakahodo"></a>
+                      <a href="#tm1" class="active"><img src="https://6c091c47d3c848f0bde8b1b0daf65c8a1922f092.googledrive.com/host/0B0MRQmKm2tbNUkgyUmN3dkIzWUU/sidney-nakahodo.jpg" alt="Sidney Nakahodo"></a>
                     </li>
                     <li class="wow fadeInUp animated" data-wow-delay="0.4s">
-                      <a href="#tm2"><img src="https://17da7a5ec5c2968a5bce514c4507507c616d5c76.googledrive.com/host/0B9LVk4xbDIJTNnJXR3haakRNOUU/aanchal-facebook.jpg" alt="Aanchal Saxena"></a>
+                      <a href="#tm2"><img src="https://6c091c47d3c848f0bde8b1b0daf65c8a1922f092.googledrive.com/host/0B0MRQmKm2tbNUkgyUmN3dkIzWUU/aanchal-saxena.jpg" alt="Aanchal Saxena"></a>
                     </li>
                     <li class="wow fadeInUp animated" data-wow-delay="0.6s">
-                      <a href="#tm3"><img src="https://17da7a5ec5c2968a5bce514c4507507c616d5c76.googledrive.com/host/0B9LVk4xbDIJTNnJXR3haakRNOUU/sean-facebook.jpg" alt="Sean Auriti"></a>
+                      <a href="#tm3"><img src="https://6c091c47d3c848f0bde8b1b0daf65c8a1922f092.googledrive.com/host/0B0MRQmKm2tbNUkgyUmN3dkIzWUU/sean-auriti.jpg" alt="Sean Auriti"></a>
                     </li>
                     <li class="wow fadeInUp animated" data-wow-delay="0.8s">
-                      <a href="#tm4"><img src="https://17da7a5ec5c2968a5bce514c4507507c616d5c76.googledrive.com/host/0B9LVk4xbDIJTNnJXR3haakRNOUU/mike-facebook.jpg" alt="Mike Mooring"></a>
+                      <a href="#tm4"><img src="https://6c091c47d3c848f0bde8b1b0daf65c8a1922f092.googledrive.com/host/0B0MRQmKm2tbNUkgyUmN3dkIzWUU/mike-facebook.jpg" alt="Mike Mooring"></a>
                     </li>
                     <li class="wow fadeInUp animated" data-wow-delay="1.0s">
                       <a href="#tm5"><img src="https://6c091c47d3c848f0bde8b1b0daf65c8a1922f092.googledrive.com/host/0B0MRQmKm2tbNUkgyUmN3dkIzWUU/khaki-rodway.jpg" alt="Khaki Rodway"></a>
