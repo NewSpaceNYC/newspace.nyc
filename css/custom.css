@@ -11,6 +11,13 @@
 	opacity: 1 !important;
 }
 
+.juicer-feed.loaded{
+	overflow: hidden;
+}
+	.juicer-feed.image-grid .text .message p, .juicer-feed.slider .text .message p{
+		  color: palegoldenrod;
+	}
+
 .meetup-menu-bg{
 	background-image: url(https://bb422bb78ee5f8bcbb55e34d2e0c79a18dce774e.googledrive.com/host/0B9LVk4xbDIJTXzV5Y2d5VnBCc3M/space-odyssey-2015.jpg);
 }
