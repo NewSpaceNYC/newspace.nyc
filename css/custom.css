@@ -21,14 +21,12 @@
 .meetup-menu-bg{
 	background-image: url(https://bb422bb78ee5f8bcbb55e34d2e0c79a18dce774e.googledrive.com/host/0B9LVk4xbDIJTXzV5Y2d5VnBCc3M/space-odyssey-2015.jpg);
 }
-
-.about-menu-bg{
-	background-image:url(https://e01664e04f761a953c177fc6c099b54b4a0ab988.googledrive.com/host/0B9LVk4xbDIJTRmwzeHdZZERtOGM/newspace-nyc_icon.svg);
-}
-
-.incubator-menu-bg{
-	background-image:url(https://bb422bb78ee5f8bcbb55e34d2e0c79a18dce774e.googledrive.com/host/0B9LVk4xbDIJTXzV5Y2d5VnBCc3M/newspacenyc-workshop-small.jpg);
-}
+	.about-menu-bg{
+		background-image:url(https://e01664e04f761a953c177fc6c099b54b4a0ab988.googledrive.com/host/0B9LVk4xbDIJTRmwzeHdZZERtOGM/newspace-nyc_icon.svg);
+	}
+	.incubator-menu-bg{
+		background-image:url(https://bb422bb78ee5f8bcbb55e34d2e0c79a18dce774e.googledrive.com/host/0B9LVk4xbDIJTXzV5Y2d5VnBCc3M/newspacenyc-workshop-small.jpg);
+	}
 
 .columbia-overlay {
   width: 100%;
