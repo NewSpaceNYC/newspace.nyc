@@ -2940,7 +2940,8 @@ a.readmore {
 }
 
 .articles .blogroll-meta {
-  padding: 0;
+  float: left;
+  padding: 0 13px 0 0 ;
   font-size: 16px;
 }
 
