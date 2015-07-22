@@ -17,6 +17,8 @@
     font-size: 14px;
     color: #fff;
     list-style: circle;
+		margin: 0 33px;
+		width: 33%;
 }
 
 .juicer-feed.loaded{
