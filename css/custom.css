@@ -15,11 +15,13 @@
     float: left;
     text-align: left;
     font-size: 14px;
-    color: #fff;
     list-style: circle;
 		margin: 0 33px;
 		width: 33%;
 }
+	.footer-links a{
+		color: #fff;
+	}
 
 .juicer-feed.loaded{
 	overflow: hidden;
