@@ -11,6 +11,14 @@
 	opacity: 1 !important;
 }
 
+.footer-links{
+    float: left;
+    text-align: left;
+    font-size: 14px;
+    color: #fff;
+    list-style: circle;
+}
+
 .juicer-feed.loaded{
 	overflow: hidden;
 }
