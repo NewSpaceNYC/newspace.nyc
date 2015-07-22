@@ -11,7 +11,7 @@
     <meta name="keywords" content="add,some,general,keywords,here,about,your,site"><!-- Add sites your keywords -->
     <link rel="icon" href="favicon.ico" type="image/x-icon" /><!-- Include a Favicon, (always keep in root of folder) -->
 
-    <title>NewSpace NYC, a community & incubator for commcerial outer-space startups. </title><!-- Your page/site title -->
+    <title>NewSpace NYC Calendar</title><!-- Your page/site title -->
 
     <!-- Load Our CSS - Do not alter the load order -->
     <link href="css/bootstrap.min.css" rel="stylesheet"><!-- Bootstrap Core - ALways load first -->
@@ -28,39 +28,6 @@
     <link href='https://fonts.googleapis.com/css?family=PT+Serif:700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
 
-    <!-- end GSS init -->
-    <!--
-    <style type="text/gss">
-      "container" {
-        width: == ::window[width];
-        height: == 666;
-        center: == ::window[center];
-      }
-      .a1l-div{
-        width: == 147;
-        height: == 147;
-        center: == "container"[center];
-        cy: == "container"[cy];
-      }
-      .csl-div{
-        size: == 333;
-        right: == "container"[right];
-        cy: == "container"[cy];
-      }
-      .spaceangels-div{
-        size: == 333;
-        left: == "container"[x];
-        cy: == "container"[cy];
-      }
-    .a1l-div[center] == ::window[center];
-    /* @h (.spaceangels-div)-30-(.a1l-div)-20-(.csl-div); */
-
-    /* Horizontally align the h1 and p with the image */
-    /* h1[center-x] == p[center-x] == #cassowaryImg[center-x]; */
-
-    </style>
-    <script src="https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/gss/v2.0.0/v2.0.0/gss.min.js"></script>
-    -->
     <!-- Load our fonts individually if IE8+, to avoid faux bold & italic rendering -->
     <!--[if IE]>
     <link href='http://fonts.googleapis.com/css?family=PT+Serif:700' rel='stylesheet' type='text/css'>
@@ -91,9 +58,6 @@
     <script src="js/html5shiv.min.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->
-
-    <!-- Sumo Me script -->
-    <script src="https://load.sumome.com/" data-sumo-site-id="5bdebe83a452625095e39e93833b0c9031f11fd3f338e550cfa0592b458a48e2" async></script>
 
 </head>
 
@@ -138,7 +102,7 @@
                         </li>
                         <li class="col-md-4 col-sm-6 eight">
                             <div class="menubg incubator-menu-bg"></div>
-                            <a href="space-startup-form.html" title="NewSpace NYC Space Startup Incubator Application">
+                            <a href="http://newspace.nyc/space-startup-form.html" title="NewSpace NYC Space Startup Incubator Application">
                               Incubator
                               <span>
                                 Apply to fly on the wings of NewSpace NYC.
@@ -238,7 +202,7 @@
                               <sub> Forum </sub>
                             </li>
                             <li class="fourteen">
-                              <a href="https://www.google.com/calendar/embed?src=bWlhZ2o2MTgyZjR0ZzhhZDdmam03OG5lYzRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" title="NewSpace NYC Calendar" class="calendar" target="_blank">
+                              <a href="calendar.html" title="NewSpace NYC Calendar" class="calendar" target="_blank">
                                 <span class="glyphicon glyphicon-calendar"></span>
                               </a>
                               <sub> Calendar </sub>
@@ -257,12 +221,13 @@
 
         <!-- =============================== End social menu ============================== -->
 
+
     <!-- ============================ Header/fixed sidebar ============================ -->
 
     <header id="header">
 
         <!-- Main menu toggle -->
-        <button class="toggle" data-toggle="modal" data-target="#menumodal">
+        <button class="toggle this" data-toggle="modal" data-target="#menumodal">
             <span class="menu-bar bar-1"></span>
             <span class="menu-bar bar-2"></span>
             <span class="menu-bar bar-3"></span>
@@ -276,10 +241,12 @@
         <!-- Bullet navigation -->
         <nav id="bullets" class="cover">
             <ul>
-                <li class="current-page-item"><a href="#one"></a></li>
-                <li><a href="#wrapper"></a></li>
-                <li><a href="#team"></a></li>
+                <li class="current-page-item"><a href="#start"></a></li>
+                <li><a href="#majortom"></a></li>
                 <li><a href="#three"></a></li>
+                <li><a href="#stats"></a></li>
+                <li><a href="#blogfeed"></a></li>
+                <li><a href="#testimonials"></a></li>
             </ul>
         </nav>
 
@@ -296,221 +263,23 @@
 
     <!-- Leading Page Container -->
     <!-- Always keep all page content wrapped in this div, with id="wrapper" and class="page-content" -->
+    <a name="start" class="absolute-anchor"> . </a>
     <div id="wrapper" class="page-content">
 
         <!-- ============================ Section Start ============================ -->
 
-        <section id="two" class="container wow fadeInUp" data-wow-delay="0.5s">
-            <div class="row padding">
-                <div class="col-xs-12 centertext">
-                    <h3>What are we?</h3>
-                    <hr class="mini central">
-                    <h1>NewSpace NYC is shaping things up for a new era of Space Entrepreneurship.</h1>
-                    <hr class="title">
-                    <!--
-                    <p>Sometime into the expedition, we stumbled across a narrow, dark tunnel. We crawled in and started to make our way further down, and to our surprise, it opened out into the largest, most lucious resource we had ever seen.</p>
-                    -->
+        <section id="two" class="container wow fadeInUp scrollreceive" data-wow-delay="0.5s">
+            <div class="row">
+                <div id="form" class="col-xs-12 centertext padding">
+                    <iframe src="https://www.google.com/calendar/embed?title=NewSpace%20NYC%20Calendar%20&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=4j2iarfh78df76711roevggsqs%40group.calendar.google.com&amp;color=%232F6309&amp;src=miagj6182f4tg8ad7fjm78nec4%40group.calendar.google.com&amp;color=%2323164E&amp;src=o15ptg5bjl3pci76nd0jq501cs%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=America%2FNew_York" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
                 </div>
             </div>
         </section>
 
-        <!-- ============================ Section End ============================== -->
+        <!-- ============================ Header End ============================== -->
 
-        <!-- ============================ Section Start ============================ -->
 
-        <section id="team" class="container-fluid dark-grey-dk">
-            <div class="row clearfix">
-                <ul class="col-md-6 team-avatars">
-                    <li class="wow fadeInUp animated" data-wow-delay="0.2s">
-                      <a href="#tm1" class="active"><img src="https://6c091c47d3c848f0bde8b1b0daf65c8a1922f092.googledrive.com/host/0B0MRQmKm2tbNUkgyUmN3dkIzWUU/sidney-nakahodo.jpg" alt="Sidney Nakahodo"></a>
-                    </li>
-                    <li class="wow fadeInUp animated" data-wow-delay="0.4s">
-                      <a href="#tm2"><img src="https://6c091c47d3c848f0bde8b1b0daf65c8a1922f092.googledrive.com/host/0B0MRQmKm2tbNUkgyUmN3dkIzWUU/aanchal-saxena.jpg" alt="Aanchal Saxena"></a>
-                    </li>
-                    <li class="wow fadeInUp animated" data-wow-delay="0.6s">
-                      <a href="#tm3"><img src="https://6c091c47d3c848f0bde8b1b0daf65c8a1922f092.googledrive.com/host/0B0MRQmKm2tbNUkgyUmN3dkIzWUU/sean-auriti.jpg" alt="Sean Auriti"></a>
-                    </li>
-                    <li class="wow fadeInUp animated" data-wow-delay="0.8s">
-                      <a href="#tm4"><img src="https://6c091c47d3c848f0bde8b1b0daf65c8a1922f092.googledrive.com/host/0B0MRQmKm2tbNUkgyUmN3dkIzWUU/mike-facebook.jpg" alt="Mike Mooring"></a>
-                    </li>
-                    <li class="wow fadeInUp animated" data-wow-delay="1.0s">
-                      <a href="#tm5"><img src="https://6c091c47d3c848f0bde8b1b0daf65c8a1922f092.googledrive.com/host/0B0MRQmKm2tbNUkgyUmN3dkIzWUU/khaki-rodway.jpg" alt="Khaki Rodway"></a>
-                    </li>
-                    <li class="wow fadeInUp animated" data-wow-delay="1.2s">
-                      <a href="#tm6"><img src="https://6c091c47d3c848f0bde8b1b0daf65c8a1922f092.googledrive.com/host/0B0MRQmKm2tbNUkgyUmN3dkIzWUU/Kjell.jpg" alt="Kjell Hegstad"></a>
-                    </li>
-                    <li class="wow fadeInUp animated" data-wow-delay="1.4s">
-                      <a href="#tm7"><img src="https://6c091c47d3c848f0bde8b1b0daf65c8a1922f092.googledrive.com/host/0B0MRQmKm2tbNUkgyUmN3dkIzWUU/Kevin.jpg" alt="Kevin Liu"></a>
-                    </li>
-                    <li class="wow fadeInUp animated" data-wow-delay="1.6s">
-                      <a href="#tm8"><img src="https://6c091c47d3c848f0bde8b1b0daf65c8a1922f092.googledrive.com/host/0B0MRQmKm2tbNUkgyUmN3dkIzWUU/chris-cleveland.png" alt="Chris Cleveland"></a>
-                    </li>
-                    <li class="wow fadeInUp animated" data-wow-delay="1.8s">
-                      <a href="#tm9"><img src="https://6c091c47d3c848f0bde8b1b0daf65c8a1922f092.googledrive.com/host/0B0MRQmKm2tbNUkgyUmN3dkIzWUU/Jinwei.jpg" alt="Jinwei Pan"></a>
-                    </li>
-                </ul>
-                <div class="col-md-6 team-content">
-                    <div id="tm1" class="team-meta active">
-                        <h3>Sidney Nakahodo</h3>
-                        <hr class="mini central">
-                        <p>Columbia University Lecturer</p>
-                        <sub>former World Bank</sub>
-                        <br/>
-                        <!-- <cite><a href="#"><span class="icon-twitter"></span> @</a></cite> -->
-                    </div>
-                    <div id="tm2" class="team-meta">
-                        <h3>Aanchal Saxena</h3>
-                        <hr class="mini central">
-                        <p>Columbia University Student</p>
-                        <sub>former Microsoft</sub>
-                        <br/>
-                        <!-- <cite><a href="#"><span class="icon-twitter"></span> @</a></cite> -->
-                    </div>
-                    <div id="tm3" class="team-meta">
-                        <h3>Sean Auriti</h3>
-                        <hr class="mini central">
-                        <p>AlphaOneLabs</p>
-                        <cite><a href="https://twitter.com/alphaonelabs"><span class="icon-twitter"></span> @AlphaOneLabs</a></cite>
-                    </div>
-                    <div id="tm4" class="team-meta">
-                        <h3>Michael Mooring</h3>
-                        <hr class="mini central">
-                        <p>Solar System Express</p>
-                        <br/>
-                        <cite><a href="https://twitter.com/mikeumus"><span class="icon-twitter"></span> @mikeumus</a></cite>
-                        <cite><a href="https://twitter.com/solx2010"><span class="icon-twitter"></span> @Solx2010</a></cite>
-                    </div>
-                    <div id="tm5" class="team-meta">
-                        <h3>Khaki Rodway</h3>
-                        <hr class="mini central">
-                        <sub>former XCOR Aerospace</sub>
-                        <!-- <cite><a href="#"><span class="icon-twitter"></span> @</a></cite> -->
-                    </div>
-                    <div id="tm6" class="team-meta">
-                        <h3>Kjell Hegstad</h3>
-                        <hr class="mini central">
-                        <p>Digital Vikings</p>
-                        <sub>former CTO of ING bank</sub>
-                        <br/>
-                        <!-- <cite><a href="#"><span class="icon-twitter"></span> @</a></cite> -->
-                    </div>
-                    <div id="tm7" class="team-meta">
-                        <h3>Kevin Liu</h3>
-                        <hr class="mini central">
-                        <p>Columbia Business School</p>
-                        <sub>Student</sub>
-                    </div>
-                    <div id="tm8" class="team-meta">
-                        <h3>Chris Cleveland</h3>
-                        <hr class="mini central">
-                        <a target="_blank" href="http://pixm.net">
-                          <p>Pixm</p>
-                        </a>
-                        <sub> founder </sub>
-                        <!-- <cite><a href="#"><span class="icon-twitter"></span> @</a></cite> -->
-                    </div>
-                    <div id="tm9" class="team-meta">
-                        <h3>Jinwei Pan</h3>
-                        <hr class="mini central">
-                        <p>Engineer</p>
-                        <!-- <cite><a href="#"><span class="icon-twitter"></span> @</a></cite> -->
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================ Section End ============================== -->
-
-        <!-- ============================ Section Start ============================ -->
-
-        <!--
-        <section id="three" class="white">
-            <div class="container padding">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <h3>Our Company Timeline</h3>
-                        <hr class="mini">
-                        <p>Sometime into the expedition, we stumbled across a narrow, dark tunnel. We crawled in and started to make our way further down, and to our surprise, it opened out into the largest, most lucious rainforest we had ever seen.</p>
-                    </div>
-                </div>
-
-                <br>
-                <br>
-
-                <div class="row">
-                    <div class="timeline-centered">
-                        <div class="line"></div>
-                        <div class="present">Now</div>
-                        <div class="dot_tp"></div>
-                        <div class="born">Born</div>
-                        <div class="dot_bt"></div>
-                        <article class="timeline-entry">
-                            <div class="timeline-entry-inner">
-                                <div class="timeline-icon bg-secondary"></div>
-                                <div class="timeline-label">
-                                    <h3>July 2014</h3>
-                                    <p>We deliver the UX conference of the century <strong>from space.</strong></p>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="timeline-entry">
-                            <div class="timeline-entry-inner">
-                                <div class="timeline-icon bg-success"></div>
-                                <div class="timeline-label">
-                                    <h3>June 2014</h3>
-                                    <p>We grew our team and added <strong>5 new staff.</strong></p>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="timeline-entry">
-                            <div class="timeline-entry-inner">
-                                <div class="timeline-icon bg-warning"></div>
-                                <div class="timeline-label">
-                                    <h3>May 2014</h3>
-                                    <p>Company onboards Apple as <strong>first major client.</strong></p>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="timeline-entry">
-                            <div class="timeline-entry-inner">
-                                <div class="timeline-icon bg-secondary"></div>
-                                <div class="timeline-label">
-                                    <h3>April 2014</h3>
-                                    <p>We win award for <strong>Best Startup.</strong></p>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="timeline-entry">
-                            <div class="timeline-entry-inner">
-                                <div class="timeline-icon bg-success"></div>
-                                <div class="timeline-label">
-                                    <h3>April 2014</h3>
-                                    <p>Our company is <strong>born,</strong> yes!</p>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="elementvid" class="container-fluid"></section>
-
-        <section class="white">
-            <div class="container padding">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <h3>Our Company Timeline</h3>
-                        <hr class="mini">
-                        <p>Sometime into the expedition, we stumbled across a narrow, dark tunnel. We crawled in and started to make our way further down, and to our surprise, it opened out into the largest, most lucious resource we had ever seen.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================ Section End ============================== -->
-
-        <!-- =============================== Footer ================================ -->
+        <!-- ============================ Footer =================================== -->
 
         <footer class="padding">
             <div class="container">
@@ -545,7 +314,6 @@
                 </div>
             </div>
         </footer>
-
     <!-- / END page #wrapper -->
     </div>
 
@@ -556,24 +324,7 @@
     <script src="js/jquery.nav.js"></script><!-- Left-hand bullet navigation -->
     <script src="js/jquery.nicescroll.min.js"></script><!-- Scrollbars for whole page and main navigation -->
     <script src="js/jquery.easing.min.js"></script><!-- Easing plugin, for opacity fade on menu background images -->
-    <script src="js/jquery.fs.wallpaper.js"></script><!-- Video plugin -->
     <script src="js/scripts.js"></script><!-- Custom JS functions - always load last -->
-
-    <!-- Page-specific JS functions - these are functions that only occur on this specific page, so we DON'T want these placed in our scripts.js file as this file is loaded on every page for global site functions.  -->
-
-    <!-- Initialize background video in hero section, (above the fold) -->
-    <script>
-        $(document).ready(function() {
-            $("#elementvid").wallpaper({
-                source: {
-                    poster: "video/about-fallback.jpg",
-                    mp4:    "video/about.mp4",
-                    ogg:    "video/about.ogv",
-                    webm:   "video/about.webm"
-                }
-            });
-        });
-    </script>
 
     <!-- ========== Insert your Google Analytics code below this line ========== -->
 
