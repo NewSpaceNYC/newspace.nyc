@@ -11,6 +11,16 @@
 	opacity: 1 !important;
 }
 
+  section#two{
+    background: #01021F url(https://2433134151e90f5019e3c174c9c5eea64ec93461.googledrive.com/host/0B9LVk4xbDIJTUXlEdm50ZkR4NzA)center no-repeat;
+    height: 715px;
+    width: 100%;
+  }
+  
+.ursa-btn{
+    margin: 425px 312px 0 0;
+}
+
 .footer-links{
     float: left;
     text-align: left;
@@ -146,6 +156,9 @@ pre{
 	#stats .container{
 		margin-top: 244px;
 	}
+	.ursa-btn {
+    	margin: 425px 653px 0 0;
+	}
 }
 
  /* ------------------- _________________________ mobile styles _________________________ ------------------- */
@@ -181,4 +194,12 @@ pre{
 		padding: 0px;
 		margin: -26px 8px -25px 10px !important;
 	}
+	  section#two{
+    background: #01021F url(https://2433134151e90f5019e3c174c9c5eea64ec93461.googledrive.com/host/0B9LVk4xbDIJTUXlEdm50ZkR4NzA)center no-repeat;
+    height: 715px;
+    width: 100%;
+  }
+  section#two{
+  	display:none;
+  }
 }
