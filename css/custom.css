@@ -11,14 +11,19 @@
 	opacity: 1 !important;
 }
 
-  section#two{
-    background: #01021F url(https://2433134151e90f5019e3c174c9c5eea64ec93461.googledrive.com/host/0B9LVk4xbDIJTUXlEdm50ZkR4NzA)center no-repeat;
-    height: 715px;
+  section#two.slogan{
+    background: #01021F url(https://6d6f7b2a35bf3893e32e9f0ca2de11a6072aa9fd.googledrive.com/host/0B9LVk4xbDIJTakF6VVJPc1JVSkk) center no-repeat;
+    height: 940px;
     width: 100%;
   }
-  
-.ursa-btn{
-    margin: 425px 312px 0 0;
+
+.ursa-youtube{
+	margin: 377px auto auto;
+    display: block;
+}
+
+.circle-bullets{
+	list-style: circle;
 }
 
 .footer-links{
@@ -194,12 +199,12 @@ pre{
 		padding: 0px;
 		margin: -26px 8px -25px 10px !important;
 	}
-	  section#two{
+  section#two.slogan{
     background: #01021F url(https://2433134151e90f5019e3c174c9c5eea64ec93461.googledrive.com/host/0B9LVk4xbDIJTUXlEdm50ZkR4NzA)center no-repeat;
     height: 715px;
     width: 100%;
   }
-  section#two{
+  section#two.slogan{
   	display:none;
   }
 }
