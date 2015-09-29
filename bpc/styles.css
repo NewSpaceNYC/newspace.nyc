@@ -23,6 +23,10 @@ html, body {
 .right{
   float:right;
 }
+.absolute{
+  position:absolute;
+}
+
 .white-bg{
   background: #fff;
 }
@@ -54,13 +58,32 @@ header.main-header{
   height: 231px;
   width: 215px;
 }
+header.two-decades{
+  right: 0;
+  background-color: #506F9E;
+}
+.newspace-conf-logo{
+  height: 163px;
+  width: 140px;
+}
 .purple-card{
   background:url(https://76952e8562c625e7d2ca13fff233c2d66e9161d8.googledrive.com/host/0B9LVk4xbDIJTVzhFcUlGM1ZTVWM);
-  color: #fff;
+}
+.hero-card{
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  color: #000;
 }
 .blue-bg{
   background:url(https://e82285d1eb0c7627251292968875625df4d01715.googledrive.com/host/0B9LVk4xbDIJTWnRDNkYtNGNIQWs);
 }
+  .mdl-card.blue-bg{
+    color:#fff;
+  }
+  .mdl-card.blue-bg .mdl-card__actions{
+    background-color: rgb(80, 111, 158);
+  }
 .mdl-demo .mdl-layout__header-row {
   padding-left: 40px;
 }
@@ -177,6 +200,8 @@ header.main-header{
           justify-content: center;
 }
 .mdl-demo section > .section__play-btn {
+  left: 0;
+  bottom: 0;
   min-height: 200px;
 }
 .mdl-demo section > header > .material-icons {
