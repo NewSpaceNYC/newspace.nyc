@@ -1,0 +1,366 @@
+<!doctype html>
+<!--
+  NewSpace NYC BPC
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NewSpace NYC BPC</title>
+    
+<!--
+
+    NS   N  NSNSNS
+    N S  N  N
+    N  S N  NSNSNS    Hi :)
+    N   SN       S
+    N    S  NSNSNS
+    
+-->
+
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="NewSpace NYC BPC">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" /><!-- Include a Favicon, (always keep in root of folder) -->
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="material.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+  </head>
+  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="main-header mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row"></div>
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+          <!--<h3>Name &amp; Title</h3>-->
+          <a href="#home">
+            <img class="logo-svg" src="https://43442400de12e16da9b3f37ae85b81f26c747a33.googledrive.com/host/0B9LVk4xbDIJTeExfakNCVXVpMGs" alt="New Space NYC Business Plan Competition logo"/>
+          </a>
+        </div>
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row"></div>
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark blue-bg">
+          <a href="#home" class="mdl-layout__tab is-active">Home</a>
+          <a id="bpc-detail-link" href="#bpc-detail" class="mdl-layout__tab">About the BPC</a>
+          <a href="http://www.meetup.com/NewSpace-NYC/events/225224233/" class="mdl-layout__tab">Attend</a>
+          <a href="#bpc-detail" class="mdl-layout__tab">Compete</a>
+          <a href="http://newspacebpc.com/competition-rules/" class="mdl-layout__tab">RULES</a>
+          <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
+          <i class="material-icons" role="presentation">add</i>
+            <span class="visuallyhidden">Add</span>
+          </button>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <div class="mdl-layout__tab-panel is-active mdl-color--grey-100" id="home">
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone white-bg mdl-color-text--white">
+              <img class="sff-logo" src="https://f63657f0d9c37417f8833f92c864ae65c7819f7d.googledrive.com/host/0B9LVk4xbDIJTLV9oVU9HSVE0Qjg" alt="Space Frontier Foundation logo"/>
+            <!--<i class="material-icons">play_circle_filled</i>-->
+            </header>
+            <div class="purple-card mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+              <div class="mdl-card__supporting-text">
+                <h4>NewSpace BPC</h4>
+                NewSpace NYC is organizing a Business Plan Competition (BPC) in partnership with the Space Frontier Foundation, Digital Vikings, Space Angels Network, OrbitalATK, Heinlein Prize Trust and the Space Finance Group.
+              </div>
+              <div class="mdl-card__actions">
+                <a href="#bpc-detail" class="mdl-button right">BPC in Detail</a>
+              </div>
+            </div>
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn1">
+              <i class="material-icons">more_vert</i>
+            </button>
+            <!--<ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn1">
+              <li class="mdl-menu__item">Lorem</li>
+              <li class="mdl-menu__item" disabled>Ipsum</li>
+              <li class="mdl-menu__item">Dolor</li>
+            </ul>-->
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                <h4 class="mdl-cell mdl-cell--12-col">Details</h4>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle mdl-color--primary">
+                    <i class="material-icons dollar-icon">attach_money</i>
+                  </div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>GRAND PRIZE: $5,000</h5>
+                  Pitch-off against the East Coast's finest space startups and be judged by the bigshots for a chance at $5k and a trip to the NewSpace Conference 2016 to do it all again for a chance at $100k. <a href="#prize">Prize Details</a>
+                </div>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle mdl-color--primary">
+                    <i class="material-icons mic-icon">settings_voice</i>
+                  </div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <br/>
+                  <h5>Rock the Mic Right</h5>
+                  Present your startup in front of over 100 attendees, but make sure you're not bumped by a technicality. <a href="#bpc-detail">Rules</a>
+                </div>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle mdl-color--primary">
+                    <i class="material-icons face-icon">mood</i>
+                  </div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <br/>
+                  <h5>Come meet NYC's Space Startup Community</h5>
+                  There's more #newspace startups in New York City than you might think. Our comunity is passionate and knowledgeable on the newspace industry. Come meet us. <a href="#">RSVP Here</a>
+                </div>
+              </div>
+              <div class="mdl-card__actions">
+                <a href="#bpc-detail" class="mdl-button right">More about the BPC</a>
+              </div>
+            </div>
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn2">
+              <i class="material-icons">more_vert</i>
+            </button>
+            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn2">
+              <li class="mdl-menu__item">Lorem</li>
+              <li class="mdl-menu__item" disabled>Ipsum</li>
+              <li class="mdl-menu__item">Dolor</li>
+            </ul>
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Technology</h4>
+                Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse. Pariatur occaecat nisi laboris tempor laboris eiusmod qui id Lorem esse commodo in. Exercitation aute dolore deserunt culpa consequat elit labore incididunt elit anim.
+              </div>
+              <div class="mdl-card__actions">
+                <a href="#bpc-detail" class="mdl-button right">More about the BPC</a>
+              </div>
+            </div>
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn3">
+              <i class="material-icons">more_vert</i>
+            </button>
+            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn3">
+              <li class="mdl-menu__item">Lorem</li>
+              <li class="mdl-menu__item" disabled>Ipsum</li>
+              <li class="mdl-menu__item">Dolor</li>
+            </ul>
+          </section>
+          <section class="section--footer mdl-color--white mdl-grid">
+            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+              <div class="section__circle-container__circle mdl-color--accent section__circle--big"></div>
+            </div>
+            <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+              <h5>Lorem ipsum dolor sit amet</h5>
+              Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
+            </div>
+            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+              <div class="section__circle-container__circle mdl-color--accent section__circle--big"></div>
+            </div>
+            <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+              <h5>Lorem ipsum dolor sit amet</h5>
+              Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
+            </div>
+          </section>
+        </div>
+        <div class="mdl-layout__tab-panel" id="bpc-detail">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h4>About the BPC</h4>
+                 NewSpace NYC is organizing a Business Plan Competition (BPC) in partnership with the Space Frontier Foundation, Digital Vikings, Space Angels Network, OrbitalATK, Heinlein Prize Trust and the Space Finance Group.
+               <ul class="toc">
+                <h5>Contents</h5>
+                <a href="#general-infomation">General Information </a>
+                <a href="#judging">Judging</a>
+                <a href="#bpc-guidlines">Business Plan Guidelines</a>
+                <a href="#dates">Important Dates</a>
+                <a href="#prize">Prize</a>
+              </ul>
+
+              <h5 id="general-infomation">General Information</h5>
+              <p>
+              The competition is intended to simulate the real world process of entrepreneurs soliciting start up funds from early stage investors and venture capital firms. The judges function as venture capital investors deciding on which business venture they would most likely fund. The quality of the idea, the strength of the management team, and the clarity and persuasiveness of the written plan and oral presentation, all influence the judge’s decisions. Ultimately, the winning team should be the team in which the judges would most likely invest their money. Most of the judges come from the investment community or have created their own startup venture. Their ranking of the top teams is guided by the scorecard but should be consistent with the approach that would be used by investors.
+              </p>
+              <p>
+              Teams are not required to reveal the exact desired terms of the deal (i.e., their proposed company valuation and percentage of company being offered to investors). However, some investors prefer to have this information upfront (while some investors feel it is not as important until later). We recommend that teams be prepared to address questions about their terms, but it is up to the team to decide how they want to answer these questions. During the competition, judges are asked to evaluate each team individually and should not discuss their evaluation with other judges until all judges’ evaluation forms have been submitted.
+              </p>
+              <br/>
+
+              <p id="judging">
+                <h4>Judging</h4>
+                <h5>Evaluation criteria</h5>
+              </p>
+              The judges will evaluate each Business Plan based on the following:
+              <ul>
+                <li>Executive Summary: Clear, exciting and effective as a stand-alone overview of the plan</li>
+                <li>Products or Services: Description, features and benefits, pricing, current stage of development and proprietary position.</li>
+                <li>Market and Marketing Strategy: Description of market, competitive analysis, needs identification, unique capabilities and sales/promotion.
+</li>
+                <li>Management: Backgrounds of key individuals, ability to execute strategy, personnel needs, organizational structure.</li>
+                <li>Summary Financials: Presented in summary form, easy to read and understand consistent with plan and effective.</li>
+                <li>Offering and Viability: Overall proposal and terms to investors – is the investment opportunity clear and compelling?</li>
+                <li>Is the opportunity practical for a student team to accomplish and near-term space enabling?</li>
+              </ul>
+
+              <h6>Assessment</h6>
+              <strong>PHASE I: Initial Review of Deliverables (70 points)</strong>
+              <ul>
+                <li>Pitch Deck – 10 Points</li>
+                <li>Executive Summary – 20 Points</li>
+                <li>Competitive Analysis – 20 Points</li>
+                <li>Pro-Forma Financials – 20 Points</li>
+              </ul>
+              
+              <strong>PHASE II: Live Final Presentations (30 points)</strong>
+              <ul>
+              <li>Team Presentation of Pitch Deck – 10-minutes</li>
+              <li>Q&A from Judges – 10-minutes</li>
+              </ul>
+              
+              <h6>Judges (to be confirmed)</h6>
+              Judges will be asked to remove themselves from judging a plan if they have a conflict of interest, such as a pre-existing family or business relationship with an entrant.
+              <ul>
+                <li>Garrett Schneider (Independent Consultant)</li>
+                <li>Chad Anderson (Space Angels Network)</li>
+                <li>Hoyt Davidson (NearEarth LLC)</li>
+                <li>Josh Benamram (Bessemer Ventures)</li>
+                <li>Chris Cummins (NanoRacks)</li>
+                <li>Will Portius (RRE Ventures)</li>
+              </ul>
+              <br/>
+
+              <h5 id="bpc-guidlines">Business Plan guidelines</h5>
+              <p>
+                Your business plan should include all sections outlined in the Elements of a Business plan session below. See the US Small Business Administration (SBA) "How to write a Business Plan” for guidelines. 
+              </p>
+              <ul>
+                <li>Your Business Plan, including the financials, must be uploaded as ONE (1) file in PDF format.</li>
+                <li>It should be no longer than 20 (one-sided) pages, excluding financial statements.</li>
+                <li>Use Arial font no less than 10pt with 1-inch margins. </li>
+              </ul>
+               <h6>The Business Plan must contain the following:</h6>
+              <ul>
+                <li> A one page overview to accompany the business plan following this format .</li>
+                <li>Cover Page with the name of the applicant, street address, telephone number, and email address of the individual entrant(s) and team leader.</li>
+                <li>Team entries must include the names of all team members, and the street address, telephone number, and email address of one designated entrant.</li>
+                <li>A Table of Contents</li>
+                <li>One-page Executive Summary</li>
+                <li>Page Numbers throughout the business plan.</li>
+              </ul>
+               <br/>
+               
+              <h4 id="dates"> Important Dates </h4>
+              <ul>
+                <li> Business Plans must be uploaded to the NewSpace NYC Business Plan Competition site no later than midnight on October 22, 2015.</li>
+                <li>The panel of judges will review submitted business plans.</li>
+                <li>The winners will be announced on November 20, 2015  </li>
+              </ul>
+              <br/>
+              
+              <h4 id="prize">Prize</h4>
+              <p>
+                The winning team will be awarded five thousand dollars and attend a private, two-day, Boot Camp session to prepare for their Shark Tank-style pitch to investors in the national competition that will be held on July 20, 2016 in Seattle, at the Space Frontier Foundation’s annual NewSpace Conference.
+              </p>
+              <br/><br/><br/>
+            </div>
+          </section>
+        </div>
+        <footer class="mdl-mega-footer">
+          <div class="mdl-mega-footer--middle-section">
+            <div class="mdl-mega-footer--drop-down-section">
+              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer--heading">About the BPC</h1>
+              <ul class="mdl-mega-footer--link-list">
+                <li><a href="#bpc-detail">About</a></li>
+                <li><a href="#bpc-detail">Dates</a></li>
+                <li><a href="#bpc-detail">Terms</a></li>
+                <li><a href="#updates">Updates</a></li>
+              </ul>
+            </div>
+            <div class="mdl-mega-footer--drop-down-section">
+              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer--heading">Details</h1>
+              <ul class="mdl-mega-footer--link-list">
+                <li><a href="http://newspace.nyc">NewSpace NYC</a></li>
+                <li><a href="https://spacefrontier.org/">Space Frontier Foundation</a></li>
+                <li><a href="http://newspacebpc.com/resources/">BPC Resources</a></li>
+              </ul>
+            </div>
+            <div class="mdl-mega-footer--drop-down-section">
+              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer--heading">More</h1>
+              <ul class="mdl-mega-footer--link-list">
+                <li><a href="http://newspacebpc.com/regional-competitions/">Regional Competitions</a></li>
+                <li><a href="https://newspace.spacefrontier.org/">NewSpace 2016 Conference</a></li>
+                <li><a href="http://discuss.newspace.nyc/">Newspace NYC Forum</a></li>
+              </ul>
+            </div>
+            <div class="mdl-mega-footer--drop-down-section">
+              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer--heading">FAQ</h1>
+              <ul class="mdl-mega-footer--link-list">
+                <li><a href="http://newspacebpc.com/competition-rules/">BPC Rules</a></li>
+                <li><a href="#bpc-detail">Guidelines</a></li>
+                <li><a href="http://newspace.nyc/contact.html">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-mega-footer--bottom-section">
+            <div class="mdl-logo">
+              &copy;2015 NewSpace NYC Public Benefit Corpotation.
+            </div>
+            <ul class="mdl-mega-footer--link-list">
+              <li><a href="#">&copy;2015 Space Frontier Foundation.</a></li>
+              <li><a href="#">All Rights Reserved.</a></li>
+              <!--<li><a href="#">Privacy and Terms</a></li>-->
+            </ul>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <a href="http://www.meetup.com/NewSpace-NYC/events/225224233/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Attend Event</a>
+    <script src="material.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="../js/jquery.simulate.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
