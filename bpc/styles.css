@@ -14,7 +14,21 @@
  * limitations under the License.
  * https://www.google.com/design/icons/#ic_settings_voice
  */
-
+#tt2{
+  position: absolute;
+  right: 56px;
+  top: -35px;
+}
+::-webkit-scrollbar {
+    width: 1em;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
 html, body {
   font-family: 'Roboto', 'Helvetica', sans-serif;
   margin: 0;
@@ -26,7 +40,9 @@ html, body {
 .absolute{
   position:absolute;
 }
-
+#loading section{
+  height: 999px;
+}
 .white-bg{
   background: #fff;
 }
@@ -54,12 +70,40 @@ html, body {
 header.main-header{
   background: url(https://0dd66ee2bffcabcede20aa1d1e0978f7d25a3a3b.googledrive.com/host/0B9LVk4xbDIJTNzlwcW4wSnRhaE0) 216px -1131px;
 }
+#btn1,#btn2,#btn3{
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  z-index: 2;
+}
+.hidden{
+  opacity: 0;
+}
+.iframe{
+  border: 0;
+  width: 100%;
+}
+.compete-iframe{
+  height: 999px;
+}
+.sff-form-iframe{
+  height: 777px;
+}
+.privacy-iframe{
+  height: 4800px;
+}
 .sff-logo{
   height: 231px;
   width: 215px;
 }
+.sfg-logo{
+  position: absolute;
+  right: 8%;
+  width: 25% !important;
+}
 header.two-decades{
   right: 0;
+  background-position: 0;
   background-color: #506F9E;
 }
 .newspace-conf-logo{
@@ -68,12 +112,32 @@ header.two-decades{
 }
 .purple-card{
   background:url(https://76952e8562c625e7d2ca13fff233c2d66e9161d8.googledrive.com/host/0B9LVk4xbDIJTVzhFcUlGM1ZTVWM);
+  color: #fff;
 }
+  .purple-card h3{
+    color: #fff;
+    text-align: CENTER;
+  }
+.sponsors{
+  color:#D2D2D2;
+}
+  .sponsors img{
+    width: 77%;
+  }
+  .sponsors .mdl-cell mdl-cell--4-col{
+    margin: auto;
+  }
+  .sponsors .mdl-demo section .section__text{
+    padding: 0 77px;
+  }
 .hero-card{
   bottom: 0;
   right: 0;
   background: #fff;
   color: #000;
+}
+.mdl-card__actions{
+  background-color: rgba(214, 210, 218, 0.17);
 }
 .blue-bg{
   background:url(https://e82285d1eb0c7627251292968875625df4d01715.googledrive.com/host/0B9LVk4xbDIJTWnRDNkYtNGNIQWs);
@@ -251,6 +315,8 @@ header.two-decades{
 }
 .mdl-demo section .section__text a {
   text-decoration: none;
+  font-weight: bold;
+  color: yellow;
 }
 .mdl-demo section .section__circle-container > .section__circle-container__circle {
   width: 64px;

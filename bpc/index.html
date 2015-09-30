@@ -60,15 +60,15 @@
     <link rel="stylesheet" href="material.min.css">
     <link rel="stylesheet" href="styles.css">
     <style>
-    #view-source {
-      position: fixed;
-      display: block;
-      right: 0;
-      bottom: 0;
-      margin-right: 40px;
-      margin-bottom: 40px;
-      z-index: 900;
-    }
+      #attend-event {
+        position: fixed;
+        display: block;
+        right: 0;
+        bottom: 0;
+        margin-right: 40px;
+        margin-bottom: 40px;
+        z-index: 900;
+      }
     </style>
   </head>
   <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
@@ -85,16 +85,21 @@
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark blue-bg">
           <a href="#home" class="mdl-layout__tab is-active">Home</a>
           <a id="bpc-detail-link" href="#bpc-detail" class="mdl-layout__tab">About the BPC</a>
-          <a href="http://www.meetup.com/NewSpace-NYC/events/225224233/" class="mdl-layout__tab">Attend</a>
-          <a href="#bpc-detail" class="mdl-layout__tab">Compete</a>
-          <a href="http://newspacebpc.com/competition-rules/" class="mdl-layout__tab">RULES</a>
-          <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
-          <i class="material-icons" role="presentation">add</i>
+          <a id="attend-header-link" href="#loading" class="mdl-layout__tab">Attend</a>
+          <a id="compete-link" href="#compete" class="mdl-layout__tab">Compete</a>
+          <a id="privacy-link" href="#privacy" class="hidden mdl-layout__tab">Privacy</a>
+          <a id="bpc-rules-link" href="#loading" class="mdl-layout__tab">RULES</a>
+          <button id="tt2" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
+            <!-- Large Tooltip -->
+          <i class="material-icons" role="presentation">terrain</i>
             <span class="visuallyhidden">Add</span>
           </button>
+          <div class="mdl-tooltip mdl-tooltip--large" for="tt2">
+          Compete
+          </div>
         </div>
       </header>
-      <main class="mdl-layout__content">
+      <main id="hero" class="mdl-layout__content">
         <div class="mdl-layout__tab-panel is-active mdl-color--grey-100" id="home">
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <img src="https://74f04378eb61b954afe1c2dea62795fafff19be9.googledrive.com/host/0B9LVk4xbDIJTR1JUdklXTWVCS3M" alt="NewSpace 2015 Conference BPC picture"/>
@@ -111,16 +116,16 @@
                 <a href="#bpc-detail" class="mdl-button right">BPC in Detail</a>
               </div>
             </div>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn1">
+            <a href="#hero" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn1">
               <i class="material-icons">more_vert</i>
-            </button>
+            </a>
             <!--<ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn1">
               <li class="mdl-menu__item">Lorem</li>
               <li class="mdl-menu__item" disabled>Ipsum</li>
               <li class="mdl-menu__item">Dolor</li>
             </ul>-->
           </section>
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+          <section id="details-section" class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="mdl-card mdl-cell mdl-cell--12-col blue-bg">
               <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
                 <h4 class="mdl-cell mdl-cell--12-col">Details</h4>
@@ -158,54 +163,110 @@
                 <a href="#bpc-detail" class="mdl-button right">More about the BPC</a>
               </div>
             </div>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn2">
+            <a href="#details-section" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn2">
               <i class="material-icons">more_vert</i>
-            </button>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn2">
+            </a>
+            <!--<ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn2">
               <li class="mdl-menu__item">Lorem</li>
               <li class="mdl-menu__item" disabled>Ipsum</li>
               <li class="mdl-menu__item">Dolor</li>
-            </ul>
+            </ul>-->
           </section>
+          <span id="newspace-section"> </span>
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header class="two-decades section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone white-bg mdl-color-text--white">
+            <header class="two-decades blue-bg section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone white-bg mdl-color-text--white">
               <img class="newspace-conf-logo" src="https://newspace.spacefrontier.org/static/img/ns15-logo.png" alt="NewSpace Conference 2016 logo"/>
             <!--<i class="material-icons">play_circle_filled</i>-->
             </header>
             <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
               <div class="mdl-card__supporting-text">
                 <h4>Two Decades of NewSpace</h4>
-                Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse. Pariatur occaecat nisi laboris tempor laboris eiusmod qui id Lorem esse commodo in. Exercitation aute dolore deserunt culpa consequat elit labore incididunt elit anim.
+                The inaugural NewSpace conference was held in 2006 and builds on two decades of other successful Space Frontier Foundation conferences. The NewSpace conference also currently acts as the annual meeting site for both the Advocates and the Board of Directors.
               </div>
               <div class="mdl-card__actions">
-                <a href="#bpc-detail" class="mdl-button right">More about the BPC</a>
+                <a href="https://newspace.spacefrontier.org/" class="mdl-button right">NewSpace 2016</a>
               </div>
             </div>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn3">
+            <a href="#newspace-section" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn3">
               <i class="material-icons">more_vert</i>
-            </button>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn3">
+            </a>
+            <!--<ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn3">
               <li class="mdl-menu__item">Lorem</li>
               <li class="mdl-menu__item" disabled>Ipsum</li>
               <li class="mdl-menu__item">Dolor</li>
-            </ul>
+            </ul>-->
           </section>
-          <section class="section--footer mdl-color--white mdl-grid">
-            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+          <section class="sponsors purple-card section--footer mdl-color--white mdl-grid">
+            <div class="mdl-card__supporting-text">
+                <h3>BPC Sponsors</h3>
+            </div>
+            <!--<div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+              <div class="section__circle-container__circle mdl-color--accent section__circle--big"></div>
+            </div>-->
+            <div class="mdl-grid">
+              <div class="mdl-cell mdl-cell--4-col">
+                <img src="https://fb72f9a24985fe253b8d4cab3fe4eff74a21e215.googledrive.com/host/0B9LVk4xbDIJTNGJFNUI5NmZWc1E" alt="Digital Vikings logo white"/>
+              </div>
+              <div class="mdl-cell mdl-cell--4-col">
+                <img src="https://a0889dbe53ceadab16437294cad1ddbc206fe0c8.googledrive.com/host/0B9LVk4xbDIJTQXctWjgzYWRMb00" alt="Orbital ATK blue logo"/>
+              </div>
+              <div class="mdl-cell mdl-cell--4-col">
+                <img src="https://eb9d1b7aec180bdd1449502ff3386f80d6eb15f8.googledrive.com/host/0B9LVk4xbDIJTUThBVzI1S2NqbkE" alt="Space Angels Network silver logo"/>
+              </div>
+              <div class="mdl-cell mdl-cell--4-col">
+                <img class="sfg-logo" src="https://38d2c2f10e018f325eed46f22de372c946bf10bd.googledrive.com/host/0B9LVk4xbDIJTZS1Ick5FTmROWWc" alt="Space Finance Group blue logo"/>
+              </div>
+              <div class="mdl-cell mdl-cell--4-col">
+                <img src="https://6bdb0bb64aab9c6143ce4dc7a4447dc2c11e918a.googledrive.com/host/0B9LVk4xbDIJTaWR6dXVVZTQxWTg" alt="HTP logo"/>
+              </div>
+            </div>
+            <!--<div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+              <h5>Lorem ipsum dolor sit amet</h5>
+              <p>
+              Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
+              </p>
+            </div>
+            <!--<div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
               <div class="section__circle-container__circle mdl-color--accent section__circle--big"></div>
             </div>
             <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
               <h5>Lorem ipsum dolor sit amet</h5>
+              <p>
               Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
-            </div>
-            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-              <div class="section__circle-container__circle mdl-color--accent section__circle--big"></div>
+              </p>
             </div>
             <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
               <h5>Lorem ipsum dolor sit amet</h5>
+              <p>
               Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
+              </p>
+            </div>-->
+            <!--<div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+              <div class="section__circle-container__circle mdl-color--accent section__circle--big"></div>
+            </div>
+            <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+              <img src="https://eb9d1b7aec180bdd1449502ff3386f80d6eb15f8.googledrive.com/host/0B9LVk4xbDIJTUThBVzI1S2NqbkE" alt="Space Angels Network silver logo"/>
+              <h5>Lorem ipsum dolor sit amet</h5>
+              <p>
+              Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
+              </p>
+            </div>-->
+          </section>
+        </div>
+        <div class="mdl-layout__tab-panel" id="loading">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h4>Loading...</h4>
+              <!-- MDL Progress Bar with Indeterminate Progress -->
+              <div id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
             </div>
           </section>
+        </div>
+        <div class="mdl-layout__tab-panel" id="compete">
+          <iframe class="iframe compete-iframe" src="compete.html"> </iframe>
+        </div>
+        <div class="mdl-layout__tab-panel" id="privacy">
+          <iframe class="iframe privacy-iframe" src="https://docs.google.com/document/d/1ncsw0T35Hq7Hk9NEa55H_V62QoTLZuqCd8phaMliskw/pub?embedded=true"></iframe>
         </div>
         <div class="mdl-layout__tab-panel" id="bpc-detail">
           <section class="section--center mdl-grid mdl-grid--no-spacing">
@@ -318,7 +379,7 @@
                 <li><a href="#bpc-detail">About</a></li>
                 <li><a href="#bpc-detail">Dates</a></li>
                 <li><a href="#bpc-detail">Terms</a></li>
-                <li><a href="#updates">Updates</a></li>
+                <li><a href="https://twitter.com/search?src=typd&q=%23newspacebpc">Updates</a></li>
               </ul>
             </div>
             <div class="mdl-mega-footer--drop-down-section">
@@ -356,13 +417,13 @@
             <ul class="mdl-mega-footer--link-list">
               <li><a href="#">&copy;2015 Space Frontier Foundation.</a></li>
               <li><a href="#">All Rights Reserved.</a></li>
-              <!--<li><a href="#">Privacy and Terms</a></li>-->
+              <li><a id="privacy-footer-link" href="#privacy">Privacy and Terms</a></li>
             </ul>
           </div>
         </footer>
       </main>
     </div>
-    <a href="http://www.meetup.com/NewSpace-NYC/events/225224233/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Attend Event</a>
+    <a href="http://www.meetup.com/NewSpace-NYC/events/225224233/" target="_blank" id="attend-event" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Attend Event</a>
     <script src="material.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script src="../js/jquery.simulate.js"></script>
