@@ -1,4 +1,28 @@
 $(function() {
+    
+    // Wait for window load
+	/*$(window).load(function() {
+	    $('a[href="#home"]').simulate('click');
+	    document.body.scrollTop = document.documentElement.scrollTop = 0;
+	});*/
+	    
+    
+    // Add fixed class to nav-menu when scrolled 
+    // function onScrolledTop(){
+    // 	// AdobeEdge.getComposition("docpad-keys-animation").getStage().play("start");
+    // 	document.getElementById('main-menu').className += " main-menu-scrolled";
+    // 	console.log('SCROLLED!!!!!!!!!!!!');
+    // }
+    
+    // // document.documentElement.className += " foo";
+    // // document.documentElementstyle.borderBottom = '7px solid #005EAC';
+    
+    // window.onscroll = function(){
+    // 	document.documentElement.scrollTop || document.body.scrollTop > 366 ?
+    // 		onScrolledTop()
+    // 		: document.getElementById('main-menu').className -= " main-menu-scrolled";
+    // }
+    
     // http://stackoverflow.com/questions/18831568/jquery-onclick-not-firing-on-dynamically-inserted-html-elements
     // All bpc-detail links
     $('a[href="#bpc-detail"]').on('click', function(){
@@ -11,10 +35,12 @@ $(function() {
         $('#updates').simulate('click'); 
     });
     
+    // simulate click for compete icon button
     $('#tt2').on('click', function(){
         $('#compete-link').simulate('click'); 
     });
     
+    // simulate click for hidden privacy tab
     $('#privacy-footer-link').on('click', function(){
         $('#privacy-link').simulate('click'); 
     });

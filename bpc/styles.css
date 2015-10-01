@@ -70,6 +70,15 @@ html, body {
 header.main-header{
   background: url(https://0dd66ee2bffcabcede20aa1d1e0978f7d25a3a3b.googledrive.com/host/0B9LVk4xbDIJTNzlwcW4wSnRhaE0) 216px -1131px;
 }
+.main-header h6{
+  padding-bottom: 0px;
+  line-height: 0;
+  margin: 16px 0 -23px 51px;
+  color: #AEB3D2;
+}
+.main-menu-scrolled{
+  position: fixed !important;
+}
 #btn1,#btn2,#btn3{
   position: absolute;
   top: 7px;
@@ -90,7 +99,7 @@ header.main-header{
   height: 777px;
 }
 .privacy-iframe{
-  height: 4800px;
+  height: 5627px;;
 }
 .sff-logo{
   height: 231px;
@@ -390,4 +399,46 @@ header.two-decades{
 
 .logo-svg{
   width: 688px;
+}
+@media (max-width: 479px){
+  .hero-card{
+    top: 203px;
+  }
+  header.absolute{
+    background: transparent;
+  }
+  .newspace-pic{
+    height: 292px;
+  }
+  .sff-logo{
+    display: none;
+  }
+  .sfg-logo{
+    position: relative;
+    right: inherit;
+    width: inherit !important;
+  }
+  .sponsors.mdl-demo section.section--footer{
+    padding: 0;
+  }
+  .sponsors .mdl-grid{
+    text-align: center;
+    padding: 0;
+  }
+    .sponsors .mdl-grid .mdl-cell{
+      margin: 17px;
+    }
+  .hero-section{
+    margin-bottom: 148px !important;
+  }
+  .details-circle{
+    margin: 23px 0 0 -23px !important;
+    position: absolute;
+  }
+    .smile-circle{
+      margin-top: 64px !important;
+    }
+    .mic-cirlce{
+      margin-top: 44px !important;
+    }
 }

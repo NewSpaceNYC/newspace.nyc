@@ -70,19 +70,23 @@
         z-index: 900;
       }
     </style>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="../js/jquery.simulate.js"></script>
   </head>
   <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="main-header mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
         <div class="mdl-layout--large-screen-only mdl-layout__header-row"></div>
         <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-          <!--<h3>Name &amp; Title</h3>-->
+          <h1>
           <a href="#home">
             <img class="logo-svg" src="https://43442400de12e16da9b3f37ae85b81f26c747a33.googledrive.com/host/0B9LVk4xbDIJTeExfakNCVXVpMGs" alt="New Space NYC Business Plan Competition logo"/>
           </a>
+          </h1>
         </div>
+        <h6>October 22nd - 2015</h6>
         <div class="mdl-layout--large-screen-only mdl-layout__header-row"></div>
-        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark blue-bg">
+        <div id="main-menu" class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark blue-bg">
           <a href="#home" class="mdl-layout__tab is-active">Home</a>
           <a id="bpc-detail-link" href="#bpc-detail" class="mdl-layout__tab">About the BPC</a>
           <a id="attend-header-link" href="#loading" class="mdl-layout__tab">Attend</a>
@@ -101,8 +105,8 @@
       </header>
       <main id="hero" class="mdl-layout__content">
         <div class="mdl-layout__tab-panel is-active mdl-color--grey-100" id="home">
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <img src="https://74f04378eb61b954afe1c2dea62795fafff19be9.googledrive.com/host/0B9LVk4xbDIJTR1JUdklXTWVCS3M" alt="NewSpace 2015 Conference BPC picture"/>
+          <section class="hero-section section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <img class="newspace-pic mdl-cell--12-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone"src="https://74f04378eb61b954afe1c2dea62795fafff19be9.googledrive.com/host/0B9LVk4xbDIJTR1JUdklXTWVCS3M" alt="NewSpace 2015 Conference BPC picture"/>
             <header class="absolute section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone white-bg mdl-color-text--white">
               <img class="sff-logo" src="https://f63657f0d9c37417f8833f92c864ae65c7819f7d.googledrive.com/host/0B9LVk4xbDIJTLV9oVU9HSVE0Qjg" alt="Space Frontier Foundation logo"/>
             <!--<i class="material-icons">play_circle_filled</i>-->
@@ -130,7 +134,7 @@
               <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
                 <h4 class="mdl-cell mdl-cell--12-col">Details</h4>
                 <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle mdl-color--accent">
+                  <div class="details-circle section__circle-container__circle mdl-color--accent">
                     <i class="material-icons dollar-icon">attach_money</i>
                   </div>
                 </div>
@@ -139,7 +143,7 @@
                   Pitch-off against the East Coast's finest space startups and be judged by the bigshots for a chance at $5k and a trip to the NewSpace Conference 2016 to do it all again for a chance at $100k. <a href="bpc-detail">Prize Details</a>
                 </div>
                 <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle mdl-color--accent">
+                  <div class="mic-circle details-circle section__circle-container__circle mdl-color--accent">
                     <i class="material-icons mic-icon">settings_voice</i>
                   </div>
                 </div>
@@ -149,7 +153,7 @@
                   Present your startup in front of over 100 attendees, but make sure you're not bumped by a technicality. <a href="#bpc-detail">Rules</a>
                 </div>
                 <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle mdl-color--accent">
+                  <div class="smile-circle details-circle section__circle-container__circle mdl-color--accent">
                     <i class="material-icons face-icon">mood</i>
                   </div>
                 </div>
@@ -220,37 +224,7 @@
                 <img src="https://6bdb0bb64aab9c6143ce4dc7a4447dc2c11e918a.googledrive.com/host/0B9LVk4xbDIJTaWR6dXVVZTQxWTg" alt="HTP logo"/>
               </div>
             </div>
-            <!--<div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-              <h5>Lorem ipsum dolor sit amet</h5>
-              <p>
-              Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
-              </p>
-            </div>
-            <!--<div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-              <div class="section__circle-container__circle mdl-color--accent section__circle--big"></div>
-            </div>
-            <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-              <h5>Lorem ipsum dolor sit amet</h5>
-              <p>
-              Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
-              </p>
-            </div>
-            <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-              <h5>Lorem ipsum dolor sit amet</h5>
-              <p>
-              Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
-              </p>
-            </div>-->
-            <!--<div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-              <div class="section__circle-container__circle mdl-color--accent section__circle--big"></div>
-            </div>
-            <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-              <img src="https://eb9d1b7aec180bdd1449502ff3386f80d6eb15f8.googledrive.com/host/0B9LVk4xbDIJTUThBVzI1S2NqbkE" alt="Space Angels Network silver logo"/>
-              <h5>Lorem ipsum dolor sit amet</h5>
-              <p>
-              Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
-              </p>
-            </div>-->
+
           </section>
         </div>
         <div class="mdl-layout__tab-panel" id="loading">
@@ -272,6 +246,8 @@
           <section class="section--center mdl-grid mdl-grid--no-spacing">
             <div class="mdl-cell mdl-cell--12-col">
               <h4>About the BPC</h4>
+                <img src="https://1f74d2340cdfcbbc6eb11d0291aed857b8086143.googledrive.com/host/0B9LVk4xbDIJTdk9qQjlnX3V6UE0" alt="NewSpace BPC logo"/>
+                <br/>
                  NewSpace NYC is organizing a Business Plan Competition (BPC) in partnership with the Space Frontier Foundation, Digital Vikings, Space Angels Network, OrbitalATK, Heinlein Prize Trust and the Space Finance Group.
                <ul class="toc">
                 <h5>Contents</h5>
@@ -424,8 +400,6 @@
     </div>
     <a href="http://www.meetup.com/NewSpace-NYC/events/225224233/" target="_blank" id="attend-event" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Attend Event</a>
     <script src="material.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script src="../js/jquery.simulate.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
