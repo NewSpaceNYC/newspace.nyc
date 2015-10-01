@@ -59,9 +59,14 @@
       rel="stylesheet">
     <link rel="stylesheet" href="material.min.css">
     <link rel="stylesheet" href="styles.css">
+    <style>
+      .compete-section p{
+        padding: 23px 0 3px 23px;
+      } 
+    </style>
   </head>
   <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
-    <section class="section--center mdl-grid mdl-grid--no-spacing">
+    <section class="compete-section section--center mdl-grid mdl-grid--no-spacing">
       <!-- Simple header with fixed tabs. -->
       <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
         <h4 class="mdl-layout-title">Compete in the BPC</h4>
@@ -74,18 +79,17 @@
         <div class="mdl-tabs__tab-bar">
             <a href="#rules-panel" class="mdl-tabs__tab is-active">Step 1</a>
             <a href="#space-frontier-foundation-form" class="mdl-tabs__tab">Step 2</a>
-            <a href="#last-form-promise" class="mdl-tabs__tab">Step 3</a>
+            <a href="#nsnyc-form" class="mdl-tabs__tab">Step 3</a>
         </div>
         <div class="mdl-tabs__panel is-active" id="rules-panel">
-         Read the <a href="">BPC Rules</a>.
+         <p>Read the <a href="">BPC Rules</a>.</p>
         </div>
         <div class="mdl-tabs__panel" id="space-frontier-foundation-form">
-         Fill out this Space Frontier Foundation form:
+         <p>Fill out this Space Frontier Foundation form:</p>
          <iframe class="iframe sff-form-iframe" src="https://app.decisiondesk.com/clients/newspace2016/account/create"> </iframe>
         </div>
-        <div class="mdl-tabs__panel" id="last-form-promise">
-          Then fill out this last form:
-          
+        <div class="mdl-tabs__panel" id="nsnyc-form">
+          <p>Then fill out this last form:</p>
             <!-- Change the width and height values to suit you best -->
             <div class="typeform-widget" data-url="https://mikeumus.typeform.com/to/MqUbAR" data-text="newspace-nyc-bpc" style="width:100%;height:500px;"></div>
             <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
