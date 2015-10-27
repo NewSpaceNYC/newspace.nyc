@@ -14,9 +14,12 @@
   section#two.slogan{
   }
 
-.ursa-youtube{
-	margin: 377px auto auto;
-    display: block;
+.right{
+	float:right;
+}
+#blog article img{
+	margin: auto;
+	display: block;
 }
 
 .circle-bullets{

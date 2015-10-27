@@ -14,10 +14,26 @@
  * limitations under the License.
  * https://www.google.com/design/icons/#ic_settings_voice
  */
+ 
+ .announcement{
+    padding: 7px 13px;
+    background: #1B1F38;
+    color: white;
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 11;
+    text-align: center;
+}
 #tt2{
   position: absolute;
   right: 56px;
   top: -35px;
+  transition: 2s;
+}
+.mdl-button__ripple-container{
+  transition: 2s;
 }
 ::-webkit-scrollbar {
     width: 1em;

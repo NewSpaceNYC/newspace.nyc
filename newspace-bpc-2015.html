@@ -11,6 +11,8 @@
     <meta name="author" content="Michael Duane Mooring"><!-- Add your author description -->
     <meta name="keywords" content="newspace, newspace nyc, nyc, new york city, nyc incubator, space incubator, private space, commercial space, outer-space, space startup"><!-- Add sites your keywords -->
     <link rel="icon" href="favicon.ico" type="image/x-icon" /><!-- Include a Favicon, (always keep in root of folder) -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
     <title>NewSpace NYC, a community & incubator for commcerial outer-space startups. </title><!-- Your page/site title -->
 
@@ -39,6 +41,39 @@
     <link href='https://fonts.googleapis.com/css?family=PT+Serif:700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
 
+    <!-- end GSS init -->
+    <!--
+    <style type="text/gss">
+      "container" {
+        width: == ::window[width];
+        height: == 666;
+        center: == ::window[center];
+      }
+      .a1l-div{
+        width: == 147;
+        height: == 147;
+        center: == "container"[center];
+        cy: == "container"[cy];
+      }
+      .csl-div{
+        size: == 333;
+        right: == "container"[right];
+        cy: == "container"[cy];
+      }
+      .spaceangels-div{
+        size: == 333;
+        left: == "container"[x];
+        cy: == "container"[cy];
+      }
+    .a1l-div[center] == ::window[center];
+    /* @h (.spaceangels-div)-30-(.a1l-div)-20-(.csl-div); */
+
+    /* Horizontally align the h1 and p with the image */
+    /* h1[center-x] == p[center-x] == #cassowaryImg[center-x]; */
+
+    </style>
+    <script src="https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/gss/v2.0.0/v2.0.0/gss.min.js"></script>
+    -->
     <!-- Load our fonts individually if IE8+, to avoid faux bold & italic rendering -->
     <!--[if IE]>
     <link href='http://fonts.googleapis.com/css?family=PT+Serif:700' rel='stylesheet' type='text/css'>
@@ -101,7 +136,7 @@
                     <!-- Logo for desktops/large screens -->
                     <div id="menumodalLabel" class="modal-title">
                         <div class="modallogo">
-                            NEWSPACE NYC
+                            <a href="http://newspace.nyc/">NEWSPACE NYC</a>
                         </div>
                         <div class="modaltagline">
                             <h3>An open community for the development of private companies commercializing space.</h3>
@@ -237,6 +272,8 @@
 
     <!-- ============================ Header/fixed sidebar ============================ -->
 
+    <!-- ============================ Header/fixed sidebar ============================ -->
+
     <header id="header">
 
         <!-- Main menu toggle -->
@@ -255,11 +292,11 @@
         <nav id="bullets" class="cover">
             <ul>
                 <li class="current-page-item"><a href="#start"></a></li>
-                <li><a href="#two"></a></li>
-                <li><a href="#five"></a></li>
+                <li><a href="#majortom"></a></li>
+                <li><a href="#three"></a></li>
                 <li><a href="#stats"></a></li>
-                <li><a href="#spacenyc"></a></li>
-                <li><a href="#footer"></a></li>
+                <li><a href="#blogfeed"></a></li>
+                <li><a href="#testimonials"></a></li>
             </ul>
         </nav>
 
@@ -279,223 +316,210 @@
     <a name="start" class="absolute-anchor"> . </a>
     <div id="wrapper" class="page-content">
 
-        <!-- ============================ Section one: hero ============================ -->
+        <!-- ============================ Section Start ============================ -->
 
-        <section id="start" class="herofade hero cover element-img">
-            <div class="tagline">
-              <!-- RIP vaslty unique and intriguing 3D logo: https://e01664e04f761a953c177fc6c099b54b4a0ab988.googledrive.com/host/0B9LVk4xbDIJTRmwzeHdZZERtOGM/logo-mockup.svg -->
-                <img src="https://e01664e04f761a953c177fc6c099b54b4a0ab988.googledrive.com/host/0B9LVk4xbDIJTRmwzeHdZZERtOGM/new-newspacenyc_logo.svg" class="wow fadeInUp" alt="New Space NYC logo" data-wow-delay="0.3s">
-                <hr class="mini white central">
-                <h1 class="wow fadeInUp" data-wow-delay="0.5s">Space, accelerated.</h1>
-                <p class="wow fadeInUp splash-slogan" data-wow-delay="0.7s">
-                    NewSpace NYC is an open community for the development of private companies commercializing outer-space.
-                </p>
-                <a class="scrollto" href="#two" title="Get Reading"><span class="icon-arrow-down2"></span></a>
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 element-img postfade" style="background: #fff url('https://1f74d2340cdfcbbc6eb11d0291aed857b8086143.googledrive.com/host/0B9LVk4xbDIJTdk9qQjlnX3V6UE0') no-repeat center">
+                    <a class="scrollto" href="#two" title="Get Reading"><span class="icon-arrow-down2"></span></a>
+                </div>
             </div>
         </section>
 
-        <!-- ============================ Section two: textblock ============================ -->
+        <!-- ============================ Section End ============================== -->
 
-        <!--<section id="two" class="slogan container wow fadeInUp scrollreceive" data-wow-delay="0.5s">
-            <div class="row padding">
-                <div class="col-xs-12 splash-event">
-                    <span itemscope itemtype="http://schema.org/Event" itemref="_description3 _url4 _url5">
-                         <pre id="_startDate2" itemprop="startDate" content="2015-05-22" class="float-right">Oct 22nd, 2015</pre> 
-                        <h1 itemprop="name" class="splash-event-h1">NewSpace BPC</h1></span>
-    
-                        <span itemscope itemtype="http://schema.org/Event" itemref="_startDate2"><sub>
-                         <span itemprop="name">a <i>Space Frontier Foundation</i> event</span> </sub> 
-                        <hr class="mini"/>
-                        <p id="_description3" itemprop="description">
-                           NewSpace NYC hosts the North Eastern Region of the NewSpace Business Plan Competition (BPC). A chance at $100k Grand Prize and a free trip to the NewSpace2016 Conference. 
+        <!-- ============================ Section Start ============================ -->
+
+        <section id="two" class="container wow fadeInUp scrollreceive" data-wow-delay="0.5s">
+            <div class="row">
+                <div class="col-xs-12 centertext padding">
+                    <span itemscope itemtype="http://schema.org/Article" itemref="_author2 _author3 _datePublished4 _image5 _articleSection6 _articleBody7 _publisher8"><h3 itemprop="name">PRESS RELEASE</h3></span>
+                        <hr class="mini central"/>
+                        <span itemscope itemtype="http://schema.org/Article" itemref="_image5 _articleSection6 _articleBody7">
+                        <span itemprop="name"><sub>NewSpace NYC Business Plan Competition</sub></span>
+                        <h3 id="_datePublished4" itemprop="datePublished" content="2015-05-17" class="date">Oct 27, 2015</h3>
+                        <a style="text-decoration:none" href="https://drive.google.com/open?id=0B9LVk4xbDIJTcGxoSlBaNGlaNms">
+                            <sub style="opacity:0.4;color:#000">PDF <i style="color:red;    vertical-align: sub;" class="material-icons">insert_drive_file</i></sub>
+                        </a>
+                        <br/>
+                        </span></div>
+                        </div>
+                        </section>
+
+                        <section class="white">
+                        <div class="container padding">
+                        <div class="row">
+                        <div class="col-xs-12">
+                        <p style="text-align:center" id="_articleSection6" itemprop="articleSection">
+                            FOR IMMEDIATE RELEASE: 10/27/15<br/>
+                            Kepler Communications Wins NewSpace Business Competition in Manhattan
                         </p>
-                        <a id="_url4" itemprop="url" type="button" class="float-right" href="http://newspace.nyc/bpc/">Event Page</a>
-                        <a id="_url4" itemprop="url" type="button" href="http://www.meetup.com/NewSpace-NYC" data-event="222707241" class="float-right">Past Events</a> 
-                    </span> <!-- event schema.org end -->
-                <!-- </div>
-            </div>
-            <a name="featured-home-content" class="absolute-anchor"> . </a>
-        </section>-->
-
-        <!-- ============================ Section three: image and text ============================ -->
-        <section class="container-fluid white">
-            <div class="row">
-                <div class="col-md-6 textpadding wow fadeInLeft" data-wow-delay="0.5s">
-                    <h3>NewSpace NYC BPC 2015</h3>
-                    <hr class="mini">
-                    <p>
-                        A Business Plan Competition (BPC) organized by NewSpace NYC in partnership with the Space Frontier Foundation, Digital Vikings, Space Angels Network, OrbitalATK, Heinlein Prize Trust and the Space Finance Group.<br/> <sub class="right">Read the <a href="newspace-bpc-2015.html">Press Release</a>.</sub> 
-                    </p>
-                </div>
-                <div class="col-md-6 element-img" style="padding: 0px;">
-                    <iframe style="margin: 63px 33px 0 0;" width="560" height="315" src="https://www.youtube.com/embed/fqTbn7lB92I?rel=0" frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>
-            <a name="majortom" class="absolute-anchor"> . </a>
-        </section>
-
-        <!-- ============================ Section five: list-items ============================ -->
-
-        <section id="five" class="container-fluid white">
-            <div class="row">
-
-                <script src="http://assets.juicer.io/embed.js" type="text/javascript"></script>
-                <link href="http://assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
-                <ul class="juicer-feed" data-feed-id="newspace-nyc" data-pages='1' data-per='6'></ul> <!-- https://www.juicer.io/blog/faqs#limit -->
-
-            </div>
-            <a name="four-points" class="absolute-anchor"> . </a>
-        </section>
-
-        <!-- ============================ Section six: ordered list-items ============================ -->
-
-        <section id="three" class="red-lt">
-            <div class="container">
-                <div class="row padding">
-                    <div class="col-sm-6 wow fadeInLeft" data-wow-delay="0.3s">
-                        <h3><span class="number">04.</span> Community</h3>
-                        <br>
-                        <p>We foster and host the outer-space community online and in NYC.</p>
-
-                        <br>
-
-                        <h3><span class="number">02.</span> Startups</h3>
-                        <br>
-                        <p>Business, in space. NewSpace is here to incubate and develope space startups.</p>
-                    </div>
-                    <div class="col-sm-6 wow fadeInRight" data-wow-delay="0.3s">
-                        <h3><span class="number">03.</span> Events</h3>
-                        <br>
-                        <p>Events for the space community in New York City.</p>
-
-                        <br>
-
-                        <h3><span class="number">01.</span> Startup Consultation</h3>
-                        <br>
-                        <p>Space businesses helping other space businesses.</p>
                     </div>
                 </div>
-                <div class="columbia-overlay trans-purple"></div>
             </div>
-            <a name="more-home-content" class="absolute-anchor"> . </a>
         </section>
 
-        <!-- ============================ Section eight: stats ============================ -->
+        <!-- ============================ Section End ============================== -->
 
-        <a name="#stats" class="absolute-anchor"> . </a>
-        <section id="stats" class="element-img" style="background-image: url('https://703b2c069452b328a61a9d57b759c4ce8e2e8891.googledrive.com/host/0B9LVk4xbDIJTMW44enlTSnVzWkE/newspace_team-pic-web.jpg')">
+        <!-- ============================ Section Start ============================ -->
+
+        <div class="container-fluid white">
+            <div class="row">
+                <div class="col-xs-12">
+                    <hr class="bq-top">
+                    <blockquote class="bigtext">
+                      <img id="_image5" itemprop="image" src="https://1060b438a3e372f178c8eca42ffe33f845042cc4.googledrive.com/host/0B9LVk4xbDIJTX0ZobUl1WVNyUG8" alt="The NewSpace BPC winners from Kepler Communications: Jeffrey Osborne (left) and Wen
+Cheng Chong (right)."/>
+                    <blockquote style="letter-spacing: 0px;">The NewSpace BPC winners from Kepler Communications: Jeffrey Osborne (left) and Wen Cheng Chong (right). </blockquote>
+                    </blockquote>
+                    <hr class="bq-bottom">
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================ Section End ============================== -->
+
+        <!-- ============================ Section Start ============================ -->
+
+        <section class="white">
             <div class="container padding">
                 <div class="row">
-                    <div class="col-md-3 col-xs-6">
-                        <h3>Members</h3>
-                        <span class="counter">203</span>
-                    </div>
-                    <div class="col-md-3 col-xs-6">
-                        <h3>Organizations</h3>
-                        <span class="counter">13</span>
-                    </div>
-                    <div class="col-md-3 col-xs-6">
-                        <h3>Offices</h3>
-                        <span class="counter">2</span>
-                    </div>
-                    <div class="col-md-3 col-xs-6">
-                        <h3>Makerspaces</h3>
-                        <span class="counter">3</span>
-                    </div>
-                    <!-- <div class="overlay trans-purple"></div> -->
-                </div>
-            </div>
-            <a name="closing-slogan" class="absolute-anchor"> . </a>
-        </section>
-
-        <!-- ============================ Section eleven: blockquote ============================ -->
-
-        <section id="spacenyc" class="container-fluid white padding">
-            <div class="row">
-                <div class="col-xs-12 wow fadeInUp" data-wow-delay="0.3s">
-                    <blockquote class="bigtext">
-                        We are starting up the private space industry in NYC.
-                    </blockquote>
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================ Section fifteen: clients ============================ -->
-
-        <section id="clients" class="white">
-             <div class="container">
-                <div class="row centertext">
                     <div class="col-xs-12">
-                        <h3>Stargazing with...</h3>
-                        <hr class="mini central">
+                        <span id="_articleBody7" itemprop="articleBody">
+                        <p>
+                            NEW YORK, Oct. 27, 2015 - NewSpace NYC, a space exploration accelerator based in New York City, announced today that Kepler Communications, a space startup in Toronto, Canada, landed first place in the Space Frontier Foundation’s Northeast Regional NewSpace Business Plan Competition (BPC) that took place Oct. 22 in the Columbia Startup Lab at WeWork Soho West, 175 Varick St, New York, NY. Kepler presented a compelling business case for developing infrastructure to enable real-time communications with space assets and will go on to compete in the BPC finals at the Space Frontier Foundation’s NewSpace conference in Seattle, June 21-23, 2016.
+                        </p>
+                        <br/>
+                        <section class="container-fluid">
+                            <div class="row">
+                                <img src="https://e228a8a036f913a35d41877a4b8c2c532d12c5e2.googledrive.com/host/0B0MRQmKm2tbNQlVqSE9KdTExaU0" alt="Kepler Communications presenting at the NewSpaceBPC"/>
+                                    <blockquote style="letter-spacing: 0px;">Jeffrey Osborne pitching Kepler Communications at NewSpaceBPC NYC.</blockquote>
+                            </div>
+                        <br/>
+                        <p>
+                            The panel of investors and space industry professionals chose Kepler over RocketStar LLC, an aerospike engine company, and Food-by-Print, which is developing a luxury food 3D printer. Each company is a new, independent venture in the early stages of building products for Earth-bound practice and space-related implications. The presenters were judged on concise, effective presentations of their business plan, product, customer base, marketing strategy, management, financials and investment viability.
+                        </p>
+                        <br/>
+                        <p>
+                            “We had a good showing for the first event of the regional NewSpace business plan competitions. All of the startups’ gave great business pitches, and the judges’ questions and analysis were superb, said Sidney Nakahodo, NewSpace NYC co-founder.
+                        </p>
+                        <br/>
+                        <p>
+                            Jeffrey Osborne, who took the stage, and Wen Cheng Chong providing technical support represented Kepler. “We are very honored to have been not only invited down to present with NewSpace NYC, but also to have been selected by this renowned panel of judges to represent the Northeast at the finals in Seattle. It is great to see the mutual enthusiasm that exists for solving the intermittent communications problem for LEO satellites, and meet some of the other exciting new space ventures happening in this region,” said Mr. Osborne.
+                        </p>
+                        <br/>
+                        <p>
+                            Judges for the NewSpace NYC Business Plan Competition included Chad Anderson, managing director of the Space Angels Network; Josh Benamram, venture investor at Bessemer Venture Partners; Chris Cummins, chief of products, pricing, and contracts at NanoRacks LLC; Garret Schneider, independent consultant; and Jerome Wong, managing member of Angelus Funding, LLC.
+                        </p>
+                        <br/>
+                        <div class="row">
+                                <img src="https://9383d28e4936b34f1580a1357a3a51594a211d9c.googledrive.com/host/0B0MRQmKm2tbNMnFFdFZRN21WOGs" alt="Kepler Communications presenting at the NewSpaceBPC"/>
+                                <blockquote style="letter-spacing: 0px;">NewSpaceBPC NYC Judges from left to right: Jerome Wong, Josh Benamram, Chad Anderson, Garret Schneider, and Chris Cummins.</blockquote>
+                            </div>
+                        <br/>
+                        <p>
+                            For more information about NewSpace NYC’s Northeast Regional Business Plan Competition, visit <a href="http://www.newspace.nyc/bpc">http://www.newspace.nyc/bpc</a><br/>
+                            Watch a recording of the NewSpace NYC BPC 2015 video here: <a href="https://youtu.be/fqTbn7lB92I">https://youtu.be/fqTbn7lB92I</a>
+                        </p>
+                        <br/>
+                        <p>
+                            <strong>About NewSpaceNYC</strong>
+                            <br/>
+                            NewSpace NYC is a Benefit Corporation based in New York City committed to creating
+                            the conditions that advance space exploration. NewSpace NYC is building open
+                            entrepreneurial ecosystems across the Earth to foster the technologies, companies, and
+                            concepts reaching for the stars. The company organizes forums and activities to
+                            connect stakeholders driven to develop the new markets and industries enveloping
+                            space exploration. NewSpace NYC believes that space is the next frontier, as well as
+                            the future of humankind. Join us in building the space community in your town. For more
+                            information about NewSpace NYC, visit: http://newspace.nyc
+                        </p>
+                        <br/>
+                        <p>
+                            <strong>About NewSpace Business Plan Competition</strong>
+                            <br/>
+                            Established in 2007 by the Space Frontier Foundation and led by Thomas A. Olson,
+                            founding partner of Exodus Consulting Group, the NewSpace Business Plan
+                            Competition (BPC) is the premiere space start-up event, connecting entrepreneurs with
+                            established industry mentors and resources. Chosen competitors attend a private, twoday,
+                            Boot Camp session to prepare for their Shark Tank-style pitch to investors.
+                            Companies are judged on their investment potential and cash prizes are awarded to the
+                            most promising teams. To become a sponsor or support the BPC please contact
+                            Meagan Crawford at Meagan.Crawford@spacefrontier.org. For more information visit
+                            <a href="http://newspacebpc.com/">www.NewSpaceBPC.com</a>
+                        </p>
+                        <br/>
+                        <p>
+                            <strong>About the Space Frontier Foundation</strong>
+                            <br/>
+                            Founded in 1988 by Jim Muncy, Rick Tumlinson and Bob Werb, the Space Frontier
+                            Foundation is a non-profit organization dedicated to opening the space frontier to
+                            human settlement as rapidly as possible by unleashing the power of free enterprise. Our
+                            goals include protecting the Earth’s fragile biosphere and creating a more prosperous
+                            life for each generation by using the unlimited energy and material resources of space.
+                            The Foundation is composed of a diverse, multinational array of space activists, expert
+                            scientists and engineers, media and political professionals, entrepreneurs, and
+                            passionate citizens. You too can be a part of the Space Frontier Foundation. For more
+                            information visit <a href="http://www.spacefrontier.org">http://www.spacefrontier.org</a>
+                        </p>
+                        <br/>
+                        <p>
+                            <strong>About Kepler:</strong>
+                            <br/>
+                            Founded in 2015, Kepler Communications is working to provide real-time
+                            communications access to LEO spacecraft. Its founding team includes members with
+                            backgrounds in telecommunications, computer networks, aerospace & systems
+                            engineering, and business development. The team is advised by Dr. Christian
+                            Sallaberger (ex-VP MDA, Canadensys President), Dr Vaughn Betz (ex-Director Altera,
+                            Associate Professor University of Toronto), Dr. Sean Hum (ex-ESA, Associate
+                            Professor University of Toronto), and Dr. Joyce Poon (Caltech, Associate Professor
+                            University of Toronto). For more information visit <a href="http://keplercommunications.com">http://keplercommunications.com</a>
+                        </p>
+                        <br/><br/>
+                        <p>
+                            Contacts:
+                        </p>
+                        <br/>
+                        <p>
+                            NewSpace NYC<br/>
+                            Khaki Rodway<br/>
+                            (310) 903-7543, khaki@newspace.nyc
+                            <br/><br/>
+                            Space Frontier Foundation, NewSpace Business Plan Competition<br/>
+                            Alexandra Abrams<br/>
+                            (925) 918-0081, alexandra.abrams@spacefrontier.org
+                            <br/><br/>
+                            Kepler Communications<br/>
+                            Jeffrey Osborne<br/>
+                            Contact@keplercommunications.com
+                            <br/><br/>
+                            <span style="text-align:center">###</span>
+                        </p>
+                        </span> <!-- ending schema.org articleBody -->
                         <br>
                     </div>
                 </div>
-                <div class="pure-g-r">
-                    <div class="pure-u-1">
-                        <div class="pure-u-1-6 wow fadeInUp" data-wow-delay="0.3s">
-                            <a href="http://www.solarsystemexpress.com/" target="_blank">
-                                <img src="https://d3bbb30bea8425002a709c49dc232c8ffd680f68.googledrive.com/host/0B6r88rAVAb7RUFJiOWZ1VktfaGM/sselogo_2-tone.png" class="img-responsive solx-logo" alt="NewSpace Member Solar System Express" title="NewSpace Member Outernet">
-                            </a>
-                        </div>
-                        <div class="pure-u-1-6 col-xs-6 wow fadeInUp xcor-div" data-wow-delay="0.6s">
-                            <a href="http://www.xcor.com/" target="_blank">
-                                <img src="https://703b2c069452b328a61a9d57b759c4ce8e2e8891.googledrive.com/host/0B9LVk4xbDIJTMW44enlTSnVzWkE/Xcor-aerospace-logo.png" class="img-responsive" alt="NewSpace Member Xcore Aerospace" title="Xcore Aerospace">
-                            </a>
-                        </div>
-                        <div class="pure-u-1-6 wow fadeInUp cvc-div" data-wow-delay="0.6s">
-                            <a href="http://columbiaventurecommunity.com/" target="_blank">
-                                <img src="https://703b2c069452b328a61a9d57b759c4ce8e2e8891.googledrive.com/host/0B9LVk4xbDIJTMW44enlTSnVzWkE/cvc-logo.jpg" class="img-responsive" alt="NewSpace Member Columbia Venture Community" title="Columbia Venture Community">
-                            </a>
-                        </div>
-                        <div class="pure-u-1-6 wow fadeInUp" data-wow-delay="0.9s">
-                            <a href="http://www.teamindus.in/" target="_blank">
-                                <img src="https://703b2c069452b328a61a9d57b759c4ce8e2e8891.googledrive.com/host/0B9LVk4xbDIJTMW44enlTSnVzWkE/team-indus_logo.png" class="img-responsive" alt="NewSpace Member Team Indus" title="Team Indus">
-                            </a>
-                        </div>
-                        <div class="pure-u-1-6 wow fadeInUp outernet-logo-div" data-wow-delay="1.2s">
-                            <a href="https://www.outernet.is/en/" target="_blank">
-                                <img src="https://703b2c069452b328a61a9d57b759c4ce8e2e8891.googledrive.com/host/0B9LVk4xbDIJTMW44enlTSnVzWkE/outernet-logo.png" class="img-responsive outernet-logo" alt="NewSpace Member Outernet" title="NewSpace Member Outernet">
-                            </a>
-                        </div>
-                    </div> <!-- end stargazers row1 .pure-u-1 -->
-                    <div class="pure-u-1"> <!-- stargazers row 2 -->
-                      <div class="pure-u-1-3 wow fadeInUp spaceangels-div" data-wow-delay="1.2s">
-                          <a href="http://spaceangelsnetwork.com/" target="_blank">
-                              <img src="https://62560c289cd26f47ae4993546c8d50577669ca76.googledrive.com/host/0B9LVk4xbDIJTUUQ2cE9CSFhuN255WC1BSlg4c1Y3ZFZ5eHY0" class="img-responsive" alt="NewSpace Member Space Angels Network" title="Space Angels Network">
-                          </a>
-                      </div> <!-- end space angels .pure-u-1-3 -->
-                      <div class="pure-u-1-6 wow fadeInUp a1l-div" data-wow-delay="1.2s">
-                          <a href="http://www.alphaonelabs.com/" target="_blank">
-                              <img src="https://175853cfb57450fb27deb3638d2ed7c66111c279.googledrive.com/host/0B9LVk4xbDIJTVVNfWUxvTF9LZ1U" class="img-responsive" alt="NewSpace Member Alpha One Labs" title="Alpha One Labs">
-                          </a>
-                      </div> <!-- end space angels .pure-u-1-3 -->
-                      <div class="pure-u-1-3 wow fadeInUp csl-div" data-wow-delay="1.2s">
-                          <a href="http://entrepreneurship.columbia.edu/startup-lab/" target="_blank">
-                              <img src="https://72dcfc98bf957457a645f1df85e76a642c30c076.googledrive.com/host/0B9LVk4xbDIJTYzkyUG5wX29mQWM" class="img-responsive" alt="NewSpace Member Columbia Startup Lab" title="Columbia Startup Lab">
-                          </a>
-                      </div> <!-- end space angels .pure-u-1-3 -->
-                    </div> <!-- end stargazers row2 .pure-u-1 -->
-                </div> <!-- .pure-g-r -->
-            </div> <!-- .container -->
-        </section> <!-- .clients -->
+            </div>
+        </section>
 
-        <!-- ============================ Footer ============================ -->
+        <!-- ============================ Section End ============================== -->
 
-        <footer id="footer" class="padding">
+        <!-- ============================ Footer =================================== -->
+
+        <footer class="padding">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <ul class="footer-links">
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                        <ul class="footer-links">
-                            <li><a href="signup.html">Member Signup</a></li>
-                            <li><a href="http://discuss.newspace.nyc/">Discussion Forum</a></li>
-                            <li><a href="space-startup-form.html">Icubator Application</a></li>
-                        </ul>
+                      <ul class="footer-links">
+                          <li><a href="blog.html">Blog</a></li>
+                          <li><a href="about.html">About</a></li>
+                          <li><a href="contact.html">Contact</a></li>
+                      </ul>
+                      <ul class="footer-links">
+                          <li><a href="signup.html">Member Signup</a></li>
+                          <li><a href="http://discuss.newspace.nyc/">Discussion Forum</a></li>
+                          <li><a href="space-startup-form.html">Icubator Application</a></li>
+                      </ul>
                     </div>
                 </div>
                 <hr> <br/><br/><br/>
@@ -515,7 +539,6 @@
                 </div>
             </div>
         </footer>
-
     <!-- / END page #wrapper -->
     </div>
 
@@ -525,60 +548,8 @@
     <script src="js/wow.min.js"></script><!-- WoW animations -->
     <script src="js/jquery.nav.js"></script><!-- Left-hand bullet navigation -->
     <script src="js/jquery.nicescroll.min.js"></script><!-- Scrollbars for whole page and main navigation -->
-    <script src="js/jquery.counterup.min.js"></script><!-- counterup plugin for increasing page stats -->
-    <script src="js/waypoints.min.js"></script><!-- Waypoints, needed for 'counterup' plugin -->
-    <script src="js/jquery.fitvids.js"></script><!-- Fitvids plugin, (responsive videos) -->
-    <script src="js/jquery.flexslider-min.js"></script><!-- Flexslider -->
     <script src="js/jquery.easing.min.js"></script><!-- Easing plugin, for opacity fade on menu background images -->
     <script src="js/scripts.js"></script><!-- Custom JS functions - always load last -->
-
-    <!-- Page-specific JS functions - these are functions that only occur on this specific page, so we DON'T want these placed in our scripts.js file as this file is loaded on every page for global site functions.  -->
-
-    <!-- Initialize CounterUp plugin for rounding up/animated statistics -->
-    <script>
-        jQuery(document).ready(function($) {
-            $('.counter').counterUp({
-                delay: 10,
-                time: 1000
-            });
-        });
-    </script>
-
-    <!-- Initialize fitvids.js plugin for responsive videos -->
-    <script>
-        $(document).ready(function(){
-            $(".fitvids").fitVids();
-        });
-    </script>
-
-    <!-- Teamimonials Carousel -->
-    <script>
-        $(document).ready(function(){
-            $('#testo-carousel').carousel({
-                pauseOnHover: true,
-                interval: 4000,
-            });
-        });
-    </script>
-
-    <!-- Initialize flexslider for blogfeed slider -->
-    <script>
-        // second-flexslider
-        $(window).load(function() {
-          $('#blogslider').flexslider({
-            animation: "slide",
-            directionNav: false,
-            controlNav: false,
-            touch: false,
-            slideshow: false
-          });
-        });
-        $('.prev, .next').on('click', function() {
-          var href = $(this).attr('href');
-          $('#blogslider').flexslider(href)
-          return false;
-        })
-    </script>
 
     <!-- ========== Insert your Google Analytics code below this line ========== -->
 
