@@ -1,344 +1,333 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" /><!-- Disable horrible auto-skype for contact numbers in IE -->
-    <meta name="description" content="A community & incubator for commercial outer-space startups."><!-- Add your site description -->
-    <meta name="author" content="Michael Duane Mooring"><!-- Add your author description -->
-    <meta name="keywords" content="newspace, newspace nyc, nyc, new york city, nyc incubator, space incubator, private space, commercial space, outer-space, space startup"><!-- Add sites your keywords -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon" /><!-- Include a Favicon, (always keep in root of folder) -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+		<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" /><!-- Disable horrible auto-skype for contact numbers in IE -->
+		<meta name="description" content="A community & incubator for commercial outer-space startups."><!-- Add your site description -->
+		<meta name="author" content="Michael Duane Mooring"><!-- Add your author description -->
+		<meta name="keywords" content="newspace, newspace nyc, nyc, new york city, nyc incubator, space incubator, private space, commercial space, outer-space, space startup"><!-- Add sites your keywords -->
+		<link rel="icon" href="favicon.ico" type="image/x-icon" /><!-- Include a Favicon, (always keep in root of folder) -->
 
-    <title>NewSpace NYC Calendar</title><!-- Your page/site title -->
+		<title>NewSpace NYC Calendar</title><!-- Your page/site title -->
 
 <!--
 
-    NS   N  NSNSNS
-    N S  N  N
-    N  S N  NSNSNS    Hi :)
-    N   SN       S
-    N    S  NSNSNS
-    
+		NS   N  NSNSNS
+		N S  N  N
+		N  S N  NSNSNS    Hi :)
+		N   SN       S
+		N    S  NSNSNS
+		
 -->
 
-    <!-- Load Our CSS - Do not alter the load order -->
-    <link href="css/bootstrap.min.css" rel="stylesheet"><!-- Bootstrap Core - ALways load first -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
-    <link href="css/animate.css" rel="stylesheet"><!-- Animatations -->
-    <link href="css/icomoon.css" rel="stylesheet"><!-- Icon Font -->
-    <link href="css/flexslider.css" rel="stylesheet"><!-- Flexslider styles for #blogfeed -->
-    <link href="css/style.css" rel="stylesheet"><!-- Main theme stylesheet -->
-    <link href="css/custom.css" rel="stylesheet"><!-- Custom styles - Always load last -->
+		<!-- Load Our CSS - Do not alter the load order -->
+		<link href="css/bootstrap.min.css" rel="stylesheet"><!-- Bootstrap Core - ALways load first -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+		<link href="css/animate.css" rel="stylesheet"><!-- Animatations -->
+		<link href="css/icomoon.css" rel="stylesheet"><!-- Icon Font -->
+		<link href="css/flexslider.css" rel="stylesheet"><!-- Flexslider styles for #blogfeed -->
+		<link href="css/style.css" rel="stylesheet"><!-- Main theme stylesheet -->
+		<link href="css/custom.css" rel="stylesheet"><!-- Custom styles - Always load last -->
 
-    <!-- Load our fonts from Google -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=PT+Serif:700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
+		<!-- Load our fonts from Google -->
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=PT+Serif:700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
 
-    <!-- Load our fonts individually if IE8+, to avoid faux bold & italic rendering -->
-    <!--[if IE]>
-    <link href='http://fonts.googleapis.com/css?family=PT+Serif:700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Vollkorn:400' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Vollkorn:400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Vollkorn:700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
-    <![endif]-->
+		<!-- Load our fonts individually if IE8+, to avoid faux bold & italic rendering -->
+		<!--[if IE]>
+		<link href='http://fonts.googleapis.com/css?family=PT+Serif:700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Vollkorn:400' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Vollkorn:400italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Vollkorn:700italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
+		<![endif]-->
 
-    <!-- Load our stylesheet for IE8 -->
-    <!--[if IE 8]>
-    <link rel="stylesheet" type="text/css" href="css/ie8.css" />
-    <![endif]-->
+		<!-- Load our stylesheet for IE8 -->
+		<!--[if IE 8]>
+		<link rel="stylesheet" type="text/css" href="css/ie8.css" />
+		<![endif]-->
 
-    <!-- Load our stylesheet for IE9 -->
-    <!--[if IE 9]>
-    <link rel="stylesheet" type="text/css" href="css/ie9.css" />
-    <![endif]-->
+		<!-- Load our stylesheet for IE9 -->
+		<!--[if IE 9]>
+		<link rel="stylesheet" type="text/css" href="css/ie9.css" />
+		<![endif]-->
 
-    <!-- Load our jQuery, with an alternative source/fallback to our own version if request is unavailable -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
-    <!-- Load these in the <head> for quicker IE8+ load times -->
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.min.js"></script>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->
+		<!-- Load these in the <head> for quicker IE8+ load times -->
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="js/html5shiv.min.js"></script>
+		<script src="js/respond.min.js"></script>
+		<![endif]-->
 
 </head>
 
 <body id="home">
 
-    <!-- Our page loader -->
-    <div class="loadstack">
-        <div class="spinner"></div>
-    </div>
+		<!-- ============================ Main menu, (modal window) ============================ -->
 
-    <!-- ============================ Main menu, (modal window) ============================ -->
+		<div id="menumodal" class="modal fade" tabindex="-1" role="dialog" aria-label="menumodalLabel" aria-hidden="true">
 
-    <div id="menumodal" class="modal fade" tabindex="-1" role="dialog" aria-label="menumodalLabel" aria-hidden="true">
+				<!-- Close modal trigger -->
+				<button class="toggleclose" data-dismiss="modal" aria-hidden="true">
+						<span class="icon-close"></span>
+				</button>
+				<div class="explore">
+						<h3>Explore</h3>
+				</div>
 
-        <!-- Close modal trigger -->
-        <button class="toggleclose" data-dismiss="modal" aria-hidden="true">
-            <span class="icon-close"></span>
-        </button>
-        <div class="explore">
-            <h3>Explore</h3>
-        </div>
+				<!-- Menu content -->
+				<div class="modal-dialog">
+						<div class="modal-content">
+								<div class="modal-header">
+										<!-- Logo for desktops/large screens -->
+										<div id="menumodalLabel" class="modal-title">
+												<div class="modallogo">
+														<a href="http://newspace.nyc/">NEWSPACE NYC</a>
+												</div>
+												<div class="modaltagline">
+														<h3>An open community for the development of private companies commercializing space.</h3>
+												</div>
+										</div>
+								</div>
+								<div class="modal-body">
+										<ul class="row motion">
+												<li class="col-md-4 col-sm-6 two">
+														<div class="menubg" style="background-image: url(https://e01664e04f761a953c177fc6c099b54b4a0ab988.googledrive.com/host/0B9LVk4xbDIJTRmwzeHdZZERtOGM/ns-website-bg.png)"></div>
+														<a href="index.html" title="homepage">Home<span>Beam me up Scotty!</span></a>
+												</li>
+												<li class="col-md-4 col-sm-6 eight">
+														<div class="menubg incubator-menu-bg"></div>
+														<a href="http://newspace.nyc/space-startup-form.html" title="NewSpace NYC Space Startup Incubator Application">
+															Incubator
+															<span>
+																Apply to fly on the wings of NewSpace NYC.
+															</span>
+														</a>
+												</li>
+												<li class="col-md-4 col-sm-6 four">
+														<div class="menubg meetup-menu-bg"></div>
+														<a href="http://www.meetup.com/NYC-Space-Ventures/" title="NewSpace NYC meetup events">
+																Events
+																<span> On Meetup.com </span>
+														</a>
+												</li>
+												<li class="col-md-4 col-sm-6 six">
+														<div class="menubg" ></div>
+														<a href="http://discuss.newspace.nyc/" title="NewSpace Discourse Forum">Forum<span>Our open community Discourse forum for all things outer-space.</span></a>
+												</li>
+												<li class="col-md-4 col-sm-6 eighteen"> <!-- about -->
+														<div class="menubg about-menu-bg"></div>
+														<a href="about.html" title="About">About<span>A community for space startups in NYC. </span></a>
+												</li> <!-- end about -->
+												<li class="col-md-4 col-sm-6 ten"> <!--  contact -->
+														<div class="menubg" style="background-image: url('img/menu/contact.jpg')"></div>
+														<a href="contact.html" title="Contact">Contact<span>Get in touch.</span></a>
+												</li> <!-- end contact -->
+												<li class="col-md-4 col-sm-6 twentytwo" style="width:100%"> <!-- blog menu item -->
+														<div class="menubg" style="background-image: url('https://985e6e7299e00d286e4fdaa4c70f9d4c86d94ed9.googledrive.com/host/0B9LVk4xbDIJTbWNtTlRWNDBzam8')"></div>
+														<a href="blog.html" title="Blog">Blog<span>NewSpace NYC blog articles.</span></a>
+												</li> <!-- end blog menu item -->
+										</ul>
+								</div>
+								<div class="modal-footer">
+										<h3>Get in Touch</h3>
+										all@newspace.nyc
+										<h4>
+											 WeWorkLabs, 175 Varick Street New York, NY 10014
+										</h4>
+								</div>
+						</div>
+				</div>
+		</div>
 
-        <!-- Menu content -->
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <!-- Logo for desktops/large screens -->
-                    <div id="menumodalLabel" class="modal-title">
-                        <div class="modallogo">
-                            <a href="http://newspace.nyc/">NEWSPACE NYC</a>
-                        </div>
-                        <div class="modaltagline">
-                            <h3>An open community for the development of private companies commercializing space.</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <ul class="row motion">
-                        <li class="col-md-4 col-sm-6 two">
-                            <div class="menubg" style="background-image: url(https://e01664e04f761a953c177fc6c099b54b4a0ab988.googledrive.com/host/0B9LVk4xbDIJTRmwzeHdZZERtOGM/ns-website-bg.png)"></div>
-                            <a href="index.html" title="homepage">Home<span>Beam me up Scotty!</span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 eight">
-                            <div class="menubg incubator-menu-bg"></div>
-                            <a href="http://newspace.nyc/space-startup-form.html" title="NewSpace NYC Space Startup Incubator Application">
-                              Incubator
-                              <span>
-                                Apply to fly on the wings of NewSpace NYC.
-                              </span>
-                            </a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 four">
-                            <div class="menubg meetup-menu-bg"></div>
-                            <a href="http://www.meetup.com/NYC-Space-Ventures/" title="NewSpace NYC meetup events">
-                                Events
-                                <span> On Meetup.com </span>
-                            </a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 six">
-                            <div class="menubg" ></div>
-                            <a href="http://discuss.newspace.nyc/" title="NewSpace Discourse Forum">Forum<span>Our open community Discourse forum for all things outer-space.</span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 eighteen"> <!-- about -->
-                            <div class="menubg about-menu-bg"></div>
-                            <a href="about.html" title="About">About<span>A community for space startups in NYC. </span></a>
-                        </li> <!-- end about -->
-                        <li class="col-md-4 col-sm-6 ten"> <!--  contact -->
-                            <div class="menubg" style="background-image: url('img/menu/contact.jpg')"></div>
-                            <a href="contact.html" title="Contact">Contact<span>Get in touch.</span></a>
-                        </li> <!-- end contact -->
-                        <li class="col-md-4 col-sm-6 twentytwo" style="width:100%"> <!-- blog menu item -->
-                            <div class="menubg" style="background-image: url('https://985e6e7299e00d286e4fdaa4c70f9d4c86d94ed9.googledrive.com/host/0B9LVk4xbDIJTbWNtTlRWNDBzam8')"></div>
-                            <a href="blog.html" title="Blog">Blog<span>NewSpace NYC blog articles.</span></a>
-                        </li> <!-- end blog menu item -->
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <h3>Get in Touch</h3>
-                    all@newspace.nyc
-                    <h4>
-                       WeWorkLabs, 175 Varick Street New York, NY 10014
-                    </h4>
-                </div>
-            </div>
-        </div>
-    </div>
+		<!-- ============================ End Main Navigation ==================================== -->
 
-    <!-- ============================ End Main Navigation ==================================== -->
+				<!-- ============================ Social menu, (modal window) ============================ -->
 
-        <!-- ============================ Social menu, (modal window) ============================ -->
+				<div id="socialmodal" class="modal fade" tabindex="-1" role="dialog" aria-label="socialmodalLabel" aria-hidden="true">
 
-        <div id="socialmodal" class="modal fade" tabindex="-1" role="dialog" aria-label="socialmodalLabel" aria-hidden="true">
+						<!-- Menu Trigger -->
+						<button class="toggleclose" data-dismiss="modal" aria-hidden="true">
+								<span class="icon-close"></span>
+						</button>
+						<div class="explore">
+								<h3>Be Social</h3>
+						</div>
 
-            <!-- Menu Trigger -->
-            <button class="toggleclose" data-dismiss="modal" aria-hidden="true">
-                <span class="icon-close"></span>
-            </button>
-            <div class="explore">
-                <h3>Be Social</h3>
-            </div>
+						<div class="modal-dialog">
+								<div class="modal-content">
+										<div class="modal-body">
+												<h3>Connect with NewSpace NYC</h3>
+												<hr class="mini white central">
+												<ul class="socialicons motion">
+														<li class="two twitter">
+															<a href="http://twitter.com/newspacenyc" title="Twitter" target="_blank">
+																<span class="icon-twitter"></span>
+															</a>
+															<sub> Twitter </sub>
+														</li>
+														<li class="four">
+															<a href="https://plus.google.com/+NewspaceNyc1/posts" title="NewSpace NYC Google Plus" class="googleplus" target="_blank">
+																<span class="icon-googleplus"></span>
+																</a>
+															<sub> Google+ </sub>
+															</li>
+														<li class="six">
+															<a href="https://www.facebook.com/newspacenyc" title="Facebook" class="facebook" target="_blank">
+																<span class="icon-facebook"></span>
+															</a>
+															<sub> Facebook </sub>
+														</li>
+														<li class="eight">
+															<a href="https://instagram.com/newspacenyc/" title="Instagram" class="instagram" target="_blank">
+																<span class="icon-instagram"></span>
+															</a>
+															<sub> Instagram </sub>
+															</li>
+														<li class="ten">
+															<a href="https://www.youtube.com/channel/UCBH-vUBIUzsEJai_UoaPV4w" title="NewSpace NYC YouTube" class="youtube" target="_blank">
+																<span class="icon-youtube"></span>
+															</a>
+															<sub> YouTube </sub>
+														</li>
+														<li class="ten">
+															<a href="http://discuss.newspace.nyc/" title="NewSpace NYC Forum" class="forum" target="_self">
+																<span class="icon-bubble2"></span>
+															</a>
+															<sub> Forum </sub>
+														</li>
+														<li class="fourteen">
+															<a href="calendar.html" title="NewSpace NYC Calendar" class="calendar" target="_blank">
+																<span class="glyphicon glyphicon-calendar"></span>
+															</a>
+															<sub> Calendar </sub>
+														</li>
+														<li class="twelve slack">
+															<a href="http://104.131.181.177:8080/" title="NewSpace NYC Slack" class="slack" target="_blank">
+																<img src="https://bb422bb78ee5f8bcbb55e34d2e0c79a18dce774e.googledrive.com/host/0B9LVk4xbDIJTXzV5Y2d5VnBCc3M/slack-icon-128.png" alt="slack chat app icon"/>
+															</a>
+															<sub> Slack </sub>
+														</li>
+												</ul>
+										</div>
+								</div>
+						</div>
+				</div>
 
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <h3>Connect with NewSpace NYC</h3>
-                        <hr class="mini white central">
-                        <ul class="socialicons motion">
-                            <li class="two twitter">
-                              <a href="http://twitter.com/newspacenyc" title="Twitter" target="_blank">
-                                <span class="icon-twitter"></span>
-                              </a>
-                              <sub> Twitter </sub>
-                            </li>
-                            <li class="four">
-                              <a href="https://plus.google.com/+NewspaceNyc1/posts" title="NewSpace NYC Google Plus" class="googleplus" target="_blank">
-                                <span class="icon-googleplus"></span>
-                                </a>
-                              <sub> Google+ </sub>
-                              </li>
-                            <li class="six">
-                              <a href="https://www.facebook.com/newspacenyc" title="Facebook" class="facebook" target="_blank">
-                                <span class="icon-facebook"></span>
-                              </a>
-                              <sub> Facebook </sub>
-                            </li>
-                            <li class="eight">
-                              <a href="https://instagram.com/newspacenyc/" title="Instagram" class="instagram" target="_blank">
-                                <span class="icon-instagram"></span>
-                              </a>
-                              <sub> Instagram </sub>
-                              </li>
-                            <li class="ten">
-                              <a href="https://www.youtube.com/channel/UCBH-vUBIUzsEJai_UoaPV4w" title="NewSpace NYC YouTube" class="youtube" target="_blank">
-                                <span class="icon-youtube"></span>
-                              </a>
-                              <sub> YouTube </sub>
-                            </li>
-                            <li class="ten">
-                              <a href="http://discuss.newspace.nyc/" title="NewSpace NYC Forum" class="forum" target="_self">
-                                <span class="icon-bubble2"></span>
-                              </a>
-                              <sub> Forum </sub>
-                            </li>
-                            <li class="fourteen">
-                              <a href="calendar.html" title="NewSpace NYC Calendar" class="calendar" target="_blank">
-                                <span class="glyphicon glyphicon-calendar"></span>
-                              </a>
-                              <sub> Calendar </sub>
-                            </li>
-                            <li class="twelve slack">
-                              <a href="http://104.131.181.177:8080/" title="NewSpace NYC Slack" class="slack" target="_blank">
-                                <img src="https://bb422bb78ee5f8bcbb55e34d2e0c79a18dce774e.googledrive.com/host/0B9LVk4xbDIJTXzV5Y2d5VnBCc3M/slack-icon-128.png" alt="slack chat app icon"/>
-                              </a>
-                              <sub> Slack </sub>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- =============================== End social menu ============================== -->
+				<!-- =============================== End social menu ============================== -->
 
 
-    <!-- ============================ Header/fixed sidebar ============================ -->
+		<!-- ============================ Header/fixed sidebar ============================ -->
 
-    <header id="header">
+		<header id="header">
 
-        <!-- Main menu toggle -->
-        <button class="toggle this" data-toggle="modal" data-target="#menumodal">
-            <span class="menu-bar bar-1"></span>
-            <span class="menu-bar bar-2"></span>
-            <span class="menu-bar bar-3"></span>
-        </button>
+				<!-- Main menu toggle -->
+				<button class="toggle this" data-toggle="modal" data-target="#menumodal">
+						<span class="menu-bar bar-1"></span>
+						<span class="menu-bar bar-2"></span>
+						<span class="menu-bar bar-3"></span>
+				</button>
 
-        <!-- Second logo for mobiles/tablets only. Maximum height of 65px -->
-        <div class="mobile_logo">
-            <h1>NewSpace NYC</h1>
-        </div>
+				<!-- Second logo for mobiles/tablets only. Maximum height of 65px -->
+				<div class="mobile_logo">
+						<h1>NewSpace NYC</h1>
+				</div>
 
-        <!-- Bullet navigation -->
-        <nav id="bullets" class="cover">
-            <ul>
-                <li class="current-page-item"><a href="#start"></a></li>
-                <li><a href="#majortom"></a></li>
-                <li><a href="#three"></a></li>
-                <li><a href="#stats"></a></li>
-                <li><a href="#blogfeed"></a></li>
-                <li><a href="#testimonials"></a></li>
-            </ul>
-        </nav>
+				<!-- Bullet navigation -->
+				<nav id="bullets" class="cover">
+						<ul>
+								<li class="current-page-item"><a href="#start"></a></li>
+								<li><a href="#majortom"></a></li>
+								<li><a href="#three"></a></li>
+								<li><a href="#stats"></a></li>
+								<li><a href="#blogfeed"></a></li>
+								<li><a href="#testimonials"></a></li>
+						</ul>
+				</nav>
 
-    </header>
+		</header>
 
-    <!-- Social menu toggle - keep outside of header to prevent horrible positioning problem on ipads -->
-    <button class="social" data-toggle="modal" data-target="#socialmodal">
-        <span class="icon-share"></span>
-    </button>
+		<!-- Social menu toggle - keep outside of header to prevent horrible positioning problem on ipads -->
+		<button class="social" data-toggle="modal" data-target="#socialmodal">
+				<span class="icon-share"></span>
+		</button>
 
-    <!-- End header/fixed sidebar -->
+		<!-- End header/fixed sidebar -->
 
-    <!-- ============================ Start the page content ============================ -->
+		<!-- ============================ Start the page content ============================ -->
 
-    <!-- Leading Page Container -->
-    <!-- Always keep all page content wrapped in this div, with id="wrapper" and class="page-content" -->
-    <a name="start" class="absolute-anchor"> . </a>
-    <div id="wrapper" class="page-content">
+		<!-- Leading Page Container -->
+		<!-- Always keep all page content wrapped in this div, with id="wrapper" and class="page-content" -->
+		<a name="start" class="absolute-anchor"> . </a>
+		<div id="wrapper" class="page-content">
 
-        <!-- ============================ Section Start ============================ -->
+				<!-- ============================ Section Start ============================ -->
 
-        <section id="two" class="container wow fadeInUp scrollreceive" data-wow-delay="0.5s">
-            <div class="row">
-                <div id="form" class="col-xs-12 centertext padding">
-                    <iframe src="https://www.google.com/calendar/embed?title=NewSpace%20NYC%20Calendar%20&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=4j2iarfh78df76711roevggsqs%40group.calendar.google.com&amp;color=%232F6309&amp;src=miagj6182f4tg8ad7fjm78nec4%40group.calendar.google.com&amp;color=%2323164E&amp;src=o15ptg5bjl3pci76nd0jq501cs%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=America%2FNew_York" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
-                </div>
-            </div>
-        </section>
+				<section id="two" class="container wow fadeInUp scrollreceive" data-wow-delay="0.5s">
+						<div class="row">
+								<div id="form" class="col-xs-12 centertext padding">
+										<iframe src="https://www.google.com/calendar/embed?title=NewSpace%20NYC%20Calendar%20&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=4j2iarfh78df76711roevggsqs%40group.calendar.google.com&amp;color=%232F6309&amp;src=miagj6182f4tg8ad7fjm78nec4%40group.calendar.google.com&amp;color=%2323164E&amp;src=o15ptg5bjl3pci76nd0jq501cs%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=America%2FNew_York" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
+								</div>
+						</div>
+				</section>
 
-        <!-- ============================ Header End ============================== -->
+				<!-- ============================ Header End ============================== -->
 
 
-        <!-- ============================ Footer =================================== -->
+				<!-- ============================ Footer =================================== -->
 
-        <footer class="padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                      <ul class="footer-links">
-                          <li><a href="blog.html">Blog</a></li>
-                          <li><a href="about.html">About</a></li>
-                          <li><a href="contact.html">Contact</a></li>
-                      </ul>
-                      <ul class="footer-links">
-                          <li><a href="signup.html">Member Signup</a></li>
-                          <li><a href="http://discuss.newspace.nyc/">Discussion Forum</a></li>
-                          <li><a href="space-startup-form.html">Incubator Application</a></li>
-                      </ul>
-                    </div>
-                </div>
-                <hr> <br/><br/><br/>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <a href="index.html" title="NewSpace.nyc">
-                          <img src="https://e01664e04f761a953c177fc6c099b54b4a0ab988.googledrive.com/host/0B9LVk4xbDIJTRmwzeHdZZERtOGM/newspace-nyc_icon.svg" alt="New Space NYC icon logo">
-                        </a>
-                        <p>Space, accelerated.</p>
-                        <small>
-                          Copyright &copy;2015 NewSpace NYC, PBC
-                          <br/>
-                          All rights reserved.
-                        </small>
-                        <hr class="mini central light-grey-dk">
-                        <script async defer src="http://104.131.181.177:8080/slackin.js"></script>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    <!-- / END page #wrapper -->
-    </div>
+				<footer class="padding">
+						<div class="container">
+								<div class="row">
+										<div class="col-xs-12">
+											<ul class="footer-links">
+													<li><a href="blog.html">Blog</a></li>
+													<li><a href="about.html">About</a></li>
+													<li><a href="contact.html">Contact</a></li>
+											</ul>
+											<ul class="footer-links">
+													<li><a href="signup.html">Member Signup</a></li>
+													<li><a href="http://discuss.newspace.nyc/">Discussion Forum</a></li>
+													<li><a href="space-startup-form.html">Incubator Application</a></li>
+											</ul>
+										</div>
+								</div>
+								<hr> <br/><br/><br/>
+								<div class="row">
+										<div class="col-xs-12">
+												<a href="index.html" title="NewSpace.nyc">
+													<img src="https://e01664e04f761a953c177fc6c099b54b4a0ab988.googledrive.com/host/0B9LVk4xbDIJTRmwzeHdZZERtOGM/newspace-nyc_icon.svg" alt="New Space NYC icon logo">
+												</a>
+												<p>Space, accelerated.</p>
+												<small>
+													Copyright &copy;2015 NewSpace NYC, PBC
+													<br/>
+													All rights reserved.
+												</small>
+												<hr class="mini central light-grey-dk">
+												<script async defer src="http://104.131.181.177:8080/slackin.js"></script>
+										</div>
+								</div>
+						</div>
+				</footer>
+		<!-- / END page #wrapper -->
+		</div>
 
-    <!-- ========== Load our scripts - keep positioned at the end of your document ========== -->
+		<!-- ========== Load our scripts - keep positioned at the end of your document ========== -->
 
-    <script src="js/bootstrap.min.js"></script><!-- Bootstrap core - always load first -->
-    <script src="js/wow.min.js"></script><!-- WoW animations -->
-    <script src="js/jquery.nav.js"></script><!-- Left-hand bullet navigation -->
-    <script src="js/jquery.nicescroll.min.js"></script><!-- Scrollbars for whole page and main navigation -->
-    <script src="js/jquery.easing.min.js"></script><!-- Easing plugin, for opacity fade on menu background images -->
-    <script src="js/scripts.js"></script><!-- Custom JS functions - always load last -->
+		<script src="js/bootstrap.min.js"></script><!-- Bootstrap core - always load first -->
+		<script src="js/scripts.js"></script><!-- Custom JS functions - always load last -->
 
-    <!-- ========== Insert your Google Analytics code below this line ========== -->
+		<!-- ========== Insert your Google Analytics code below this line ========== -->
 
-    <!-- ======================== End Google Analytics ========================= -->
+		<!-- ======================== End Google Analytics ========================= -->
 
 </body>
 
