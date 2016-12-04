@@ -57,13 +57,6 @@ html {
   }
 }
 
-@media (min-width: 1025px) {
-  html {
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-}
-
 #ascrail2000 {
   display: none !important;
 }
@@ -1165,33 +1158,31 @@ header#pagemeta hr.mini {
 /********************************************************/
 
 #bullets {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: table;
-  width: 80px;
-  z-index: 0;
+  align-items: center;
+  display: flex;
+  height: 67%;
+  justify-content: center;
 }
 #bullets ul {
-  padding-left: 0;
   display: table-cell;
+  padding-left: 0;
   vertical-align: middle;
 }
 
 #bullets ul li{
   border-width:2px;
   border-style: solid;
+  border-radius:100%;
   border-color: transparent;
-  width: 14px;
   height: 14px;
   margin: 14px auto;
+  transition: border-color .3s linear;
+  width: 14px;
   -webkit-border-radius:100%;
   -moz-border-radius: 100%;
-  border-radius:100%;
   -webkit-transition: border-color .3s linear;
   -moz-transition: border-color .3s linear;
   -o-transition: border-color .3s linear;
-  transition: border-color .3s linear;
 }
 
 #bullets ul li a {
@@ -1561,13 +1552,13 @@ blockquote.bigtext {
 /********************************************************/
 
 .hero {
-  height: 100%;
+  height: 666px;
   text-align: center;
   display: table;
   width: 100%;
 }
 .hero.cover{
-  background: url("https://e01664e04f761a953c177fc6c099b54b4a0ab988.googledrive.com/host/0B9LVk4xbDIJTRmwzeHdZZERtOGM/ns-website-bg.png") repeat-x scroll center top #110E0C;
+  background: url("../img/ns-website-bg.png") repeat-x scroll center top #110E0C;
 }
 
 .herofade {
