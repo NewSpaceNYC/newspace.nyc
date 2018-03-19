@@ -351,7 +351,6 @@ iframe {
 }
 
 /* ==== START Fix for iOS8 orientation bug ==== */
-
 @media (max-width:768px) {
   #wrapper {
     padding-left: 0
@@ -359,7 +358,6 @@ iframe {
 }
 
 /* ==== END Fix for iOS8 orientation bug ==== */
-
 .page-content {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   -khtml-opacity: 1;
