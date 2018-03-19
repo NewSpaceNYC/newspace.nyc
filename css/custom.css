@@ -113,11 +113,10 @@
 	.a1l-div{
 		width: 188px;
 		margin: auto !important;
-		display: block;
+		/*display: block;*/
 	}
 	.a1l-div img{
 		margin: 10px auto auto 0px !important;
-		width: 77%;
 	}
 
 pre{
