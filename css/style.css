@@ -1584,7 +1584,7 @@ blockquote.bigtext {
 }
 
 .hero img {
-  margin: auto auto 10px;
+  margin: auto;
   position: relative;
   height: 202px;
   width: 666px;
