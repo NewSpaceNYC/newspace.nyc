@@ -1607,7 +1607,6 @@ blockquote.bigtext {
 }
 
 @media (min-width: 768px) {
-
   .hero h1 {
     font-size: 40px;
     margin: 0 auto 40px;
@@ -1617,7 +1616,6 @@ blockquote.bigtext {
   .hero p {
     width: 50%;
   }
-
 }
 
 @media (max-width: 450px) {
