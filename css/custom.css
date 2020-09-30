@@ -184,6 +184,8 @@ pre{
 		margin: auto;
 	}
 	.cvc-div{
+		display: block;
+		background: #80c1ff;
 		float: left;
 		clear: both;
 	}
