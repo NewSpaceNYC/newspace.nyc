@@ -437,7 +437,7 @@ a[type="button"]{
   }
 }
 
-// large resolutions
+
 @media (min-width:1400px){
   #stats .container{
     margin-top: 222px;
@@ -507,6 +507,13 @@ a[title="SumoMe"]{
 
 .splash-slogan{
   word-spacing: 2px;
+}
+
+.home-title {
+  color:rgb(240, 238, 240) !important;
+  background-color: rgba(8, 7, 8, 0.657);
+	text-shadow: 4px 4px #000000;
+  width: 100% !important;
 }
 
 /***********************************************************/
@@ -1555,7 +1562,9 @@ blockquote.bigtext {
   width: 100%;
 }
 .hero.cover{
-  background: url("..//img/ns-website-bg.png") repeat-x scroll center top #110E0C;
+  /* background: url("..//img/ns-website-bg.png") repeat-x scroll center top #110E0C; */
+  /* background: url("..//img/BNY.jpeg") repeat-x scroll center top #110E0C; */
+  background: url("..//img/nyc_photo-1523374228107-6e44bd2b524e.jpeg") repeat-x scroll center top #110E0C;
 }
 
 .herofade {
@@ -4443,7 +4452,7 @@ a.list-group-item-danger.active, a.list-group-item-danger:hover, a.list-group-it
 }
 .trans-purple{
   background-color: rgba(146, 98, 180, 0.29);
-  border-color: rgba(146, 98, 180, 0.29); !important;
+  border-color: rgba(146, 98, 180, 0.29) !important;
 }
 /* Black */
 .black {
