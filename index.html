@@ -28,33 +28,32 @@
 -->
 
 		<!-- Load Our CSS - Do not alter the load order -->
-		<link href="css/bootstrap.min.css" rel="stylesheet"><!-- Bootstrap Core - ALways load first -->
-		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 		<link href="css/icomoon.css" rel="stylesheet"><!-- Icon Font -->
 		<link href="css/style.css" rel="stylesheet"><!-- Main theme stylesheet -->
 		<link href="css/custom.css" rel="stylesheet"><!-- Custom styles - Always load last -->
-
+		
 		<!-- Load our fonts from Google -->
-		<link href='//fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
-		<link href='//fonts.googleapis.com/css?family=PT+Serif:700' rel='stylesheet' type='text/css'>
-
+		<!-- <link href='//fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=PT+Serif:700' rel='stylesheet' type='text/css'> -->
+		
 		<!-- Load our fonts individually if IE8+, to avoid faux bold & italic rendering -->
 		<!--[if IE]>
-		<link href='https://fonts.googleapis.com/css?family=PT+Serif:700' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
-		<![endif]-->
-
-		<!-- Load our stylesheet for IE8 -->
-		<!--[if IE 8]>
-		<link rel="stylesheet" type="text/css" href="css/ie8.css" />
-		<![endif]-->
-
-		<!-- Load our stylesheet for IE9 -->
-		<!--[if IE 9]>
-		<link rel="stylesheet" type="text/css" href="css/ie9.css" />
-		<![endif]-->
-
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+			<link href='https://fonts.googleapis.com/css?family=PT+Serif:700' rel='stylesheet' type='text/css'>
+			<link href='https://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+			<![endif]-->
+			
+			<!-- Load our stylesheet for IE8 -->
+			<!--[if IE 8]>
+				<link rel="stylesheet" type="text/css" href="css/ie8.css" />
+				<![endif]-->
+				
+				<!-- Load our stylesheet for IE9 -->
+				<!--[if IE 9]>
+					<link rel="stylesheet" type="text/css" href="css/ie9.css" />
+					<![endif]-->
+					
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
 		<!-- Load these in the <head> for quicker IE8+ load times -->
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -269,7 +268,32 @@
 
 				<!-- ============================ Section three: image and text ============================ -->
 				<section class="container-fluid white">
-						<div class="row">
+					<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-indicators">
+						  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+						</div>
+						<div class="carousel-inner">
+						  <div class="carousel-item active">
+							<div class="row">
+								<div class="col-md-6 textpadding wow fadeInLeft" data-wow-delay="0.5s">
+										<h3>"Satellites For Rent - A New Approach For Space Exploration"</h3>
+										<hr class="mini">
+										<p>
+											a #spacetalk with Dennis Silin of Exodus Orbitals
+											<br/>
+											📅 March 19th, 6:30pm EST <br/>
+											📝 RSVP: <a href="https://meetup.com/NewSpace-NYC/events/276763999/">meetup.com/NewSpace-NYC/events</a>
+										</p>
+								</div>
+								<div class="col-md-6 element-img" style="padding: 0px;">
+									<img src="img/exodus-orbitals_banner.png" alt="Exodus Orbitals logo black white" />
+								</div>
+						    </div>
+						  </div>
+						  <div class="carousel-item">
+							<div class="row">
 								<div class="col-md-6 textpadding wow fadeInLeft" data-wow-delay="0.5s">
 										<h3>NewSpace NYC BPC 2021</h3>
 										<hr class="mini">
@@ -280,8 +304,24 @@
 								<div class="col-md-6 element-img" style="padding: 0px;">
 										<iframe style="margin: 63px 33px 0 0;" width="560" height="315" src="https://www.youtube.com/embed/fqTbn7lB92I?rel=0" frameborder="0" allowfullscreen></iframe>
 								</div>
+						    </div>
+							<!-- <img src="..." class="d-block w-100" alt="..."> -->
+						  </div>
+						  </div>
+						  <!-- <div class="carousel-item">
+							<h1> TEST 222222!!!!!!!!!</h1>
+							<img src="..." class="d-block w-100" alt="..."> -->
+						  </div>
 						</div>
-						<a name="majortom" class="absolute-anchor"> . </a>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+						  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						  <span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+						  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						  <span class="visually-hidden">Next</span>
+						</button>
+					  </div>
 				</section>
 				
 				<section id="five" class="container-fluid white">
@@ -469,8 +509,8 @@
 
 		<!-- ========== Load our scripts - keep positioned at the end of your document ========== -->
 
-		<script src="js/bootstrap.min.js"></script><!-- Bootstrap core - always load first -->
-		<script src="js/scripts.js"></script><!-- Custom JS functions - always load last -->
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg==" crossorigin="anonymous"></script> -->
+		<!-- <script src="js/scripts.js"></script>Custom JS functions - always load last -->
 
 </body>
 
