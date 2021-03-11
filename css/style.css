@@ -563,7 +563,7 @@ a[title="SumoMe"]{
 
 #menumodal .modal-dialog {
   width: 100%;
-  margin: auto;
+  margin: 0;
   padding-right: 0;
   padding-left: 0
 }
@@ -575,6 +575,8 @@ a[title="SumoMe"]{
 }
 
 #menumodal .modal-content {
+  width: 100vw;
+  height: 100vh;
   background-color: #444;
 }
 
