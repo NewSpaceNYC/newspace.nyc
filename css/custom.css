@@ -116,6 +116,14 @@
 pre{
 	font-size: 13px;
 }
+.center-block {
+	margin: auto;
+    display: block;
+}
+
+.margin-auto {
+	margin: auto;
+}
 
 #clients .container{
 	width: 86%;
