@@ -511,7 +511,7 @@ a[title="SumoMe"]{
 
 .home-title {
   color:rgb(240, 238, 240) !important;
-  background-color: rgba(8, 7, 8, 0.657);
+  background-color: rgb(8 7 8 / 78%);
 	text-shadow: 4px 4px #000000;
   width: 100% !important;
 }
@@ -559,6 +559,15 @@ a[title="SumoMe"]{
   #menumodal .modal-header {
     display: none;
   }
+}
+
+.caro-img.center-cropped {
+  width: 100%;
+  height: 333px;
+  background-image: url('../img/NS_Eva-IMG_8188.jpeg?ixlib=rb-1.2.1&auto=format&fit=crop&w=700');
+  /* background-image: url('../img/NS_Eva-IMG_8188.jpeg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=300&q=60'); */
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 
 #menumodal .modal-dialog {
@@ -634,10 +643,12 @@ a[title="SumoMe"]{
   }
 
 #cform .socialicons{
+  padding: 0;
   display: flex;
 }
   #cform .socialicons li{
-    padding: 0 11px;
+    padding: 0 2px;
+    margin: 10px;
   }
 
 #menumodal ul li {
