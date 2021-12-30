@@ -1,5 +1,7 @@
+.DS_Store
 .c9/
 node_modules/
 out/
 img/Thumbs.db
 video/Thumbs.db
+.DS_Store
